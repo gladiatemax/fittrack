@@ -15,7 +15,7 @@ function addExercise() {
   const note = document.getElementById("note").value.trim();
 
   if (!exerciseName || !setsReps || isNaN(weight) || isNaN(week)) {
-    alert("Inserisci tutti i campi richiesti (escluso Note)");
+    alert("Inserisci tutti i campi obbligatori");
     return;
   }
 
@@ -28,21 +28,11 @@ function addExercise() {
     program[day].push(existing);
   }
 
-  // Converti eventuali log vecchi errati
-  existing.log = existing.log.map(entry => {
-    if (typeof entry === "string") {
-      const [week, sets, reps, weight] = entry.split(" ").map(Number);
-      return { week, setsReps: `${sets}x${reps}`, weight, note: "" };
-    }
-    return entry;
-  });
-
   existing.log.push({ week, setsReps, weight, note });
 
   saveProgram(program);
   displayProgram();
 
-  // Pulisci form
   document.getElementById("exerciseName").value = "";
   document.getElementById("setsReps").value = "";
   document.getElementById("weight").value = "";
@@ -94,9 +84,9 @@ function displayProgram() {
     exercise.log.forEach(log => {
       html += `<tr>
         <td>${log.week}</td>
-        <td>${log.setsReps || ''}</td>
+        <td>${log.setsReps}</td>
         <td>${log.weight}</td>
-        <td>${log.note || ''}</td>
+        <td>${log.note || "-"}</td>
       </tr>`;
     });
 
@@ -121,10 +111,8 @@ document.getElementById("nextDay").addEventListener("click", () => {
 });
 
 document.getElementById("toggleFormBtn").addEventListener("click", () => {
-  const formSection = document.querySelector(".form-section");
-  formSection.style.display = (formSection.style.display === "none") ? "block" : "none";
+  const formSection = document.getElementById("formSection");
+  formSection.classList.toggle("hidden");
 });
 
-
-// Mostra schede al caricamento
 displayProgram();
