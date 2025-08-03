@@ -1,0 +1,14 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" rx="32" fill="#0d1117"/>
+
+  <!-- Asta del manubrio -->
+  <rect x="48" y="88" width="96" height="16" rx="8" fill="#34d399"/>
+
+  <!-- Dischi verdi accesi ma più scuri -->
+  <circle cx="38" cy="96" r="34" fill="#16a34a"/>
+  <circle cx="154" cy="96" r="34" fill="#16a34a"/>
+
+  <!-- Testo "Kg" centrato nei dischi -->
+  <text x="28" y="101" font-size="14" fill="#000000" font-family="Arial, sans-serif" font-weight="bold">Kg</text>
+  <text x="144" y="101" font-size="14" fill="#000000" font-family="Arial, sans-serif" font-weight="bold">Kg</text>
+</svg>
