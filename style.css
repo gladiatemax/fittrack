@@ -1,0 +1,111 @@
+body {
+  background-color: #0d1117;
+  color: #d1fae5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0 1rem 2rem 1rem;
+}
+
+header, footer {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #10b981;
+  margin-bottom: 0.25rem;
+}
+
+p {
+  color: #a3e635;
+}
+
+button {
+  background-color: #10b981;
+  border: none;
+  color: #0d1117;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #059669;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto 1rem auto;
+  background-color: #161b22;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+form label {
+  display: block;
+  margin-top: 0.6rem;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+  color: #a3e635;
+}
+
+form input[type=text],
+form input[type=number],
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #374151;
+  background-color: #0d1117;
+  color: #d1fae5;
+}
+
+#dayNavigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+#dayNavigation button {
+  margin: 0 1rem;
+}
+
+#programDisplay {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #161b22;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+table, th, td {
+  border: 1px solid #374151;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+h3 {
+  color: #10b981;
+}
+
+h4 {
+  margin-bottom: 0.3rem;
+}
