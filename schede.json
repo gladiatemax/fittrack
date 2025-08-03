@@ -3,7 +3,12 @@
     {
       "exercise": "Panca piana",
       "log": [
-        { "week": 1, "sets": 3, "reps": 8, "weight": 70, "notes": "Buona tecnica" }
+        {
+          "week": 1,
+          "setsReps": "3x8",
+          "weight": 70,
+          "notes": "Buona tecnica"
+        }
       ]
     }
   ]
