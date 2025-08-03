@@ -1,0 +1,28 @@
+{
+  "lunedì": [
+    {
+      "exercise": "Panca piana",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "4x10",
+          "weight": 60,
+          "note": "Buona esecuzione"
+        }
+      ]
+    }
+  ],
+  "mercoledì": [
+    {
+      "exercise": "Squat",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3x8",
+          "weight": 80,
+          "note": ""
+        }
+      ]
+    }
+  ]
+}
