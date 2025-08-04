@@ -1,26 +1,207 @@
 {
   "lunedì": [
     {
-      "exercise": "Panca piana",
+      "exercise": "Back Squat",
       "log": [
         {
           "week": 1,
-          "setsReps": "4x10",
-          "weight": 60,
-          "note": "Buona esecuzione"
+          "setsReps": "5x10",
+          "weight": 0,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 2,
+          "setsReps": "5x9",
+          "weight": 4,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 3,
+          "setsReps": "5x8",
+          "weight": 8,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 4,
+          "setsReps": "5x7",
+          "weight": 12,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 5,
+          "setsReps": "5x6",
+          "weight": 16,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 6,
+          "setsReps": "5x5",
+          "weight": 20,
+          "note": "rec 2 min"
         }
       ]
-    }
-  ],
-  "mercoledì": [
+    },
     {
-      "exercise": "Squat",
+      "exercise": "Panca Piana",
       "log": [
         {
           "week": 1,
-          "setsReps": "3x8",
-          "weight": 80,
-          "note": ""
+          "setsReps": "5x5",
+          "weight": 10,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 2,
+          "setsReps": "5x5",
+          "weight": 14,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 3,
+          "setsReps": "5x5",
+          "weight": 18,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 4,
+          "setsReps": "5x5",
+          "weight": 22,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 5,
+          "setsReps": "5x5",
+          "weight": 26,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 6,
+          "setsReps": "5x5",
+          "weight": 30,
+          "note": "rec 2-3 min"
+        }
+      ]
+    },
+    {
+      "exercise": "Rowing Machine",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "4x6",
+          "weight": 40,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 2,
+          "setsReps": "4x6-8",
+          "weight": 40,
+          "note": "rec 2 min, se 8 reps -> + kg e 6 reps"
+        },
+        {
+          "week": 3,
+          "setsReps": "4x6-8",
+          "weight": 40,
+          "note": "rec 2 min, se 8 reps -> + kg e 6 reps"
+        },
+        {
+          "week": 4,
+          "setsReps": "4x6-8",
+          "weight": 40,
+          "note": "rec 2 min, se 8 reps -> + kg e 6 reps"
+        },
+        {
+          "week": 5,
+          "setsReps": "4x6-8",
+          "weight": 40,
+          "note": "rec 2 min, se 8 reps -> + kg e 6 reps"
+        },
+        {
+          "week": 6,
+          "setsReps": "4x6-8",
+          "weight": 40,
+          "note": "rec 2 min, se 8 reps -> + kg e 6 reps"
+        }
+      ]
+    },
+    {
+      "exercise": "Skull Crusher",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "4x6",
+          "weight": 10,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 2,
+          "setsReps": "4x8",
+          "weight": 10,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 3,
+          "setsReps": "4x10",
+          "weight": 10,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 4,
+          "setsReps": "4x6",
+          "weight": 12.5,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 5,
+          "setsReps": "4x8",
+          "weight": 12.5,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 6,
+          "setsReps": "4x10",
+          "weight": 12.5,
+          "note": "rec 2 min"
+        }
+      ]
+    },
+    {
+      "exercise": "Plank",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3x1",
+          "weight": 0,
+          "note": "rec 30 s"
+        },
+        {
+          "week": 2,
+          "setsReps": "3x1",
+          "weight": 0,
+          "note": "rec 30 s"
+        },
+        {
+          "week": 3,
+          "setsReps": "3x1",
+          "weight": 0,
+          "note": "rec 30 s"
+        },
+        {
+          "week": 4,
+          "setsReps": "3x1",
+          "weight": 0,
+          "note": "rec 30 s"
+        },
+        {
+          "week": 5,
+          "setsReps": "3x1",
+          "weight": 0,
+          "note": "rec 30 s"
+        },
+        {
+          "week": 6,
+          "setsReps": "3x1",
+          "weight": 0,
+          "note": "rec 30 s"
         }
       ]
     }
