@@ -205,5 +205,172 @@
         }
       ]
     }
+  ],
+  
+  "martedì": [
+    {
+      "exercise": "Stacco",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x5",
+          "weight": 20,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 2,
+          "setsReps": "5x5",
+          "weight": 24,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 3,
+          "setsReps": "4x4",
+          "weight": 28,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 4,
+          "setsReps": "5x5",
+          "weight": 28,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 5,
+          "setsReps": "6x3",
+          "weight": 32,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 6,
+          "setsReps": "4x4",
+          "weight": 32,
+          "note": "rec 2-3 min"
+        }
+      ]
+    },
+    {
+      "exercise": "Military Press",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x5",
+          "weight": 4,
+          "note": "bilanciere 15kg, rec 2-3 min"
+        },
+        {
+          "week": 2,
+          "setsReps": "5x5",
+          "weight": 8,
+          "note": "bilanciere 15kg, rec 2-3 min"
+        },
+        {
+          "week": 3,
+          "setsReps": "5x5",
+          "weight": 12,
+          "note": "bilanciere 15kg, rec 2-3 min"
+        },
+        {
+          "week": 4,
+          "setsReps": "5x5",
+          "weight": 16,
+          "note": "bilanciere 15kg, rec 2-3 min"
+        },
+        {
+          "week": 5,
+          "setsReps": "5x5",
+          "weight": 20,
+          "note": "bilanciere 15kg, rec 2-3 min"
+        },
+        {
+          "week": 6,
+          "setsReps": "5x5",
+          "weight": 24,
+          "note": "bilanciere 15kg, rec 2-3 min"
+        }
+      ]
+    },
+    {
+      "exercise": "Trazioni Zav. Fronte",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3x2",
+          "weight": 2,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 2,
+          "setsReps": "4x2",
+          "weight": 2,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 3,
+          "setsReps": "5x2",
+          "weight": 2,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 4,
+          "setsReps": "3x2",
+          "weight": 4,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 5,
+          "setsReps": "4x2",
+          "weight": 4,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 6,
+          "setsReps": "5x2",
+          "weight": 4,
+          "note": "rec 2 min"
+        }
+      ]
+    },
+    {
+      "exercise": "Curl con EZ",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "4x6",
+          "weight": 10,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 2,
+          "setsReps": "4x8",
+          "weight": 10,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 3,
+          "setsReps": "4x10",
+          "weight": 10,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 4,
+          "setsReps": "4x6",
+          "weight": 12.5,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 5,
+          "setsReps": "4x8",
+          "weight": 12.5,
+          "note": "rec 2 min"
+        },
+        {
+          "week": 6,
+          "setsReps": "4x10",
+          "weight": 12.5,
+          "note": "rec 2 min"
+        }
+      ]
+    }
   ]
 }
