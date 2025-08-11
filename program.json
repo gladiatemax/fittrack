@@ -20,24 +20,6 @@
           "setsReps": "5x8",
           "weight": 8,
           "note": "rec 2 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "5x7",
-          "weight": 12,
-          "note": "rec 2 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "5x6",
-          "weight": 16,
-          "note": "rec 2 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "5x5",
-          "weight": 20,
-          "note": "rec 2 min"
         }
       ]
     },
@@ -61,24 +43,6 @@
           "setsReps": "5x5",
           "weight": 18,
           "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "5x5",
-          "weight": 22,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "5x5",
-          "weight": 26,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "5x5",
-          "weight": 30,
-          "note": "rec 2-3 min"
         }
       ]
     },
@@ -99,24 +63,6 @@
         },
         {
           "week": 3,
-          "setsReps": "4x6-8",
-          "weight": 40,
-          "note": "rec 2 min, se 8 reps -> + kg e 6 reps"
-        },
-        {
-          "week": 4,
-          "setsReps": "4x6-8",
-          "weight": 40,
-          "note": "rec 2 min, se 8 reps -> + kg e 6 reps"
-        },
-        {
-          "week": 5,
-          "setsReps": "4x6-8",
-          "weight": 40,
-          "note": "rec 2 min, se 8 reps -> + kg e 6 reps"
-        },
-        {
-          "week": 6,
           "setsReps": "4x6-8",
           "weight": 40,
           "note": "rec 2 min, se 8 reps -> + kg e 6 reps"
@@ -143,24 +89,6 @@
           "setsReps": "4x10",
           "weight": 10,
           "note": "rec 2 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "4x6",
-          "weight": 12.5,
-          "note": "rec 2 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "4x8",
-          "weight": 12.5,
-          "note": "rec 2 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "4x10",
-          "weight": 12.5,
-          "note": "rec 2 min"
         }
       ]
     },
@@ -181,24 +109,6 @@
         },
         {
           "week": 3,
-          "setsReps": "3x1",
-          "weight": 0,
-          "note": "rec 30 s"
-        },
-        {
-          "week": 4,
-          "setsReps": "3x1",
-          "weight": 0,
-          "note": "rec 30 s"
-        },
-        {
-          "week": 5,
-          "setsReps": "3x1",
-          "weight": 0,
-          "note": "rec 30 s"
-        },
-        {
-          "week": 6,
           "setsReps": "3x1",
           "weight": 0,
           "note": "rec 30 s"
@@ -228,24 +138,6 @@
           "setsReps": "4x4",
           "weight": 28,
           "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "5x5",
-          "weight": 28,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "6x3",
-          "weight": 32,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "4x4",
-          "weight": 32,
-          "note": "rec 2-3 min"
         }
       ]
     },
@@ -268,24 +160,6 @@
           "week": 3,
           "setsReps": "5x5",
           "weight": 12,
-          "note": "bilanciere 15kg, rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "5x5",
-          "weight": 16,
-          "note": "bilanciere 15kg, rec 2-3 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "5x5",
-          "weight": 20,
-          "note": "bilanciere 15kg, rec 2-3 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "5x5",
-          "weight": 24,
           "note": "bilanciere 15kg, rec 2-3 min"
         }
       ]
@@ -310,24 +184,6 @@
           "setsReps": "5x2",
           "weight": 2,
           "note": "rec 2 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "3x2",
-          "weight": 4,
-          "note": "rec 2 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "4x2",
-          "weight": 4,
-          "note": "rec 2 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "5x2",
-          "weight": 4,
-          "note": "rec 2 min"
         }
       ]
     },
@@ -351,24 +207,6 @@
           "setsReps": "4x10",
           "weight": 10,
           "note": "rec 2 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "4x6",
-          "weight": 12.5,
-          "note": "rec 2 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "4x8",
-          "weight": 12.5,
-          "note": "rec 2 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "4x10",
-          "weight": 12.5,
-          "note": "rec 2 min"
         }
       ]
     }
@@ -391,15 +229,9 @@
         },
         {
           "week": 3,
-          "setsReps": "3x2",
-          "weight": 12,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "3x1",
-          "weight": 16,
-          "note": "rec 2-3 min"
+          "setsReps": "TEST 1RM",
+          "weight": 0,
+          "note": "rec 2-3 min, NON ISOCINETICO"
         }
       ]
     },
@@ -420,15 +252,9 @@
         },
         {
           "week": 3,
-          "setsReps": "MAV 3 + 90% 3x3",
+          "setsReps": "TEST 1RM",
           "weight": 0,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "MAV 2 + 90% 4x2",
-          "weight": 0,
-          "note": "rec 2-3 min"
+          "note": "rec 2-3 min, NON ISOCINETICO"
         }
       ]
     },
@@ -449,13 +275,7 @@
         },
         {
           "week": 3,
-          "setsReps": "2x12, 2x10, 2x8",
-          "weight": 0,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "2x12, 2x10, 2x8",
+          "setsReps": "TEST 1RM",
           "weight": 0,
           "note": "rec 2-3 min"
         }
@@ -481,12 +301,6 @@
           "setsReps": "3x12 + 1xMAX",
           "weight": 18,
           "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "3x12 + 1xMAX",
-          "weight": 18,
-          "note": "rec 2-3 min"
         }
       ]
     },
@@ -507,12 +321,6 @@
         },
         {
           "week": 3,
-          "setsReps": "3xMAX",
-          "weight": 0,
-          "note": "rec 2 min"
-        },
-        {
-          "week": 4,
           "setsReps": "3xMAX",
           "weight": 0,
           "note": "rec 2 min"
