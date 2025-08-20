@@ -448,5 +448,112 @@
         }
       ]
     }
+  ],
+  "venerdì": [
+    {
+      "exercise": "Stacco con Fermo Incastro",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "MAV 3 + 4x3 90%",
+          "weight": 0,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 2,
+          "setsReps": "MAV 2 + 4x2 90%",
+          "weight": 0,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 3,
+          "setsReps": "MAV 1",
+          "weight": 0,
+          "note": "rec 2-3 min"
+        }
+      ]
+    },
+    {
+      "exercise": "Croci ai Cavi Bassi",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "TEST 15 RM",
+          "weight": 0,
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "3x12 + 1xMAX",
+          "weight": 0,
+          "note": "rec 1.5 min"
+        },
+        {
+          "week": 3,
+          "setsReps": "3x12 + 1xMAX",
+          "weight": 0,
+          "note": "rec 1.5 min"
+        },
+        {
+          "week": 4,
+          "setsReps": "3x12 + 1xMAX",
+          "weight": 0,
+          "note": "rec 1.5 min"
+        },
+        {
+          "week": 5,
+          "setsReps": "3x12 + 1xMAX",
+          "weight": 0,
+          "note": "rec 1.5 min"
+        },
+        {
+          "week": 6,
+          "setsReps": "3x12 + 1xMAX",
+          "weight": 0,
+          "note": "rec 1.5 min"
+        }
+      ]
+    },
+    {
+      "exercise": "Leg Curl + Alzate Laterali",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "(2x10 + 1xMAX) + 3x10",
+          "weight": 32,
+          "note": "rec 1.5 min"
+        },
+        {
+          "week": 2,
+          "setsReps": "(1x10 + 2xMAX) + 3x10",
+          "weight": 32,
+          "note": "rec 1.5 min"
+        },
+        {
+          "week": 3,
+          "setsReps": "3xMAX + 3x10",
+          "weight": 32,
+          "note": "rec 1.5 min"
+        },
+        {
+          "week": 4,
+          "setsReps": "(2x10 + 1xMAX) + 3x10",
+          "weight": 36,
+          "note": "rec 1.5 min"
+        },
+        {
+          "week": 5,
+          "setsReps": "(1x10 + 2xMAX) + 3x10",
+          "weight": 36,
+          "note": "rec 1.5 min"
+        },
+        {
+          "week": 6,
+          "setsReps": "3xMAX + 3x10",
+          "weight": 36,
+          "note": "rec 1.5 min"
+        }
+      ]
+    }
   ]
 }
