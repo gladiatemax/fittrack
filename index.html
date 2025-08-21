@@ -27,5 +27,13 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/fittrack/sw.js")
+      .then(() => console.log("✅ Service Worker registrato"))
+      .catch(err => console.error("❌ Errore SW:", err));
+  }
+</script>
+
 </body>
 </html>
