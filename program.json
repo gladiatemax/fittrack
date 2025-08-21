@@ -313,13 +313,13 @@
         },
         {
           "week": 5,
-          "setsReps": "7x5",
+          "setsReps": "6x5",
           "weight": 40,
           "note": "rec 2-3 min"
         },
         {
           "week": 6,
-          "setsReps": "5x7",
+          "setsReps": "5x5",
           "weight": 40,
           "note": "rec 2-3 min"
         }
@@ -469,6 +469,47 @@
           "week": 3,
           "setsReps": "MAV 1",
           "weight": 0,
+          "note": "rec 2-3 min"
+        }
+      ]
+    },
+    {
+      "exercise": "Panca Piana",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "6x2",
+          "weight": 40,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 2,
+          "setsReps": "6x2",
+          "weight": 40,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 3,
+          "setsReps": "6x2",
+          "weight": 40,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 4,
+          "setsReps": "6x2",
+          "weight": 40,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 5,
+          "setsReps": "6x2",
+          "weight": 40,
+          "note": "rec 2-3 min"
+        },
+        {
+          "week": 6,
+          "setsReps": "6x2",
+          "weight": 40,
           "note": "rec 2-3 min"
         }
       ]
