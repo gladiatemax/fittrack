@@ -70,7 +70,14 @@ form textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   margin: 1rem 0;
+  position: sticky;
+  top: 0;
+  background-color: #0d1117; /* stesso bg */
+  padding: 0.5rem;
+  z-index: 1000; /* resta sopra i contenuti */
+  border-bottom: 1px solid #333;
 }
 
 #dayNavigation button {
@@ -109,18 +116,3 @@ h3 {
 h4 {
   margin-bottom: 0.3rem;
 }
-
-#dayNavigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
-  position: sticky;
-  top: 0;
-  background-color: #0d1117; /* stesso bg */
-  padding: 0.5rem;
-  z-index: 1000; /* resta sopra i contenuti */
-  border-bottom: 1px solid #333;
-}
-
