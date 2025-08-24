@@ -89,22 +89,6 @@ form textarea {
   border-radius: 10px;
 }
 
-/* Chip che rimane fisso in alto a destra */
-#dayChip {
-  position: fixed;
-  right: 1rem;
-  top: 0.8rem;
-  background-color: rgba(16,185,129,0.95);
-  color: #071013;
-  padding: 0.4rem 0.8rem;
-  border-radius: 999px;
-  font-weight: 700;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
-  pointer-events: none; /* non cliccabile */
-  z-index: 1100;
-  text-transform: capitalize;
-}
-
 #dayNavigation button {
   margin: 0 1rem;
 }
