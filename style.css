@@ -94,6 +94,16 @@ form textarea {
   overflow-x: auto;
 }
 
+#topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0d1117;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
