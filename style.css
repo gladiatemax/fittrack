@@ -6,10 +6,6 @@ body {
   padding: 0 1rem 2rem 1rem;
 }
 
-main {
-  margin-top: 70px; /* Adatta il valore se la barra è più alta */
-}
-
 header, footer {
   text-align: center;
   margin-top: 1rem;
