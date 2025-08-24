@@ -1,27 +1,50 @@
-// sw.js
 const CACHE_NAME = "fittrack-cache-v1";
-const URLS_TO_CACHE = [
-  "/fittrack/",          // homepage (importante per GitHub Pages)
+const urlsToCache = [
+  "/fittrack/",
   "/fittrack/index.html",
   "/fittrack/style.css",
   "/fittrack/script.js",
-  "/fittrack/manifest.json",
-  "/fittrack/icon-192.png",
-  "/fittrack/icon-512.png"
+  "/fittrack/program.json",
+  "/fittrack/icon.png",
+  "/fittrack/manifest.json"
 ];
 
+// Installazione
 self.addEventListener("install", event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll(URLS_TO_CACHE);
-    })
+    caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
   );
 });
 
+// Attivazione
+self.addEventListener("activate", event => {
+  event.waitUntil(
+    caches.keys().then(keys =>
+      Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
+    )
+  );
+  self.clients.claim();
+});
+
+// Fetch
 self.addEventListener("fetch", event => {
   event.respondWith(
-    caches.match(event.request).then(response => {
-      return response || fetch(event.request);
-    })
+    caches.match(event.request).then(resp => resp || fetch(event.request))
+  );
+});
+
+// 🔥 Notifica update
+self.addEventListener("install", event => {
+  self.skipWaiting();
+});
+
+self.addEventListener("activate", event => {
+  event.waitUntil(
+    (async () => {
+      const clients = await self.clients.matchAll({ type: "window" });
+      for (const client of clients) {
+        client.postMessage({ type: "NEW_VERSION" });
+      }
+    })()
   );
 });
