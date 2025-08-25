@@ -116,8 +116,8 @@ function displayProgram() {
           <span class="counter-label">Serie completate:</span>
           <span class="counter-value">0</span>
           <div class="counter-buttons">
-            <button class="btn-plus">+</button>
             <button class="btn-minus">-</button>
+            <button class="btn-plus">+</button>
             <button class="btn-reset">⟳</button>
           </div>
         </div>
