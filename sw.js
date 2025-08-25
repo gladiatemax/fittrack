@@ -1,4 +1,4 @@
-const CACHE_NAME = "fittrack-v3.2"; // cambia versione ogni volta che aggiorni
+const CACHE_NAME = "fittrack-v3.3"; // cambia versione ogni volta che aggiorni
 const FILES_TO_CACHE = [
   "/fittrack/",
   "/fittrack/index.html",
