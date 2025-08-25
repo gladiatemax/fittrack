@@ -147,5 +147,19 @@ function displayProgram() {
 
 }
 
+document.getElementById("prevDay").addEventListener("click", () => {
+  do {
+    currentDayIndex = (currentDayIndex - 1 + daysOfWeek.length) % daysOfWeek.length;
+  } while (!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length === 0);
+  displayProgram();
+});
+
+document.getElementById("nextDay").addEventListener("click", () => {
+  do {
+    currentDayIndex = (currentDayIndex + 1) % daysOfWeek.length;
+  } while (!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length === 0);
+  displayProgram();
+});
+
 // Carica scheda all'avvio
 loadProgram();
