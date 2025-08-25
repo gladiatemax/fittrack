@@ -1,5 +1,5 @@
-const CACHE_NAME = "fittrack-cache-v2";
-const urlsToCache = [
+const CACHE_NAME = "fittrack-v2"; // cambia versione ogni volta che aggiorni
+const FILES_TO_CACHE = [
   "/fittrack/",
   "/fittrack/index.html",
   "/fittrack/style.css",
@@ -9,42 +9,29 @@ const urlsToCache = [
   "/fittrack/manifest.json"
 ];
 
-// Installazione
 self.addEventListener("install", event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
+    caches.open(CACHE_NAME).then(cache => cache.addAll(FILES_TO_CACHE))
   );
+  self.skipWaiting(); // forza il nuovo SW subito
 });
 
-// Attivazione
 self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys().then(keys =>
       Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
     )
   );
-  self.clients.claim();
+  self.clients.claim(); // i client usano subito il nuovo SW
 });
 
-// Fetch
 self.addEventListener("fetch", event => {
   event.respondWith(
-    caches.match(event.request).then(resp => resp || fetch(event.request))
-  );
-});
-
-// 🔥 Notifica update
-self.addEventListener("install", event => {
-  self.skipWaiting();
-});
-
-self.addEventListener("activate", event => {
-  event.waitUntil(
-    (async () => {
-      const clients = await self.clients.matchAll({ type: "window" });
-      for (const client of clients) {
-        client.postMessage({ type: "NEW_VERSION" });
-      }
-    })()
+    fetch(event.request).then(response => {
+      // aggiorna cache con la nuova versione del file
+      const clone = response.clone();
+      caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+      return response;
+    }).catch(() => caches.match(event.request))
   );
 });
