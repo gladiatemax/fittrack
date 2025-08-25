@@ -81,83 +81,71 @@ function displayProgram() {
       </thead>
       <tbody>`;
 
-    exercise.log.forEach(log => {
-    html += `<tr class="log-row" data-exercise="${exercise.exercise}" data-week="${log.week}">
-    <td>${log.week}</td>
-    <td>${log.setsReps || "-"}</td>
-    <td>${log.weight}</td>
-    <td>${log.note ? log.note : "-"}</td>
-  </tr>`;
+  exercise.log.forEach((log, logIndex) => {
+    html += `<tr class="exercise-row" data-exercise="${exercise.exercise}" data-logindex="${logIndex}">
+      <td>${log.week}</td>
+      <td>${log.setsReps || "-"}</td>
+      <td>${log.weight}</td>
+      <td>${log.note ? log.note : "-"}</td>
+    </tr>`;
   });
-
 
     html += `</tbody></table>`;
   });
 
   container.innerHTML = html;
+
+  document.querySelectorAll(".exercise-row").forEach(row => {
+  row.addEventListener("click", () => {
+    const existing = row.nextElementSibling;
+    if (existing && existing.classList.contains("counter-box")) {
+      // Se già aperta → la rimuovo
+      existing.remove();
+      return;
+    }
+
+    // Chiudi eventuali altre box aperte
+    document.querySelectorAll(".counter-box").forEach(box => box.remove());
+
+    // Crea la box contatore
+    const counterBox = document.createElement("tr");
+    counterBox.className = "counter-box";
+    counterBox.innerHTML = `
+      <td colspan="4">
+        <div class="counter-content">
+          <span class="counter-label">Serie completate:</span>
+          <span class="counter-value">0</span>
+          <div class="counter-buttons">
+            <button class="btn-plus">+</button>
+            <button class="btn-minus">-</button>
+            <button class="btn-reset">⟳</button>
+          </div>
+        </div>
+      </td>
+    `;
+    row.insertAdjacentElement("afterend", counterBox);
+
+    const valueEl = counterBox.querySelector(".counter-value");
+    let count = 0;
+
+    counterBox.querySelector(".btn-plus").addEventListener("click", () => {
+      count++;
+      valueEl.textContent = count;
+    });
+
+    counterBox.querySelector(".btn-minus").addEventListener("click", () => {
+      if (count > 0) count--;
+      valueEl.textContent = count;
+    });
+
+    counterBox.querySelector(".btn-reset").addEventListener("click", () => {
+      count = 0;
+      valueEl.textContent = count;
+    });
+  });
+  });
+
 }
-
-document.getElementById("prevDay").addEventListener("click", () => {
-  do {
-    currentDayIndex = (currentDayIndex - 1 + daysOfWeek.length) % daysOfWeek.length;
-  } while (!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length === 0);
-  displayProgram();
-});
-
-document.getElementById("nextDay").addEventListener("click", () => {
-  do {
-    currentDayIndex = (currentDayIndex + 1) % daysOfWeek.length;
-  } while (!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length === 0);
-  displayProgram();
-});
-
-document.addEventListener("click", e => {
-  const row = e.target.closest(".log-row");
-  if (!row) return;
-
-  // Rimuovi eventuali altri contatori aperti
-  const oldCounter = document.querySelector(".series-counter-row");
-  if (oldCounter) oldCounter.remove();
-
-  // Crea una nuova riga subito sotto quella cliccata
-  const counterRow = document.createElement("tr");
-  counterRow.classList.add("series-counter-row");
-
-  const td = document.createElement("td");
-  td.colSpan = 4; // la tabella ha 4 colonne
-  td.innerHTML = `
-    <div class="series-counter">
-      <span>Serie completate: <span class="series-value">0</span></span>
-      <div class="series-buttons">
-        <button class="minus-btn">➖</button>
-        <button class="plus-btn">➕</button>
-        <button class="reset-btn">🔄 Reset</button>
-      </div>
-    </div>
-  `;
-  counterRow.appendChild(td);
-
-  row.insertAdjacentElement("afterend", counterRow);
-
-  let value = 0;
-  const valueEl = td.querySelector(".series-value");
-
-  td.querySelector(".plus-btn").addEventListener("click", () => {
-    value++;
-    valueEl.textContent = value;
-  });
-
-  td.querySelector(".minus-btn").addEventListener("click", () => {
-    if (value > 0) value--;
-    valueEl.textContent = value;
-  });
-
-  td.querySelector(".reset-btn").addEventListener("click", () => {
-    value = 0;
-    valueEl.textContent = value;
-  });
-});
-
 
 // Carica scheda all'avvio
 loadProgram();
