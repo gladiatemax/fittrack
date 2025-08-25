@@ -69,7 +69,7 @@ function displayProgram() {
   let html = `<h3>📅 ${capitalize(day)}</h3>`;
 
   program[day].forEach(exercise => {
-    html += `<h4 class="exercise-title" data-exercise="${exercise.exercise}">🏋️ ${exercise.exercise}</h4>`;
+    html += `<h4>🏋️ ${exercise.exercise}</h4>`;
     html += `<table>
       <thead>
         <tr>
