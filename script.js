@@ -27,31 +27,25 @@ async function loadProgram() {
  * - Altrimenti trova il prossimo giorno disponibile
  */
 function getClosestDayIndex() {
-  const todayIndex = new Date().getDay(); // 0 = domenica
-  const todayName = daysOfWeek[todayIndex];
+  const today = new Date().getDay(); 
+  // Domenica = 0, Lunedì = 1, ..., Sabato = 6
+  const map = [6, 0, 1, 2, 3, 4, 5]; 
+  // Converte: 0->domenica=6, 1->lunedì=0, ecc.
+  const todayIndex = map[today];
 
-  // Se oggi ha una scheda
-  if (program[todayName] && program[todayName].length > 0) {
-    return todayIndex;
+  const validDays = daysOfWeek
+    .map((day, i) => program[day] && program[day].length > 0 ? i : null)
+    .filter(i => i !== null);
+
+  if (validDays.includes(todayIndex)) return todayIndex;
+
+  // Cerca il prossimo giorno valido
+  for (let offset = 1; offset < daysOfWeek.length; offset++) {
+    const nextIndex = (todayIndex + offset) % daysOfWeek.length;
+    if (validDays.includes(nextIndex)) return nextIndex;
   }
 
-  // Cerca il prossimo giorno disponibile
-  for (let offset = 1; offset < 7; offset++) {
-    const nextIndex = (todayIndex + offset) % 7;
-    const nextName = daysOfWeek[nextIndex];
-    if (program[nextName] && program[nextName].length > 0) {
-      return nextIndex;
-    }
-  }
-
-  // fallback → primo giorno disponibile
-  for (let i = 0; i < daysOfWeek.length; i++) {
-    if (program[daysOfWeek[i]] && program[daysOfWeek[i]].length > 0) {
-      return i;
-    }
-  }
-
-  return todayIndex;
+  return validDays[0]; // fallback
 }
 
 function displayProgram() {
