@@ -82,13 +82,14 @@ function displayProgram() {
       <tbody>`;
 
     exercise.log.forEach(log => {
-      html += `<tr>
-        <td>${log.week}</td>
-        <td>${log.setsReps || "-"}</td>
-        <td>${log.weight}</td>
-        <td>${log.note ? log.note : "-"}</td>
-      </tr>`;
-    });
+    html += `<tr class="log-row" data-exercise="${exercise.exercise}" data-week="${log.week}">
+    <td>${log.week}</td>
+    <td>${log.setsReps || "-"}</td>
+    <td>${log.weight}</td>
+    <td>${log.note ? log.note : "-"}</td>
+  </tr>`;
+  });
+
 
     html += `</tbody></table>`;
   });
@@ -110,25 +111,51 @@ document.getElementById("nextDay").addEventListener("click", () => {
   displayProgram();
 });
 
-let currentSeries = 0;
-
 document.addEventListener("click", e => {
-  if (e.target.classList.contains("exercise-title")) {
-    const exerciseName = e.target.dataset.exercise;
-    currentSeries = 0;
-    document.getElementById("popupExerciseName").innerText = exerciseName;
-    document.getElementById("seriesDone").innerText = currentSeries;
-    document.getElementById("seriesCounterPopup").classList.remove("hidden");
-  }
-});
+  const row = e.target.closest(".log-row");
+  if (!row) return;
 
-document.getElementById("addSeriesBtn").addEventListener("click", () => {
-  currentSeries++;
-  document.getElementById("seriesDone").innerText = currentSeries;
-});
+  // Rimuovi eventuali altri contatori aperti
+  const oldCounter = document.querySelector(".series-counter-row");
+  if (oldCounter) oldCounter.remove();
 
-document.getElementById("closePopupBtn").addEventListener("click", () => {
-  document.getElementById("seriesCounterPopup").classList.add("hidden");
+  // Crea una nuova riga subito sotto quella cliccata
+  const counterRow = document.createElement("tr");
+  counterRow.classList.add("series-counter-row");
+
+  const td = document.createElement("td");
+  td.colSpan = 4; // la tabella ha 4 colonne
+  td.innerHTML = `
+    <div class="series-counter">
+      <span>Serie completate: <span class="series-value">0</span></span>
+      <div class="series-buttons">
+        <button class="minus-btn">➖</button>
+        <button class="plus-btn">➕</button>
+        <button class="reset-btn">🔄 Reset</button>
+      </div>
+    </div>
+  `;
+  counterRow.appendChild(td);
+
+  row.insertAdjacentElement("afterend", counterRow);
+
+  let value = 0;
+  const valueEl = td.querySelector(".series-value");
+
+  td.querySelector(".plus-btn").addEventListener("click", () => {
+    value++;
+    valueEl.textContent = value;
+  });
+
+  td.querySelector(".minus-btn").addEventListener("click", () => {
+    if (value > 0) value--;
+    valueEl.textContent = value;
+  });
+
+  td.querySelector(".reset-btn").addEventListener("click", () => {
+    value = 0;
+    valueEl.textContent = value;
+  });
 });
 
 
