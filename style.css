@@ -159,3 +159,39 @@ h4 {
   background: #c62828;
 }
 
+.counter-box td {
+  background-color: #1e293b; /* sfondo scuro */
+  color: #f1f5f9;           /* testo chiaro */
+  padding: 10px;
+}
+
+.counter-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.counter-value {
+  font-size: 1.2em;
+  margin: 0 15px;
+  color: #38bdf8; /* azzurrino evidenziato */
+}
+
+.counter-buttons button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background: #334155;
+  color: #f1f5f9;
+  border: 1px solid #475569;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.counter-buttons button:hover {
+  background: #475569;
+}
