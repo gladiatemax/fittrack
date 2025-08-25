@@ -247,37 +247,37 @@
         {
           "week": 1,
           "setsReps": "5x5 + 5x10",
-          "weight": 0,
+          "weight": 12.5,
           "note": "rec 1.5 min"
         },
         {
           "week": 2,
           "setsReps": "5x7 + 5x10",
-          "weight": 0,
+          "weight": 12.5,
           "note": "rec 1.5 min"
         },
         {
           "week": 3,
           "setsReps": "6x6 + 5x10",
-          "weight": 0,
+          "weight": 12.5,
           "note": "rec 1.5 min"
         },
         {
           "week": 4,
           "setsReps": "5x5 + 5x10",
-          "weight": 0,
+          "weight": 15,
           "note": "rec 1.5 min"
         },
         {
           "week": 5,
           "setsReps": "5x7 + 5x10",
-          "weight": 0,
+          "weight": 15,
           "note": "rec 1.5 min"
         },
         {
           "week": 6,
           "setsReps": "6x6 + 5x10",
-          "weight": 0,
+          "weight": 15,
           "note": "rec 1.5 min"
         }
       ]
