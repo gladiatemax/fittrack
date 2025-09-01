@@ -55,6 +55,12 @@
           "setsReps": "5 (28), 4 (28), 3 (30), 2 (30)",
           "weight": 0,
           "note": "rec 3 min, se chiusa +2.5%"
+        },
+        {
+          "week": 3,
+          "setsReps": "5 (30), 4 (30), 3 (32), 2 (32)",
+          "weight": 0,
+          "note": "rec 3 min, se chiusa +2.5%"
         }
       ]
     },
@@ -110,6 +116,12 @@
         },
         {
           "week": 2,
+          "setsReps": "6 (50), 8 (48), 10 (44), 12 (40)",
+          "weight": 0,
+          "note": "rec 2 min, se chiusa +2.5%"
+        },
+        {
+          "week": 3,
           "setsReps": "6 (50), 8 (48), 10 (44), 12 (40)",
           "weight": 0,
           "note": "rec 2 min, se chiusa +2.5%"
@@ -213,7 +225,7 @@
           "week": 2,
           "setsReps": "10 min",
           "weight": 5,
-          "note": ""
+          "note": "13"
         },
         {
           "week": 3,
