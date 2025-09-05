@@ -21,6 +21,15 @@ function getUser() {
   return user;
 }
 
+// Calcola settimana corrente dalla data di start
+function getCurrentWeek(startDateStr) {
+  const start = new Date(startDateStr);
+  const today = new Date();
+  const diffMs = today - start;
+  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  return Math.floor(diffDays / 7) + 1;
+}
+
 // Carica programma per un utente specifico
 async function loadProgram(username) {
   try {
@@ -73,6 +82,8 @@ function displayProgram() {
   const day = daysOfWeek[currentDayIndex];
   document.getElementById("currentDayLabel").innerText = capitalize(day);
 
+  const currentWeek = getCurrentWeek(program.startDate);
+
   let html = `<h3>📅 ${capitalize(day)}</h3>`;
   program[day].forEach(exercise => {
     html += `<h4>🏋️ ${exercise.exercise}</h4>`;
@@ -88,7 +99,8 @@ function displayProgram() {
       <tbody>`;
 
     exercise.log.forEach((log, logIndex) => {
-      html += `<tr class="exercise-row" data-exercise="${exercise.exercise}" data-logindex="${logIndex}">
+      const highlightClass = log.week === currentWeek ? "current-week" : "";
+      html += `<tr class="exercise-row ${highlightClass}" data-exercise="${exercise.exercise}" data-logindex="${logIndex}">
         <td>${log.week}</td>
         <td>${log.setsReps || "-"}</td>
         <td>${log.weight}</td>
@@ -174,7 +186,7 @@ async function init() {
   const user = getUser();
 
   if (user === "admin") {
-    document.querySelector("#adminPanel").style.display = "block";
+    document.querySelector("#adminPanel").style.display = "flex";
     try {
       const res = await fetch("programs.json");
       const users = await res.json();
