@@ -99,10 +99,12 @@ function displayProgram() {
   row.addEventListener("click", () => {
     const existing = row.nextElementSibling;
     if (existing && existing.classList.contains("counter-box")) {
-      // Se già aperta → la rimuovo
-      existing.remove();
+      // Aggiunge animazione di chiusura
+      existing.classList.add("fade-out");
+      existing.addEventListener("animationend", () => existing.remove(), { once: true });
       return;
-    }
+  }
+
 
     // Chiudi eventuali altre box aperte
     document.querySelectorAll(".counter-box").forEach(box => box.remove());
