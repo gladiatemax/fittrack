@@ -12,6 +12,18 @@ header, footer {
   margin-bottom: 1rem;
 }
 
+footer p {
+  margin: 0.2rem 0;
+  color: #94a3b8;   /* grigio chiaro, meno invasivo */
+  font-size: 0.9rem;
+  text-align: center;
+}
+footer p:first-child {
+  color: #10b981;   /* evidenzia copyright */
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
 h1 {
   color: #10b981;
   margin-bottom: 0.25rem;
