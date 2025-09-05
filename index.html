@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FitTrack - Scheda Cliente</title>
-  <link rel="manifest" href="/fittrack/manifest.json" />
+  <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,7 +13,7 @@
     <p>Visualizza la tua scheda settimanale</p>
   </header>
 
-   <!-- Sticky navigation + day chip -->
+  <!-- Sticky navigation + day chip -->
   <div id="topBar">
     <div id="dayNavigation">
       <button id="prevDay">⬅</button>
@@ -23,6 +23,12 @@
   </div>
 
   <main>
+    <!-- Admin panel -->
+    <div id="adminPanel" style="display:none;">
+      <label for="userSelect">Seleziona cliente:</label>
+      <select id="userSelect"></select>
+    </div>
+
     <section id="programDisplay"></section>
   </main>
 
@@ -34,10 +40,10 @@
 
   <script>
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/fittrack/sw.js")
+    navigator.serviceWorker.register("sw.js")
       .then(() => console.log("✅ Service Worker registrato"))
       .catch(err => console.error("❌ Errore SW:", err));
-  
+
     navigator.serviceWorker.addEventListener("message", event => {
       if (event.data.type === "NEW_VERSION") {
         if (confirm("È disponibile una nuova versione di FitTrack. Vuoi aggiornarla ora?")) {
@@ -46,7 +52,6 @@
       }
     });
   }
-</script>
-
+  </script>
 </body>
 </html>
