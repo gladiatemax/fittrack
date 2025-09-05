@@ -21,14 +21,19 @@ function getUser() {
   return user;
 }
 
-// Calcola settimana corrente dalla data di start
 function getCurrentWeek(startDateStr) {
   const start = new Date(startDateStr);
   const today = new Date();
-  const diffMs = today - start;
+
+  // normalizza le date a mezzanotte locale
+  const startDate = new Date(start.getFullYear(), start.getMonth(), start.getDate());
+  const todayDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
+  const diffMs = todayDate - startDate;
   const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
   return Math.floor(diffDays / 7) + 1;
 }
+
 
 // Carica programma per un utente specifico
 async function loadProgram(username) {
