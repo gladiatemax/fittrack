@@ -216,3 +216,25 @@ h4 {
   background-color: #1e293b;
   cursor: pointer;
 }
+
+#adminPanel {
+  display: flex;
+  justify-content: center;   /* centro orizzontale */
+  align-items: center;       /* centro verticale, se serve */
+  margin: 1rem 0;            /* un po' di spazio sopra e sotto */
+  gap: 0.5rem;               /* spazio tra label e select */
+}
+
+#adminPanel label {
+  color: #a3e635;
+  font-weight: bold;
+}
+
+#adminPanel select {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #374151;
+  background-color: #0d1117;
+  color: #d1fae5;
+  cursor: pointer;
+}
