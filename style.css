@@ -66,7 +66,7 @@ form textarea {
   color: #d1fae5;
 }
 
-/* Top bar che contiene nav e chip */
+/* Top bar */
 #topBar {
   position: sticky;
   top: 0;
@@ -78,7 +78,6 @@ form textarea {
   align-items: center;
 }
 
-/* Day navigation rimane centrata */
 #dayNavigation {
   display: flex;
   justify-content: center;
@@ -159,6 +158,7 @@ h4 {
   background: #c62828;
 }
 
+/* Counter box */
 .counter-box td {
   background-color: #1e293b; /* sfondo scuro */
   color: #f1f5f9;           /* testo chiaro */
@@ -171,7 +171,7 @@ h4 {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* 👇 nuovo fade-out */
+/* Fade-out */
 .fade-out {
   animation: fadeOut 0.2s ease-in forwards;
 }
@@ -210,4 +210,9 @@ h4 {
 
 .counter-buttons button:hover {
   background: #475569;
+}
+
+.exercise-row:hover {
+  background-color: #1e293b;
+  cursor: pointer;
 }
