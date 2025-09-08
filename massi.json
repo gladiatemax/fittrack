@@ -37,7 +37,8 @@
       "log": [
         { "week": 1, "setsReps": "6 (48), 8 (44), 10 (40), 12 (36)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" },
         { "week": 2, "setsReps": "6 (50), 8 (48), 10 (44), 12 (40)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" },
-        { "week": 3, "setsReps": "6 (50), 8 (48), 10 (44), 12 (40)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" }
+        { "week": 3, "setsReps": "6 (50), 8 (48), 10 (44), 12 (40)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" },
+        { "week": 4, "setsReps": "6 (52), 8 (50), 10 (48), 12 (44)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" }
       ]
     }
   ],
@@ -48,7 +49,7 @@
         { "week": 1, "setsReps": "5x7", "weight": 40, "recupero": "2-3 min", "note": "" },
         { "week": 2, "setsReps": "4x5", "weight": 44, "recupero": "2-3 min", "note": "" },
         { "week": 3, "setsReps": "3x3", "weight": 48, "recupero": "2-3 min", "note": "" },
-        { "week": 4, "setsReps": "5x7", "weight": 43, "recupero": "2-3 min", "note": "" },
+        { "week": 4, "setsReps": "5x7", "weight": 42, "recupero": "2-3 min", "note": "" },
         { "week": 5, "setsReps": "4x5", "weight": 47, "recupero": "2-3 min", "note": "" },
         { "week": 6, "setsReps": "3x3", "weight": 50, "recupero": "2-3 min", "note": "" }
       ]
