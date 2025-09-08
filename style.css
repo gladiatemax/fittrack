@@ -223,11 +223,6 @@ h4 {
   cursor: pointer;
 }
 
-.exercise-row:hover {
-  background-color: #1e293b;
-  cursor: pointer;
-}
-
 #adminPanel {
   display: flex;
   justify-content: center;   /* centro orizzontale */
