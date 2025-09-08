@@ -246,3 +246,8 @@ h4 {
   color: #d1fae5;
   cursor: pointer;
 }
+
+.current-week {
+  background-color: #1f2733; /* leggermente più chiaro */
+  border-left: 3px solid #10b981; /* bordo verde per evidenziare */
+}
