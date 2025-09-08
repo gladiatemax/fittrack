@@ -220,10 +220,6 @@ h4 {
   cursor: pointer;
 }
 
-.counter-buttons button:hover {
-  background: #475569;
-}
-
 .exercise-row:hover {
   background-color: #1e293b;
   cursor: pointer;
