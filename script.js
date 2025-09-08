@@ -97,6 +97,7 @@ function displayProgram() {
         <tr>
           <th>Settimana</th>
           <th>Serie/Ripetizioni</th>
+          <th>Recupero</th>
           <th>Peso (kg)</th>
           <th>Note</th>
         </tr>
@@ -108,7 +109,8 @@ function displayProgram() {
       html += `<tr class="exercise-row ${highlightClass}" data-exercise="${exercise.exercise}" data-logindex="${logIndex}">
         <td>${log.week}</td>
         <td>${log.setsReps || "-"}</td>
-        <td>${log.weight}</td>
+        <td>${log.recupero || "-"}</td>
+        <td>${log.weight || "-"}</td>
         <td>${log.note ? log.note : "-"}</td>
       </tr>`;
     });
