@@ -96,7 +96,7 @@ function displayProgram() {
       <thead>
         <tr>
           <th>Settimana</th>
-          <th>Serie/Ripetizioni</th>
+          <th>Serie/<br>Ripetizioni</th>
           <th>Recupero</th>
           <th>Peso (kg)</th>
           <th>Note</th>
