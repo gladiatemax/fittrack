@@ -4,135 +4,40 @@
     {
       "exercise": "Stacco",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "5x5",
-          "weight": 44,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 2,
-          "setsReps": "5x5",
-          "weight": 48,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 3,
-          "setsReps": "5x5",
-          "weight": 52,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "5x3",
-          "weight": 52,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "5x3",
-          "weight": 56,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "5x1",
-          "weight": 60,
-          "note": "rec 2-3 min"
-        }
+        { "week": 1, "setsReps": "5x5", "weight": 44, "recupero": "2-3 min", "note": "" },
+        { "week": 2, "setsReps": "5x5", "weight": 48, "recupero": "2-3 min", "note": "" },
+        { "week": 3, "setsReps": "5x5", "weight": 52, "recupero": "2-3 min", "note": "" },
+        { "week": 4, "setsReps": "5x3", "weight": 52, "recupero": "2-3 min", "note": "" },
+        { "week": 5, "setsReps": "5x3", "weight": 56, "recupero": "2-3 min", "note": "" },
+        { "week": 6, "setsReps": "5x1", "weight": 60, "recupero": "2-3 min", "note": "" }
       ]
     },
     {
       "exercise": "Military Press",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "5 (25), 4 (25), 3 (29), 2 (29)",
-          "weight": 0,
-          "note": "rec 3 min, se chiusa +2.5%"
-        },
-        {
-          "week": 2,
-          "setsReps": "5 (28), 4 (28), 3 (30), 2 (30)",
-          "weight": 0,
-          "note": "rec 3 min, se chiusa +2.5%"
-        },
-        {
-          "week": 3,
-          "setsReps": "5 (30), 4 (30), 3 (32), 2 (32)",
-          "weight": 0,
-          "note": "rec 3 min, se chiusa +2.5%"
-        },
-        {
-          "week": 4,
-          "setsReps": "5 (32), 4 (32), 3 (34), 2 (34)",
-          "weight": 0,
-          "note": "rec 3 min, se chiusa +2.5%"
-        }
+        { "week": 1, "setsReps": "5 (25), 4 (25), 3 (29), 2 (29)", "weight": 0, "recupero": "3 min", "note": "se chiusa +2.5%" },
+        { "week": 2, "setsReps": "5 (28), 4 (28), 3 (30), 2 (30)", "weight": 0, "recupero": "3 min", "note": "se chiusa +2.5%" },
+        { "week": 3, "setsReps": "5 (30), 4 (30), 3 (32), 2 (32)", "weight": 0, "recupero": "3 min", "note": "se chiusa +2.5%" },
+        { "week": 4, "setsReps": "5 (32), 4 (32), 3 (34), 2 (34)", "weight": 0, "recupero": "3 min", "note": "se chiusa +2.5%" }
       ]
     },
     {
       "exercise": "Squat",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "22 REPS",
-          "weight": 30,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 2,
-          "setsReps": "22 REPS",
-          "weight": 30,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 3,
-          "setsReps": "22 REPS",
-          "weight": 30,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "22 REPS",
-          "weight": 30,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "22 REPS",
-          "weight": 30,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "22 REPS",
-          "weight": 30,
-          "note": "rec 2-3 min"
-        }
+        { "week": 1, "setsReps": "22 REPS", "weight": 30, "recupero": "2-3 min", "note": "" },
+        { "week": 2, "setsReps": "22 REPS", "weight": 30, "recupero": "2-3 min", "note": "" },
+        { "week": 3, "setsReps": "22 REPS", "weight": 30, "recupero": "2-3 min", "note": "" },
+        { "week": 4, "setsReps": "22 REPS", "weight": 30, "recupero": "2-3 min", "note": "" },
+        { "week": 5, "setsReps": "22 REPS", "weight": 30, "recupero": "2-3 min", "note": "" },
+        { "week": 6, "setsReps": "22 REPS", "weight": 30, "recupero": "2-3 min", "note": "" }
       ]
     },
     {
       "exercise": "Rowing Machine",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "6 (48), 8 (44), 10 (40), 12 (36)",
-          "weight": 0,
-          "note": "rec 2 min, se chiusa +2.5%"
-        },
-        {
-          "week": 2,
-          "setsReps": "6 (50), 8 (48), 10 (44), 12 (40)",
-          "weight": 0,
-          "note": "rec 2 min, se chiusa +2.5%"
-        },
-        {
-          "week": 3,
-          "setsReps": "6 (50), 8 (48), 10 (44), 12 (40)",
-          "weight": 0,
-          "note": "rec 2 min, se chiusa +2.5%"
-        }
+        { "week": 1, "setsReps": "6 (48), 8 (44), 10 (40), 12 (36)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" },
+        { "week": 2, "setsReps": "6 (50), 8 (48), 10 (44), 12 (40)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" },
+        { "week": 3, "setsReps": "6 (50), 8 (48), 10 (44), 12 (40)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" }
       ]
     }
   ],
@@ -140,165 +45,45 @@
     {
       "exercise": "Squat",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "5x7",
-          "weight": 40,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 2,
-          "setsReps": "4x5",
-          "weight": 44,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 3,
-          "setsReps": "3x3",
-          "weight": 48,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "5x7",
-          "weight": 43,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "4x5",
-          "weight": 47,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "3x3",
-          "weight": 50,
-          "note": "rec 2-3 min"
-        }
+        { "week": 1, "setsReps": "5x7", "weight": 40, "recupero": "2-3 min", "note": "" },
+        { "week": 2, "setsReps": "4x5", "weight": 44, "recupero": "2-3 min", "note": "" },
+        { "week": 3, "setsReps": "3x3", "weight": 48, "recupero": "2-3 min", "note": "" },
+        { "week": 4, "setsReps": "5x7", "weight": 43, "recupero": "2-3 min", "note": "" },
+        { "week": 5, "setsReps": "4x5", "weight": 47, "recupero": "2-3 min", "note": "" },
+        { "week": 6, "setsReps": "3x3", "weight": 50, "recupero": "2-3 min", "note": "" }
       ]
     },
     {
       "exercise": "Panca Piana 3 Fermi Discesa",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "6x6",
-          "weight": 34,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 2,
-          "setsReps": "MAV 3 + 3x5 90%",
-          "weight": 0,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 3,
-          "setsReps": "MAV 3 + 3x5 90%",
-          "weight": 44,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "MAV 3 + 3x5 90%",
-          "weight": 0,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "MAV 3 + 3x5 90%",
-          "weight": 0,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "MAV 3 + 3x5 90%",
-          "weight": 0,
-          "note": "rec 2-3 min"
-        }
+        { "week": 1, "setsReps": "6x6", "weight": 34, "recupero": "2-3 min", "note": "" },
+        { "week": 2, "setsReps": "MAV 3 + 3x5 90%", "weight": 0, "recupero": "2-3 min", "note": "" },
+        { "week": 3, "setsReps": "MAV 3 + 3x5 90%", "weight": 44, "recupero": "2-3 min", "note": "" },
+        { "week": 4, "setsReps": "MAV 3 + 3x5 90%", "weight": 0, "recupero": "2-3 min", "note": "" },
+        { "week": 5, "setsReps": "MAV 3 + 3x5 90%", "weight": 0, "recupero": "2-3 min", "note": "" },
+        { "week": 6, "setsReps": "MAV 3 + 3x5 90%", "weight": 0, "recupero": "2-3 min", "note": "" }
       ]
     },
     {
       "exercise": "Trazioni Zavorrate",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "10 min",
-          "weight": 5,
-          "note": "12"
-        },
-        {
-          "week": 2,
-          "setsReps": "10 min",
-          "weight": 5,
-          "note": "13"
-        },
-        {
-          "week": 3,
-          "setsReps": "10 min",
-          "weight": 5,
-          "note": "14"
-        },
-        {
-          "week": 4,
-          "setsReps": "10 min",
-          "weight": 5,
-          "note": ""
-        },
-        {
-          "week": 5,
-          "setsReps": "10 min",
-          "weight": 5,
-          "note": ""
-        },
-        {
-          "week": 6,
-          "setsReps": "10 min",
-          "weight": 5,
-          "note": ""
-        }
+        { "week": 1, "setsReps": "10 min", "weight": 5, "recupero": "", "note": "12" },
+        { "week": 2, "setsReps": "10 min", "weight": 5, "recupero": "", "note": "13" },
+        { "week": 3, "setsReps": "10 min", "weight": 5, "recupero": "", "note": "14" },
+        { "week": 4, "setsReps": "10 min", "weight": 5, "recupero": "", "note": "" },
+        { "week": 5, "setsReps": "10 min", "weight": 5, "recupero": "", "note": "" },
+        { "week": 6, "setsReps": "10 min", "weight": 5, "recupero": "", "note": "" }
       ]
     },
     {
       "exercise": "Skull Crusher + Curl 45",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "5x5 + 5x10",
-          "weight": 12.5,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 2,
-          "setsReps": "5x7 + 5x10",
-          "weight": 12.5,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 3,
-          "setsReps": "6x6 + 5x10",
-          "weight": 12.5,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "5x5 + 5x10",
-          "weight": 15,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "5x7 + 5x10",
-          "weight": 15,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "6x6 + 5x10",
-          "weight": 15,
-          "note": "rec 1.5 min"
-        }
+        { "week": 1, "setsReps": "5x5 + 5x10", "weight": 12.5, "recupero": "1.5 min", "note": "" },
+        { "week": 2, "setsReps": "5x7 + 5x10", "weight": 12.5, "recupero": "1.5 min", "note": "" },
+        { "week": 3, "setsReps": "6x6 + 5x10", "weight": 12.5, "recupero": "1.5 min", "note": "" },
+        { "week": 4, "setsReps": "5x5 + 5x10", "weight": 15, "recupero": "1.5 min", "note": "" },
+        { "week": 5, "setsReps": "5x7 + 5x10", "weight": 15, "recupero": "1.5 min", "note": "" },
+        { "week": 6, "setsReps": "6x6 + 5x10", "weight": 15, "recupero": "1.5 min", "note": "" }
       ]
     }
   ],
@@ -306,165 +91,45 @@
     {
       "exercise": "Panca Piana",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "7x5",
-          "weight": 34,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 2,
-          "setsReps": "5x7",
-          "weight": 34,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 3,
-          "setsReps": "7x5",
-          "weight": 38,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "5x7",
-          "weight": 38,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "6x5",
-          "weight": 40,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "5x5",
-          "weight": 40,
-          "note": "rec 2-3 min"
-        }
+        { "week": 1, "setsReps": "7x5", "weight": 34, "recupero": "2-3 min", "note": "" },
+        { "week": 2, "setsReps": "5x7", "weight": 34, "recupero": "2-3 min", "note": "" },
+        { "week": 3, "setsReps": "7x5", "weight": 38, "recupero": "2-3 min", "note": "" },
+        { "week": 4, "setsReps": "5x7", "weight": 38, "recupero": "2-3 min", "note": "" },
+        { "week": 5, "setsReps": "6x5", "weight": 40, "recupero": "2-3 min", "note": "" },
+        { "week": 6, "setsReps": "5x5", "weight": 40, "recupero": "2-3 min", "note": "" }
       ]
     },
     {
       "exercise": "Squat D5 S5",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "3x3",
-          "weight": 30,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 2,
-          "setsReps": "3x2",
-          "weight": 34,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 3,
-          "setsReps": "3x1",
-          "weight": 40,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "3x3",
-          "weight": 34,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "3x2",
-          "weight": 38,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "3x1",
-          "weight": 44,
-          "note": "rec 2-3 min"
-        }
+        { "week": 1, "setsReps": "3x3", "weight": 30, "recupero": "2-3 min", "note": "" },
+        { "week": 2, "setsReps": "3x2", "weight": 34, "recupero": "2-3 min", "note": "" },
+        { "week": 3, "setsReps": "3x1", "weight": 40, "recupero": "2-3 min", "note": "" },
+        { "week": 4, "setsReps": "3x3", "weight": 34, "recupero": "2-3 min", "note": "" },
+        { "week": 5, "setsReps": "3x2", "weight": 38, "recupero": "2-3 min", "note": "" },
+        { "week": 6, "setsReps": "3x1", "weight": 44, "recupero": "2-3 min", "note": "" }
       ]
     },
     {
       "exercise": "Lento in Avanti",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "5x5",
-          "weight": 10,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 2,
-          "setsReps": "6x5",
-          "weight": 12,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 3,
-          "setsReps": "6x6",
-          "weight": 12,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "5x5",
-          "weight": 15,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "6x5",
-          "weight": 15,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "6x6",
-          "weight": 15,
-          "note": "rec 2-3 min"
-        }
+        { "week": 1, "setsReps": "5x5", "weight": 10, "recupero": "2-3 min", "note": "" },
+        { "week": 2, "setsReps": "6x5", "weight": 12, "recupero": "2-3 min", "note": "" },
+        { "week": 3, "setsReps": "6x6", "weight": 12, "recupero": "2-3 min", "note": "" },
+        { "week": 4, "setsReps": "5x5", "weight": 15, "recupero": "2-3 min", "note": "" },
+        { "week": 5, "setsReps": "6x5", "weight": 15, "recupero": "2-3 min", "note": "" },
+        { "week": 6, "setsReps": "6x6", "weight": 15, "recupero": "2-3 min", "note": "" }
       ]
     },
     {
       "exercise": "Curl EZ + Push Down",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "5x5 + 5x12",
-          "weight": 12.5,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 2,
-          "setsReps": "5x7 + 5x12",
-          "weight": 12.5,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 3,
-          "setsReps": "6x6 + 5x12",
-          "weight": 12.5,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "5x5 + 5x12",
-          "weight": 15,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "5x7 + 5x12",
-          "weight": 15,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "6x6 + 5x12",
-          "weight": 15,
-          "note": "rec 1.5 min"
-        }
+        { "week": 1, "setsReps": "5x5 + 5x12", "weight": 12.5, "recupero": "1.5 min", "note": "" },
+        { "week": 2, "setsReps": "5x7 + 5x12", "weight": 12.5, "recupero": "1.5 min", "note": "" },
+        { "week": 3, "setsReps": "6x6 + 5x12", "weight": 12.5, "recupero": "1.5 min", "note": "" },
+        { "week": 4, "setsReps": "5x5 + 5x12", "weight": 15, "recupero": "1.5 min", "note": "" },
+        { "week": 5, "setsReps": "5x7 + 5x12", "weight": 15, "recupero": "1.5 min", "note": "" },
+        { "week": 6, "setsReps": "6x6 + 5x12", "weight": 15, "recupero": "1.5 min", "note": "" }
       ]
     }
   ],
@@ -472,147 +137,42 @@
     {
       "exercise": "Stacco con Fermo Incastro",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "MAV 3 + 4x3 90%",
-          "weight": 0,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 2,
-          "setsReps": "MAV 2 + 4x2 90%",
-          "weight": 0,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 3,
-          "setsReps": "MAV 1",
-          "weight": 0,
-          "note": "rec 2-3 min"
-        }
+        { "week": 1, "setsReps": "MAV 3 + 4x3 90%", "weight": 0, "recupero": "2-3 min", "note": "" },
+        { "week": 2, "setsReps": "MAV 2 + 4x2 90%", "weight": 0, "recupero": "2-3 min", "note": "" },
+        { "week": 3, "setsReps": "MAV 1", "weight": 0, "recupero": "2-3 min", "note": "" }
       ]
     },
     {
       "exercise": "Panca Piana",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "6x2",
-          "weight": 40,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 2,
-          "setsReps": "6x2",
-          "weight": 40,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 3,
-          "setsReps": "6x2",
-          "weight": 40,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "6x2",
-          "weight": 40,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "6x2",
-          "weight": 40,
-          "note": "rec 2-3 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "6x2",
-          "weight": 40,
-          "note": "rec 2-3 min"
-        }
+        { "week": 1, "setsReps": "6x2", "weight": 40, "recupero": "2-3 min", "note": "" },
+        { "week": 2, "setsReps": "6x2", "weight": 40, "recupero": "2-3 min", "note": "" },
+        { "week": 3, "setsReps": "6x2", "weight": 40, "recupero": "2-3 min", "note": "" },
+        { "week": 4, "setsReps": "6x2", "weight": 40, "recupero": "2-3 min", "note": "" },
+        { "week": 5, "setsReps": "6x2", "weight": 40, "recupero": "2-3 min", "note": "" },
+        { "week": 6, "setsReps": "6x2", "weight": 40, "recupero": "2-3 min", "note": "" }
       ]
     },
     {
       "exercise": "Croci ai Cavi Bassi",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "TEST 15 RM",
-          "weight": 0,
-          "note": ""
-        },
-        {
-          "week": 2,
-          "setsReps": "3x12 + 1xMAX",
-          "weight": 0,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 3,
-          "setsReps": "3x12 + 1xMAX",
-          "weight": 0,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "3x12 + 1xMAX",
-          "weight": 0,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "3x12 + 1xMAX",
-          "weight": 0,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "3x12 + 1xMAX",
-          "weight": 0,
-          "note": "rec 1.5 min"
-        }
+        { "week": 1, "setsReps": "TEST 15 RM", "weight": 0, "recupero": "", "note": "" },
+        { "week": 2, "setsReps": "3x12 + 1xMAX", "weight": 0, "recupero": "1.5 min", "note": "" },
+        { "week": 3, "setsReps": "3x12 + 1xMAX", "weight": 0, "recupero": "1.5 min", "note": "" },
+        { "week": 4, "setsReps": "3x12 + 1xMAX", "weight": 0, "recupero": "1.5 min", "note": "" },
+        { "week": 5, "setsReps": "3x12 + 1xMAX", "weight": 0, "recupero": "1.5 min", "note": "" },
+        { "week": 6, "setsReps": "3x12 + 1xMAX", "weight": 0, "recupero": "1.5 min", "note": "" }
       ]
     },
     {
       "exercise": "Leg Curl + Alzate Laterali",
       "log": [
-        {
-          "week": 1,
-          "setsReps": "(2x10 + 1xMAX) + 3x10",
-          "weight": 32,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 2,
-          "setsReps": "(1x10 + 2xMAX) + 3x10",
-          "weight": 32,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 3,
-          "setsReps": "3xMAX + 3x10",
-          "weight": 32,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 4,
-          "setsReps": "(2x10 + 1xMAX) + 3x10",
-          "weight": 36,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 5,
-          "setsReps": "(1x10 + 2xMAX) + 3x10",
-          "weight": 36,
-          "note": "rec 1.5 min"
-        },
-        {
-          "week": 6,
-          "setsReps": "3xMAX + 3x10",
-          "weight": 36,
-          "note": "rec 1.5 min"
-        }
+        { "week": 1, "setsReps": "(2x10 + 1xMAX) + 3x10", "weight": 32, "recupero": "1.5 min", "note": "" },
+        { "week": 2, "setsReps": "(1x10 + 2xMAX) + 3x10", "weight": 32, "recupero": "1.5 min", "note": "" },
+        { "week": 3, "setsReps": "(2x10 + 1xMAX) + 3x10", "weight": 36, "recupero": "1.5 min", "note": "" },
+        { "week": 4, "setsReps": "(1x10 + 2xMAX) + 3x10", "weight": 36, "recupero": "1.5 min", "note": "" },
+        { "week": 5, "setsReps": "(2x10 + 1xMAX) + 3x10", "weight": 40, "recupero": "1.5 min", "note": "" },
+        { "week": 6, "setsReps": "(1x10 + 2xMAX) + 3x10", "weight": 40, "recupero": "1.5 min", "note": "" }
       ]
     }
   ]
