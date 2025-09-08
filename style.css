@@ -122,7 +122,7 @@ table {
 
 table, th, td {
   border: 1px solid #374151;
-  font-size: 0.8rem; /* riduce la dimensione del font */
+  font-size: 0.9rem; /* riduce la dimensione del font */
   text-align: center; /* centra il testo */
   padding: 0.4rem;    /* riduce anche il padding per compattezza */
 }
