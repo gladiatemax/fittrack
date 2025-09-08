@@ -138,7 +138,7 @@ function displayProgram() {
       const counterBox = document.createElement("tr");
       counterBox.className = "counter-box";
       counterBox.innerHTML = `
-        <td colspan="4">
+        <td colspan="5">
           <div class="counter-content">
             <span class="counter-label">Serie completate:</span>
             <span class="counter-value">0</span>
