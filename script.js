@@ -105,7 +105,7 @@ function displayProgram() {
       <tbody>`;
 
     exercise.log.forEach((log, logIndex) => {
-      const highlightClass = log.week === currentWeek ? "current-week" : "";
+      const highlightClass = Number(log.week) === Number(currentWeek) ? "current-week" : "";
       html += `<tr class="exercise-row ${highlightClass}" data-exercise="${exercise.exercise}" data-logindex="${logIndex}">
         <td>${log.week}</td>
         <td>${log.setsReps || "-"}</td>
