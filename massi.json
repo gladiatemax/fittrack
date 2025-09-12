@@ -71,7 +71,7 @@
         { "week": 1, "setsReps": "10 min", "weight": 5, "recupero": "", "note": "12" },
         { "week": 2, "setsReps": "10 min", "weight": 5, "recupero": "", "note": "13" },
         { "week": 3, "setsReps": "10 min", "weight": 5, "recupero": "", "note": "14" },
-        { "week": 4, "setsReps": "10 min", "weight": 5, "recupero": "", "note": "" },
+        { "week": 4, "setsReps": "10 min", "weight": 5, "recupero": "", "note": "14" },
         { "week": 5, "setsReps": "10 min", "weight": 5, "recupero": "", "note": "" },
         { "week": 6, "setsReps": "10 min", "weight": 5, "recupero": "", "note": "" }
       ]
@@ -117,9 +117,9 @@
         { "week": 1, "setsReps": "5x5", "weight": 10, "recupero": "2-3 min", "note": "" },
         { "week": 2, "setsReps": "6x5", "weight": 12, "recupero": "2-3 min", "note": "" },
         { "week": 3, "setsReps": "6x6", "weight": 12, "recupero": "2-3 min", "note": "" },
-        { "week": 4, "setsReps": "5x5", "weight": 15, "recupero": "2-3 min", "note": "" },
-        { "week": 5, "setsReps": "6x5", "weight": 15, "recupero": "2-3 min", "note": "" },
-        { "week": 6, "setsReps": "6x6", "weight": 15, "recupero": "2-3 min", "note": "" }
+        { "week": 4, "setsReps": "5x5", "weight": 14, "recupero": "2-3 min", "note": "" },
+        { "week": 5, "setsReps": "6x5", "weight": 14, "recupero": "2-3 min", "note": "" },
+        { "week": 6, "setsReps": "6x6", "weight": 14, "recupero": "2-3 min", "note": "" }
       ]
     },
     {
@@ -136,11 +136,11 @@
   ],
   "venerdì": [
     {
-      "exercise": "Stacco con Fermo Incastro",
+      "exercise": "Stacco",
       "log": [
-        { "week": 1, "setsReps": "MAV 3 + 4x3 90%", "weight": 0, "recupero": "2-3 min", "note": "" },
-        { "week": 2, "setsReps": "MAV 2 + 4x2 90%", "weight": 0, "recupero": "2-3 min", "note": "" },
-        { "week": 3, "setsReps": "MAV 1", "weight": 0, "recupero": "2-3 min", "note": "" }
+        { "week": 4, "setsReps": "MAV 3 + 4x3 90%", "weight": 0, "recupero": "2-3 min", "note": "" },
+        { "week": 5, "setsReps": "MAV 2 + 4x2 90%", "weight": 0, "recupero": "2-3 min", "note": "" },
+        { "week": 6, "setsReps": "MAV 1", "weight": 0, "recupero": "2-3 min", "note": "" }
       ]
     },
     {
