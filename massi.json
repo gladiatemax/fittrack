@@ -18,7 +18,8 @@
         { "week": 1, "setsReps": "5 (25), 4 (25), 3 (29), 2 (29)", "weight": 0, "recupero": "3 min", "note": "se chiusa +2.5%" },
         { "week": 2, "setsReps": "5 (28), 4 (28), 3 (30), 2 (30)", "weight": 0, "recupero": "3 min", "note": "se chiusa +2.5%" },
         { "week": 3, "setsReps": "5 (30), 4 (30), 3 (32), 2 (32)", "weight": 0, "recupero": "3 min", "note": "se chiusa +2.5%" },
-        { "week": 4, "setsReps": "5 (32), 4 (32), 3 (34), 2 (34)", "weight": 0, "recupero": "3 min", "note": "se chiusa +2.5%" }
+        { "week": 4, "setsReps": "5 (32), 4 (32), 3 (34), 2 (34)", "weight": 0, "recupero": "3 min", "note": "se chiusa +2.5%" },
+        { "week": 5, "setsReps": "5 (34), 4 (34), 3 (36), 2 (36)", "weight": 0, "recupero": "3 min", "note": "se chiusa +2.5%" }
       ]
     },
     {
@@ -38,7 +39,8 @@
         { "week": 1, "setsReps": "6 (48), 8 (44), 10 (40), 12 (36)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" },
         { "week": 2, "setsReps": "6 (50), 8 (48), 10 (44), 12 (40)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" },
         { "week": 3, "setsReps": "6 (50), 8 (48), 10 (44), 12 (40)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" },
-        { "week": 4, "setsReps": "6 (52), 8 (50), 10 (48), 12 (44)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" }
+        { "week": 4, "setsReps": "6 (52), 8 (50), 10 (48), 12 (44)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" },
+        { "week": 5, "setsReps": "6 (52), 8 (50), 10 (48), 12 (44)", "weight": 0, "recupero": "2 min", "note": "se chiusa +2.5%" }
       ]
     }
   ],
