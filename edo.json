@@ -1,0 +1,796 @@
+{
+  "martedì": [
+    {
+      "exercise": "Tapis Rouland 1",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5 km/h(+0,5 ogni 2 min) pendenza 3% x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "Ogni 2 min aumento di 0,5 la velocità"
+        },
+        {
+          "week": 2,
+          "setsReps": "5 km/h(+0,5 ogni 2 min) pendenza 3% x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "5 km/h(+0,5 ogni 2 min) pendenza 3% x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5 km/h(+0,5 ogni 2 min) pendenza 3% x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "5 km/h(+0,5 ogni 2 min) pendenza 3% x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "5 km/h(+0,5 ogni 2 min) pendenza 3% x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Squat",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "4x4",
+          "recupero": "2-3 min",
+          "weight": "88",
+          "note": "Inclina in busto prima di partire"
+        },
+        {
+          "week": 2,
+          "setsReps": "4x8",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": "Come carico usa 90% del carico del 4x4"
+        },
+        {
+          "week": 3,
+          "setsReps": "3x4 + 1xAMRAP",
+          "recupero": "2-3 min",
+          "weight": "88",
+          "note": "AMRAP= max rep, se +8(+10 kg sul 4x4)"
+        },
+        {
+          "week": 4,
+          "setsReps": "4x4",
+          "recupero": "2-3 min",
+          "weight": "93",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "4x8",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": "Come carico usa 90% del carico del 4x4"
+        },
+        {
+          "week": 6,
+          "setsReps": "3x4 + 1xAMRAP",
+          "recupero": "2-3 min",
+          "weight": "93",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Panca 3 fermi in discesa",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "6x3",
+          "recupero": "2-3 min",
+          "weight": "50",
+          "note": "2/3 cm dopo lo sblocco dei gomiti, un palmo dal petto, al petto"
+        },
+        {
+          "week": 2,
+          "setsReps": "8x3",
+          "recupero": "2-3 min",
+          "weight": "55",
+          "note": "Cresci con il petto ad ogni fermo"
+        },
+        {
+          "week": 3,
+          "setsReps": "6x4",
+          "recupero": "2-3 min",
+          "weight": "55",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "8x3",
+          "recupero": "2-3 min",
+          "weight": "60",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "6x4",
+          "recupero": "2-3 min",
+          "weight": "60",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3x3(60) + 3x2(65)",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Lat machine ISO 3 Fermi in discesa",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3x5",
+          "recupero": "1:30-2 min",
+          "weight": "35",
+          "note": "Rep lente,1\"appena sblocchi,1\"alla fronte,1\"in chiusura \nFocus dorsale"
+        },
+        {
+          "week": 2,
+          "setsReps": "3x5",
+          "recupero": "1:30-2 min",
+          "weight": "35",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "4x5",
+          "recupero": "1:30-2 min",
+          "weight": "35",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "4x5",
+          "recupero": "1:30-2 min",
+          "weight": "35",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "5x5",
+          "recupero": "1:30-2 min",
+          "weight": "35",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "5x5",
+          "recupero": "1:30-2 min",
+          "weight": "35",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Curl Ez +  Leg Curl Sdraiato",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x5 + (2x12 + 1xmax)",
+          "recupero": "1:30 min",
+          "weight": "29.7",
+          "note": "l'ultime due serie di curl poi rec 2 min"
+        },
+        {
+          "week": 2,
+          "setsReps": "5x5 + (1x12 + 2xmax)",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": "+2,5% kg"
+        },
+        {
+          "week": 3,
+          "setsReps": "5x5 + (3xmax)",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": "+2,5% kg"
+        },
+        {
+          "week": 4,
+          "setsReps": "5x5 + (2x12 + 1xmax)",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": "+2,5% kg"
+        },
+        {
+          "week": 5,
+          "setsReps": "5x5 + (1x12 + 2xmax)",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": "+2,5% kg"
+        },
+        {
+          "week": 6,
+          "setsReps": "5x5 + (3xmax)",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": "+2,5% kg"
+        }
+      ]
+    },
+    {
+      "exercise": "Tapis Rouland 2",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        }
+      ]
+    }
+  ],
+  "sabato": [
+    {
+      "exercise": "Tapis Rouland 1",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5 km/h(+0,5 ogni 2 min) pendenza 3% x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "Ogni 2 min aumento di 0,5 la velocità"
+        },
+        {
+          "week": 2,
+          "setsReps": "5 km/h(+0,5 ogni 2 min) pendenza 3% x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "5 km/h(+0,5 ogni 2 min) pendenza 3% x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5 km/h(+0,5 ogni 2 min) pendenza 3% x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "5 km/h(+0,5 ogni 2 min) pendenza 3% x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "5 km/h(+0,5 ogni 2 min) pendenza 3% x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Military Press",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "Mav5 + 4x5 90%",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": "Mav5= kg con cui fai max 5rep tecniche"
+        },
+        {
+          "week": 2,
+          "setsReps": "Mav5 + 4x5 90%",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "Mav5 + 4x5 90%",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "Mav5 + 4x5 90%",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "Mav5 + 4x5 90%",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "Mav5 + 4x5 90%",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Lat Machine",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3x8 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "50",
+          "note": "se fai + di 8 rep nel max, volta dopo +kg"
+        },
+        {
+          "week": 2,
+          "setsReps": "3x8 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "50",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3x8 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "50",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "3x8 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "50",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "3x8 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "50",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3x8 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "50",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Pulley Busto Flesso",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3x12 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": "se nel max rep fai +12 rep volta dopo +kg"
+        },
+        {
+          "week": 2,
+          "setsReps": "3x12 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3x12 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "3x12 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "3x12 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3x12 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Leg Extension",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "2x12 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "46",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "1x12 + 2xmax",
+          "recupero": "1:30 min",
+          "weight": "46",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3xmax",
+          "recupero": "1:30 min",
+          "weight": "46",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "2x12 + 1xmax",
+          "recupero": "1:30 min",
+          "weight": "50",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "1x12 + 2xmax",
+          "recupero": "1:30 min",
+          "weight": "50",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3xmax",
+          "recupero": "1:30 min",
+          "weight": "50",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Curl a 45° + Push down",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3x10 + 3x12",
+          "recupero": "1:30 min",
+          "weight": "5",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "3x10 + 3x12",
+          "recupero": "1:30 min",
+          "weight": "5",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3x10 + 3x12",
+          "recupero": "1:30 min",
+          "weight": "5",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "3x10 + 3x12",
+          "recupero": "1:30 min",
+          "weight": "5",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "3x10 + 3x12",
+          "recupero": "1:30 min",
+          "weight": "5",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3x10 + 3x12",
+          "recupero": "1:30 min",
+          "weight": "5",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Tapis Rouland 2",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        }
+      ]
+    }
+  ],
+  "giovedì": [
+    {
+      "exercise": "Tapis Rouland 1",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5 km/h pendenza 3%(+1% ogni 2min) x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "Ogni 2 min aumento di 1 la pendenza"
+        },
+        {
+          "week": 2,
+          "setsReps": "5 km/h pendenza 3%(+1% ogni 2min) x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "5 km/h pendenza 3%(+1% ogni 2min) x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5 km/h pendenza 3%(+1% ogni 2min) x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "5 km/h pendenza 3%(+1% ogni 2min) x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "5 km/h pendenza 3%(+1% ogni 2min) x 10 min",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Panca piana",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "4x4",
+          "recupero": "2-3 min",
+          "weight": "65",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "4x8",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": "Come carico usa 90% del carico del 4x4"
+        },
+        {
+          "week": 3,
+          "setsReps": "3x4 + 1xAMRAP",
+          "recupero": "2-3 min",
+          "weight": "65",
+          "note": "AMRAP= max rep, se +8(+10 kg sul 4x4)"
+        },
+        {
+          "week": 4,
+          "setsReps": "4x4",
+          "recupero": "2-3 min",
+          "weight": "70",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "4x8",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": "Come carico usa 90% del carico del 4x4"
+        },
+        {
+          "week": 6,
+          "setsReps": "3x4 + 1xAMRAP",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": "AMRAP= max rep, se +8(+10 kg sul 4x4)"
+        }
+      ]
+    },
+    {
+      "exercise": "Squat  D4 F2 S4",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "4x4",
+          "recupero": "2-3 min",
+          "weight": "50",
+          "note": "Sali e scendi in 4 secondi fermati 2 sec in buca"
+        },
+        {
+          "week": 2,
+          "setsReps": "3x3",
+          "recupero": "2-3 min",
+          "weight": "65",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "4x4",
+          "recupero": "2-3 min",
+          "weight": "58",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "3x3",
+          "recupero": "2-3 min",
+          "weight": "70",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "4x4",
+          "recupero": "2-3 min",
+          "weight": "65",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3x3",
+          "recupero": "2-3 min",
+          "weight": "75",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Pulley",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "TEST 8 RM",
+          "recupero": "0",
+          "weight": "0",
+          "note": "Trova il carico con cui fai max 8 rep"
+        },
+        {
+          "week": 2,
+          "setsReps": "4x6",
+          "recupero": "1:30-2 min",
+          "weight": "8RM",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "4x6",
+          "recupero": "1:30-2 min",
+          "weight": "8RM",
+          "note": "+kg"
+        },
+        {
+          "week": 4,
+          "setsReps": "4x6",
+          "recupero": "1:30-2 min",
+          "weight": "8RM",
+          "note": "+kg"
+        },
+        {
+          "week": 5,
+          "setsReps": "4x6",
+          "recupero": "1:30-2 min",
+          "weight": "8RM",
+          "note": "+kg"
+        },
+        {
+          "week": 6,
+          "setsReps": "4x6",
+          "recupero": "1:30-2 min",
+          "weight": "8RM",
+          "note": "+kg"
+        }
+      ]
+    },
+    {
+      "exercise": "Lento in Avanti + Skull Crusher",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x3 + 5x5",
+          "recupero": "2 min",
+          "weight": "20",
+          "note": "5x5 parti dal vecchio carico e ogni volta aumenti di 2,5kg"
+        },
+        {
+          "week": 2,
+          "setsReps": "4x4 + 5x5",
+          "recupero": "2 min",
+          "weight": "20",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3x5 + 5x5",
+          "recupero": "2 min",
+          "weight": "20",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5x3 + 5x5",
+          "recupero": "2 min",
+          "weight": "22,5",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "4x4 + 5x5",
+          "recupero": "2 min",
+          "weight": "22,5",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3x5 + 5x5",
+          "recupero": "2 min",
+          "weight": "22,5",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Tapis Rouland 2",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        }
+      ]
+    }
+  ]
+}
