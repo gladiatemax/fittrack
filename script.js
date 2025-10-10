@@ -87,7 +87,11 @@ function playBeep() {
 function displayProgram() {
   const container = document.getElementById("programDisplay");
   const validDays = daysOfWeek.filter(day => program[day] && program[day].length > 0);
-  if (validDays.length === 0) { container.innerHTML = "<p>Nessuna scheda disponibile.</p>"; return; }
+  if (validDays.length === 0) {
+    container.innerHTML = "<p>Nessuna scheda disponibile.</p>";
+    return;
+  }
+
   while (!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length === 0) {
     currentDayIndex = (currentDayIndex + 1) % daysOfWeek.length;
   }
@@ -97,51 +101,20 @@ function displayProgram() {
   const currentWeek = getCurrentWeek(program.startDate);
 
   let html = `<h3>📅 ${capitalize(day)}</h3>`;
+
   program[day].forEach(exercise => {
+    // Gestione immagini super-set o esercizi singoli
+    const exerciseNames = exercise.exercise.split("+").map(e => e.trim());
 
-    // ------------------ GESTIONE IMMAGINI ------------------
-    function getExerciseImages(exerciseName) {
-    const containerImg = document.createElement("div");
-    containerImg.style.display = "flex";
-    containerImg.style.gap = "0.4rem";
-    containerImg.style.justifyContent = "center";
-  
-    const parts = exerciseName.split("+").map(p => p.trim());
-  
-    parts.forEach(part => {
-      const words = part.toLowerCase().split(" ");
-      const img = document.createElement("img");
-      img.className = "exercise-image";
-      img.width = 80;
-      img.height = 80;
-      img.style.objectFit = "contain";
-  
-      // Tentiamo di caricare un file corrispondente alle parole
-      let found = false;
-      for (let w of words) {
-        img.src = `img/${w}.png`;
-        img.onerror = () => {};
-        // Se esiste, usalo e interrompi il ciclo
-        img.onload = () => { found = true; };
-        if (found) break;
-      }
-  
-      // fallback: se non trova niente, usa la prima parola
-      img.onerror = () => {
-        img.src = `img/${words[0]}.png`;
-      };
-  
-      img.alt = part;
-      containerImg.appendChild(img);
-    });
-  
-    return containerImg.outerHTML;
-  }
+    let imagesHtml = exerciseNames.map(name => {
+      // Nome semplificato: solo lettere minuscole, togli caratteri speciali
+      const baseName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
+      return `<img src="img/${baseName}.png" alt="${name}" class="exercise-image" width="80" height="80">`;
+    }).join("");
 
-
-    html += `<div class="exercise-container">
+    html += `<div class="exercise-box">
       <h4>🏋️ ${exercise.exercise}</h4>
-      ${getExerciseImages(exercise.exercise)}
+      <div class="exercise-images">${imagesHtml}</div>
       <table>
         <thead>
           <tr>
@@ -157,7 +130,7 @@ function displayProgram() {
     // Mostra solo settimana corrente inizialmente
     exercise.log.forEach((log, logIndex) => {
       const highlightClass = Number(log.week) === Number(currentWeek) ? "current-week" : "other-week";
-      html += `<tr class="exercise-row ${highlightClass}" data-exercise="${exercise.exercise}" data-logindex="${logIndex}" ${highlightClass === "other-week" ? 'style="display:none"' : ''}>
+      html += `<tr class="exercise-row ${highlightClass}" data-exercise="${exercise.exercise}" data-logindex="${logIndex}" ${highlightClass==="other-week"?'style="display:none"':''}>
         <td>${log.week}</td>
         <td>${log.setsReps || "-"}</td>
         <td>${log.recupero || "-"}</td>
@@ -234,7 +207,10 @@ function displayProgram() {
       let timerInterval = null;
 
       counterBox.querySelector(".btn-start-timer").addEventListener("click", () => {
-        if (timerInterval) { clearInterval(timerInterval); timerInterval = null; }
+        if (timerInterval) {
+          clearInterval(timerInterval);
+          timerInterval = null;
+        }
 
         let seconds = parseInt(counterBox.querySelector(".timer-minutes").value, 10);
         if (isNaN(seconds) || seconds <= 0) return;
@@ -250,18 +226,21 @@ function displayProgram() {
 
           if (seconds <= 0) {
             clearInterval(timerInterval);
-            playBeep();
+            playBeep(); // suono dolce
             row.classList.add("timer-finished");
             timerDisplay.textContent = "⏱️ Fine!";
             timerDisplay.style.color = "#f87171";
-            setTimeout(() => { row.classList.remove("timer-finished"); timerDisplay.style.color = "#38bdf8"; }, 2500);
+            setTimeout(() => {
+              row.classList.remove("timer-finished");
+              timerDisplay.style.color = "#38bdf8";
+            }, 2500);
           }
         }, 1000);
       });
+
     });
   });
 }
-
 
 // Navigazione giorni
 document.getElementById("prevDay").addEventListener("click",()=>{
