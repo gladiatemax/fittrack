@@ -2,10 +2,12 @@ const daysOfWeek = ["lunedì","martedì","mercoledì","giovedì","venerdì","sab
 let currentDayIndex = 0;
 let program = {};
 
+// Capitalizza stringa
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+// Chiede nome utente o admin
 function getUser() {
   let user = localStorage.getItem("fittrack_user");
   if (!user) {
@@ -29,12 +31,12 @@ function getCurrentWeek(startDateStr) {
   return Math.floor(diffDays / 7) + 1;
 }
 
+// Carica programma per un utente specifico
 async function loadProgram(username) {
   try {
     const response = await fetch(`${username}.json`);
     if (!response.ok) throw new Error("Impossibile caricare scheda");
     program = await response.json();
-
     currentDayIndex = getClosestDayIndex();
     displayProgram();
   } catch (e) {
@@ -43,125 +45,145 @@ async function loadProgram(username) {
   }
 }
 
+// Trova giorno iniziale più vicino
 function getClosestDayIndex() {
   const today = new Date().getDay();
-  const map = [6, 0, 1, 2, 3, 4, 5];
+  const map = [6,0,1,2,3,4,5];
   const todayIndex = map[today];
   const validDays = daysOfWeek
-    .map((day, i) => program[day] && program[day].length > 0 ? i : null)
+    .map((day,i) => program[day] && program[day].length > 0 ? i : null)
     .filter(i => i !== null);
   if (validDays.includes(todayIndex)) return todayIndex;
-  for (let offset = 1; offset < daysOfWeek.length; offset++) {
-    const nextIndex = (todayIndex + offset) % daysOfWeek.length;
+  for (let offset=1; offset<daysOfWeek.length; offset++) {
+    const nextIndex = (todayIndex+offset)%daysOfWeek.length;
     if (validDays.includes(nextIndex)) return nextIndex;
   }
   return validDays[0];
 }
 
+// Mostra programma
 function displayProgram() {
   const container = document.getElementById("programDisplay");
+  container.innerHTML = "";
   const validDays = daysOfWeek.filter(day => program[day] && program[day].length > 0);
   if (validDays.length === 0) {
     container.innerHTML = "<p>Nessuna scheda disponibile.</p>";
     return;
   }
-
   while (!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length === 0) {
     currentDayIndex = (currentDayIndex + 1) % daysOfWeek.length;
   }
-
   const day = daysOfWeek[currentDayIndex];
   document.getElementById("currentDayLabel").innerText = capitalize(day);
-
   const currentWeek = getCurrentWeek(program.startDate);
 
-  let html = `<h3>📅 ${capitalize(day)}</h3>`;
   program[day].forEach(exercise => {
-    const imgSrc = exercise.image || "img/default.png"; // fallback
-    html += `
-      <div class="exercise-card">
-        <img src="${imgSrc}" alt="${exercise.exercise}" class="exercise-img">
-        <h4>🏋️ ${exercise.exercise}</h4>
-        <table>
-          <thead>
-            <tr>
-              <th>Settimana</th>
-              <th>Serie/<br>Ripetizioni</th>
-              <th>Recupero</th>
-              <th>Peso (kg)</th>
-              <th>Note</th>
-            </tr>
-          </thead>
-          <tbody>`;
+    // Percorso immagine automatizzato
+    let fileName = exercise.exercise.toLowerCase().replace(/\s+/g,"_").replace(/[^\w\-]/g,"");
+    let imgSrc = `img/${fileName}.png`;
 
-    exercise.log.forEach((log, logIndex) => {
-      const highlightClass = Number(log.week) === Number(currentWeek) ? "current-week" : "hidden-week";
-      html += `
-        <tr class="exercise-row ${highlightClass}" data-exercise="${exercise.exercise}" data-logindex="${logIndex}">
-          <td>${log.week}</td>
-          <td>${log.setsReps || "-"}</td>
-          <td>${log.recupero || "-"}</td>
-          <td>${log.weight || "-"}</td>
-          <td>${log.note ? log.note : "-"}</td>
-        </tr>`;
-    });
+    // fallback se immagine non esiste
+    fetch(imgSrc, {method:'HEAD'})
+      .then(res => { if(!res.ok) imgSrc="img/default.png"; })
+      .catch(()=>{ imgSrc="img/default.png"; })
+      .finally(() => {
+        let html = `<h4>🏋️ ${exercise.exercise}</h4>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Immagine</th>
+                          <th>Settimana</th>
+                          <th>Serie/<br>Ripetizioni</th>
+                          <th>Recupero</th>
+                          <th>Peso (kg)</th>
+                          <th>Note</th>
+                        </tr>
+                      </thead>
+                      <tbody>`;
 
-    html += `</tbody></table>
-      <button class="toggle-weeks-btn">👁 Mostra tutte le settimane</button>
-      </div>`;
-  });
+        exercise.log.forEach((log, logIndex) => {
+          const highlightClass = Number(log.week)===Number(currentWeek)?"current-week":"";
+          html += `<tr class="exercise-row ${highlightClass}" data-exercise="${exercise.exercise}" data-logindex="${logIndex}">
+                    <td><img src="${imgSrc}" alt="${exercise.exercise}" class="exercise-img"></td>
+                    <td>${log.week}</td>
+                    <td>${log.setsReps||"-"}</td>
+                    <td>${log.recupero||"-"}</td>
+                    <td>${log.weight||"-"}</td>
+                    <td>${log.note||"-"}</td>
+                  </tr>`;
+        });
 
-  container.innerHTML = html;
+        html += `</tbody></table>`;
+        container.innerHTML += html;
 
-  // Toggle settimane
-  document.querySelectorAll(".toggle-weeks-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const table = btn.previousElementSibling;
-      const hiddenRows = table.querySelectorAll(".hidden-week");
-      const expanded = btn.classList.toggle("expanded");
-      hiddenRows.forEach(r => r.style.display = expanded ? "table-row" : "none");
-      btn.textContent = expanded ? "🙈 Nascondi settimane" : "👁 Mostra tutte le settimane";
-    });
+        // Gestione counter-box
+        document.querySelectorAll(".exercise-row").forEach(row => {
+          row.addEventListener("click", () => {
+            const existing = row.nextElementSibling;
+            if(existing && existing.classList.contains("counter-box")) {
+              existing.classList.add("fade-out");
+              existing.addEventListener("animationend",()=>existing.remove(),{once:true});
+              return;
+            }
+            document.querySelectorAll(".counter-box").forEach(box=>{
+              box.classList.add("fade-out");
+              box.addEventListener("animationend",()=>box.remove(),{once:true});
+            });
+            const counterBox = document.createElement("tr");
+            counterBox.className="counter-box";
+            counterBox.innerHTML = `<td colspan="6">
+              <div class="counter-content">
+                <span class="counter-label">Serie completate:</span>
+                <span class="counter-value">0</span>
+                <div class="counter-buttons">
+                  <button class="btn-minus">-</button>
+                  <button class="btn-plus">+</button>
+                  <button class="btn-reset">⟳</button>
+                </div>
+              </div>
+            </td>`;
+            row.insertAdjacentElement("afterend",counterBox);
+            const valueEl = counterBox.querySelector(".counter-value");
+            let count=0;
+            counterBox.querySelector(".btn-plus").addEventListener("click",()=>{count++; valueEl.textContent=count;});
+            counterBox.querySelector(".btn-minus").addEventListener("click",()=>{if(count>0) count--; valueEl.textContent=count;});
+            counterBox.querySelector(".btn-reset").addEventListener("click",()=>{count=0; valueEl.textContent=count;});
+          });
+        });
+      });
   });
 }
 
 // Navigazione giorni
 document.getElementById("prevDay").addEventListener("click", () => {
-  do {
-    currentDayIndex = (currentDayIndex - 1 + daysOfWeek.length) % daysOfWeek.length;
-  } while (!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length === 0);
+  do { currentDayIndex=(currentDayIndex-1+daysOfWeek.length)%daysOfWeek.length; }
+  while(!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length===0);
   displayProgram();
 });
-
 document.getElementById("nextDay").addEventListener("click", () => {
-  do {
-    currentDayIndex = (currentDayIndex + 1) % daysOfWeek.length;
-  } while (!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length === 0);
+  do { currentDayIndex=(currentDayIndex+1)%daysOfWeek.length; }
+  while(!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length===0);
   displayProgram();
 });
 
+// Inizializzazione
 async function init() {
   const user = getUser();
-
-  if (user === "admin") {
-    document.querySelector("#adminPanel").style.display = "flex";
+  if(user==="admin"){
+    document.querySelector("#adminPanel").style.display="flex";
     try {
       const res = await fetch("programs.json");
       const users = await res.json();
-
       const select = document.querySelector("#userSelect");
-      users.forEach(u => {
-        const opt = document.createElement("option");
-        opt.value = u;
-        opt.textContent = u;
+      users.forEach(u=>{
+        const opt=document.createElement("option");
+        opt.value=u;
+        opt.textContent=u;
         select.appendChild(opt);
       });
-
       loadProgram(users[0]);
-      select.addEventListener("change", e => loadProgram(e.target.value));
-    } catch (err) {
-      console.error("Errore caricamento lista utenti:", err);
-    }
+      select.addEventListener("change",e=>{ loadProgram(e.target.value); });
+    } catch(err){ console.error("Errore caricamento lista utenti:",err); }
   } else {
     loadProgram(user);
   }
