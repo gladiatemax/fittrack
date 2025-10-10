@@ -82,7 +82,6 @@ function playBeep() {
   }
 }
 
-
 // Mostra programma
 function displayProgram() {
   const container=document.getElementById("programDisplay");
@@ -101,7 +100,6 @@ function displayProgram() {
     const imgPath=`img/${exercise.exercise.replace(/ /g,"_").toLowerCase()}.png`;
     html+=`<div class="exercise-container">
       <h4>🏋️ ${exercise.exercise}</h4>
-      <img src="${imgPath}" alt="${exercise.exercise}" class="exercise-img">
       <img src="${imgPath}" alt="${exercise.exercise}" class="exercise-img" width="80" height="80">
       <table>
         <thead>
