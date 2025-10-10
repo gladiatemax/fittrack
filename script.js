@@ -47,178 +47,172 @@ async function loadProgram(username) {
 
 // Trova giorno iniziale più vicino
 function getClosestDayIndex() {
-  const today = new Date().getDay();
-  const map = [6,0,1,2,3,4,5];
+  const today = new Date().getDay(); 
+  const map = [6,0,1,2,3,4,5]; 
   const todayIndex = map[today];
   const validDays = daysOfWeek
-    .map((day,i) => program[day] && program[day].length > 0 ? i : null)
-    .filter(i => i !== null);
+    .map((day,i)=>program[day] && program[day].length>0 ? i:null)
+    .filter(i=>i!==null);
   if (validDays.includes(todayIndex)) return todayIndex;
-  for (let offset=1; offset<daysOfWeek.length; offset++) {
-    const nextIndex = (todayIndex+offset)%daysOfWeek.length;
-    if (validDays.includes(nextIndex)) return nextIndex;
+  for(let offset=1; offset<daysOfWeek.length; offset++){
+    const nextIndex=(todayIndex+offset)%daysOfWeek.length;
+    if(validDays.includes(nextIndex)) return nextIndex;
   }
   return validDays[0];
 }
 
 // Mostra programma
 function displayProgram() {
-  const container = document.getElementById("programDisplay");
-  container.innerHTML = "";
-  const validDays = daysOfWeek.filter(day => program[day] && program[day].length > 0);
-  if (validDays.length === 0) {
-    container.innerHTML = "<p>Nessuna scheda disponibile.</p>";
-    return;
+  const container=document.getElementById("programDisplay");
+  const validDays=daysOfWeek.filter(day=>program[day]&&program[day].length>0);
+  if(validDays.length===0){ container.innerHTML="<p>Nessuna scheda disponibile.</p>"; return; }
+  while(!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length===0){
+    currentDayIndex=(currentDayIndex+1)%daysOfWeek.length;
   }
-  while (!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length === 0) {
-    currentDayIndex = (currentDayIndex + 1) % daysOfWeek.length;
-  }
-  const day = daysOfWeek[currentDayIndex];
-  document.getElementById("currentDayLabel").innerText = capitalize(day);
-  const currentWeek = getCurrentWeek(program.startDate);
 
-  program[day].forEach(exercise => {
-    let fileName = exercise.exercise.toLowerCase().replace(/\s+/g,"_").replace(/[^\w\-]/g,"");
-    let imgSrc = `img/${fileName}.png`;
+  const day=daysOfWeek[currentDayIndex];
+  document.getElementById("currentDayLabel").innerText=capitalize(day);
+  const currentWeek=getCurrentWeek(program.startDate);
 
-    fetch(imgSrc, {method:'HEAD'})
-      .then(res => { if(!res.ok) imgSrc="img/default.png"; })
-      .catch(()=>{ imgSrc="img/default.png"; })
-      .finally(() => {
-        let html = `<div class="exercise-card">
-                      <h4>🏋️ ${exercise.exercise}</h4>
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>Immagine</th>
-                            <th>Settimana</th>
-                            <th>Serie/<br>Ripetizioni</th>
-                            <th>Recupero</th>
-                            <th>Peso (kg)</th>
-                            <th>Note</th>
-                          </tr>
-                        </thead>
-                        <tbody>`;
+  let html=`<h3>📅 ${capitalize(day)}</h3>`;
+  program[day].forEach(exercise=>{
+    const imgPath=`img/${exercise.exercise.replace(/ /g,"_")}.png`;
+    html+=`<div class="exercise-container">
+      <h4>🏋️ ${exercise.exercise}</h4>
+      <img src="${imgPath}" alt="${exercise.exercise}" class="exercise-img">
+      <table>
+        <thead>
+          <tr>
+            <th>Settimana</th>
+            <th>Serie/<br>Ripetizioni</th>
+            <th>Recupero</th>
+            <th>Peso (kg)</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>`;
+    
+    // Mostra solo settimana corrente inizialmente
+    exercise.log.forEach((log,logIndex)=>{
+      const highlightClass=Number(log.week)===Number(currentWeek)?"current-week":"other-week";
+      html+=`<tr class="exercise-row ${highlightClass}" data-exercise="${exercise.exercise}" data-logindex="${logIndex}" ${highlightClass==="other-week"?'style="display:none"':''}>
+        <td>${log.week}</td>
+        <td>${log.setsReps||"-"}</td>
+        <td>${log.recupero||"-"}</td>
+        <td>${log.weight||"-"}</td>
+        <td>${log.note?log.note:"-"}</td>
+      </tr>`;
+    });
 
-        exercise.log.forEach((log, logIndex) => {
-          const highlightClass = Number(log.week)===Number(currentWeek)?"current-week":"";
-          html += `<tr class="exercise-row ${highlightClass}" data-exercise="${exercise.exercise}" data-logindex="${logIndex}">
-                    <td><img src="${imgSrc}" alt="${exercise.exercise}" class="exercise-img"></td>
-                    <td>${log.week}</td>
-                    <td>${log.setsReps||"-"}</td>
-                    <td>${log.recupero||"-"}</td>
-                    <td>${log.weight||"-"}</td>
-                    <td>${log.note||"-"}</td>
-                  </tr>`;
-        });
+    html+=`</tbody></table>
+      <button class="toggle-weeks" data-exercise="${exercise.exercise}">👁️ Mostra altre settimane</button>
+    </div>`;
+  });
 
-        html += `</tbody></table></div>`;
-        container.innerHTML += html;
+  container.innerHTML=html;
 
-        // Contatore + timer recupero
-        document.querySelectorAll(".exercise-row").forEach(row => {
-          row.addEventListener("click", () => {
-            const existing = row.nextElementSibling;
-            if(existing && existing.classList.contains("counter-box")) {
-              existing.classList.add("fade-out");
-              existing.addEventListener("animationend",()=>existing.remove(),{once:true});
-              return;
-            }
-            document.querySelectorAll(".counter-box").forEach(box=>{
-              box.classList.add("fade-out");
-              box.addEventListener("animationend",()=>box.remove(),{once:true});
-            });
+  // Toggle settimane
+  document.querySelectorAll(".toggle-weeks").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      const exercise=btn.dataset.exercise;
+      const rows=document.querySelectorAll(`.exercise-row[data-exercise="${exercise}"].other-week`);
+      const isHidden=rows[0].style.display==="none";
+      rows.forEach(r=>r.style.display=isHidden?"table-row":"none");
+      btn.textContent=isHidden?"👁️ Nascondi altre settimane":"👁️ Mostra altre settimane";
+    });
+  });
 
-            const counterBox = document.createElement("tr");
-            counterBox.className="counter-box";
-            counterBox.innerHTML = `<td colspan="6">
-              <div class="counter-content">
-                <span class="counter-label">Serie completate:</span>
-                <span class="counter-value">0</span>
-                <div class="counter-buttons">
-                  <button class="btn-minus">-</button>
-                  <button class="btn-plus">+</button>
-                  <button class="btn-reset">⟳</button>
-                </div>
-                <div class="recovery-timer">
-                  <span>Recupero: </span>
-                  <span class="timer-display">0:00</span>
-                  <button class="btn-start-timer">▶</button>
-                  <button class="btn-reset-timer">⟳</button>
-                </div>
-              </div>
-            </td>`;
-            row.insertAdjacentElement("afterend",counterBox);
-
-            // Gestione contatore
-            const valueEl = counterBox.querySelector(".counter-value");
-            let count = 0;
-            counterBox.querySelector(".btn-plus").addEventListener("click",()=>{count++; valueEl.textContent=count;});
-            counterBox.querySelector(".btn-minus").addEventListener("click",()=>{if(count>0) count--; valueEl.textContent=count;});
-            counterBox.querySelector(".btn-reset").addEventListener("click",()=>{count=0; valueEl.textContent=count;});
-
-            // Gestione timer
-            const timerDisplay = counterBox.querySelector(".timer-display");
-            const btnStart = counterBox.querySelector(".btn-start-timer");
-            const btnReset = counterBox.querySelector(".btn-reset-timer");
-            let timer = null;
-            let totalSeconds = 0;
-
-            btnStart.addEventListener("click", ()=>{
-              if(timer) return; // evita doppio click
-              totalSeconds = 30; // default 30s
-              timerDisplay.textContent = `0:${totalSeconds.toString().padStart(2,'0')}`;
-              timer = setInterval(()=>{
-                totalSeconds--;
-                timerDisplay.textContent = `0:${totalSeconds.toString().padStart(2,'0')}`;
-                if(totalSeconds<=0){ clearInterval(timer); timer=null; }
-              },1000);
-            });
-            btnReset.addEventListener("click",()=>{
-              if(timer){ clearInterval(timer); timer=null; }
-              totalSeconds=0;
-              timerDisplay.textContent="0:00";
-            });
-          });
-        });
+  // Contatore + Timer
+  document.querySelectorAll(".exercise-row").forEach(row=>{
+    row.addEventListener("click",()=>{
+      const existing=row.nextElementSibling;
+      if(existing && existing.classList.contains("counter-box")){
+        existing.classList.add("fade-out");
+        existing.addEventListener("animationend",()=>existing.remove(),{once:true});
+        return;
+      }
+      document.querySelectorAll(".counter-box").forEach(box=>{
+        box.classList.add("fade-out");
+        box.addEventListener("animationend",()=>box.remove(),{once:true});
       });
+
+      const counterBox=document.createElement("tr");
+      counterBox.className="counter-box";
+      counterBox.innerHTML=`<td colspan="5">
+        <div class="counter-content">
+          <div class="series-container">
+            <span class="counter-label">Serie completate:</span>
+            <span class="counter-value">0</span>
+            <div class="counter-buttons">
+              <button class="btn-minus">-</button>
+              <button class="btn-plus">+</button>
+              <button class="btn-reset">⟳</button>
+            </div>
+          </div>
+          <div class="timer-container">
+            <span class="counter-label">Recupero:</span>
+            <input type="number" min="1" value="30" class="timer-minutes" style="width:50px"> sec
+            <button class="btn-start-timer">▶</button>
+            <span class="timer-display">0</span> sec
+          </div>
+        </div>
+      </td>`;
+      row.insertAdjacentElement("afterend",counterBox);
+
+      // Serie contatore
+      const valueEl=counterBox.querySelector(".counter-value");
+      let count=0;
+      counterBox.querySelector(".btn-plus").addEventListener("click",()=>{count++; valueEl.textContent=count;});
+      counterBox.querySelector(".btn-minus").addEventListener("click",()=>{if(count>0) count--; valueEl.textContent=count;});
+      counterBox.querySelector(".btn-reset").addEventListener("click",()=>{count=0; valueEl.textContent=count;});
+
+      // Timer
+      const timerDisplay=counterBox.querySelector(".timer-display");
+      let timerInterval=null;
+      counterBox.querySelector(".btn-start-timer").addEventListener("click",()=>{
+        if(timerInterval) { clearInterval(timerInterval); timerInterval=null; }
+        let seconds=parseInt(counterBox.querySelector(".timer-minutes").value,10);
+        timerDisplay.textContent=seconds;
+        timerInterval=setInterval(()=>{
+          seconds--;
+          timerDisplay.textContent=seconds;
+          if(seconds<=0) clearInterval(timerInterval);
+        },1000);
+      });
+    });
   });
 }
 
-
 // Navigazione giorni
-document.getElementById("prevDay").addEventListener("click", () => {
-  do { currentDayIndex=(currentDayIndex-1+daysOfWeek.length)%daysOfWeek.length; }
+document.getElementById("prevDay").addEventListener("click",()=>{
+  do{currentDayIndex=(currentDayIndex-1+daysOfWeek.length)%daysOfWeek.length;}
   while(!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length===0);
   displayProgram();
 });
-document.getElementById("nextDay").addEventListener("click", () => {
-  do { currentDayIndex=(currentDayIndex+1)%daysOfWeek.length; }
+document.getElementById("nextDay").addEventListener("click",()=>{
+  do{currentDayIndex=(currentDayIndex+1)%daysOfWeek.length;}
   while(!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length===0);
   displayProgram();
 });
 
 // Inizializzazione
-async function init() {
-  const user = getUser();
+async function init(){
+  const user=getUser();
   if(user==="admin"){
     document.querySelector("#adminPanel").style.display="flex";
-    try {
-      const res = await fetch("programs.json");
-      const users = await res.json();
-      const select = document.querySelector("#userSelect");
+    try{
+      const res=await fetch("programs.json");
+      const users=await res.json();
+      const select=document.querySelector("#userSelect");
       users.forEach(u=>{
         const opt=document.createElement("option");
-        opt.value=u;
-        opt.textContent=u;
-        select.appendChild(opt);
+        opt.value=u; opt.textContent=u; select.appendChild(opt);
       });
       loadProgram(users[0]);
-      select.addEventListener("change",e=>{ loadProgram(e.target.value); });
-    } catch(err){ console.error("Errore caricamento lista utenti:",err); }
-  } else {
+      select.addEventListener("change",e=>{loadProgram(e.target.value);});
+    }catch(err){ console.error("Errore caricamento lista utenti:",err);}
+  }else{
     loadProgram(user);
   }
 }
-
 init();
