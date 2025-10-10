@@ -120,3 +120,17 @@ table, th, td {
   table, th, td { font-size: 0.8rem; }
   h4 { font-size: 1rem; }
 }
+
+.exercise-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+@media (max-width: 480px) {
+  .exercise-img {
+    width: 70px;
+    height: 70px;
+  }
+}
