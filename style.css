@@ -166,8 +166,8 @@ h4 {
 
 /* --- IMMAGINE DELL'ESERCIZIO --- */
 .exercise-image {
-  width: 80px;               /* ridotta da 100px */
-  height: 80px;
+  width: 40px;               /* ridotta da 100px */
+  height: 40px;
   object-fit: contain;
   background-color: #d1fae5;
   border-radius: 8px;
