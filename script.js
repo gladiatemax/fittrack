@@ -100,7 +100,7 @@ function displayProgram() {
     const imgPath=`img/${exercise.exercise.replace(/ /g,"_").toLowerCase()}.png`;
     html+=`<div class="exercise-container">
       <h4>🏋️ ${exercise.exercise}</h4>
-      <img src="${imgPath}" alt="${exercise.exercise}" class="exercise-img" width="80" height="80">
+      <img src="${imgPath}" alt="${exercise.exercise}" class="exercise-img" width="80" height="80" onerror="this.onerror=null;this.src='img/default.png';">
       <table>
         <thead>
           <tr>
