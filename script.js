@@ -76,7 +76,7 @@ function displayProgram() {
 
   let html=`<h3>📅 ${capitalize(day)}</h3>`;
   program[day].forEach(exercise=>{
-    const imgPath=`img/${exercise.exercise.replace(/ /g,"_")}.png`;
+    const imgPath=`img/${exercise.exercise.replace(/ /g,"_").toLowerCase()}.png`;
     html+=`<div class="exercise-container">
       <h4>🏋️ ${exercise.exercise}</h4>
       <img src="${imgPath}" alt="${exercise.exercise}" class="exercise-img">
