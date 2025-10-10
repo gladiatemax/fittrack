@@ -101,28 +101,43 @@ function displayProgram() {
 
     // ------------------ GESTIONE IMMAGINI ------------------
     function getExerciseImages(exerciseName) {
-      const containerImg = document.createElement("div");
-      containerImg.style.display = "flex";
-      containerImg.style.gap = "0.4rem";
-      containerImg.style.justifyContent = "center";
+    const containerImg = document.createElement("div");
+    containerImg.style.display = "flex";
+    containerImg.style.gap = "0.4rem";
+    containerImg.style.justifyContent = "center";
+  
+    const parts = exerciseName.split("+").map(p => p.trim());
+  
+    parts.forEach(part => {
+      const words = part.toLowerCase().split(" ");
+      const img = document.createElement("img");
+      img.className = "exercise-image";
+      img.width = 80;
+      img.height = 80;
+      img.style.objectFit = "contain";
+  
+      // Tentiamo di caricare un file corrispondente alle parole
+      let found = false;
+      for (let w of words) {
+        img.src = `img/${w}.png`;
+        img.onerror = () => {};
+        // Se esiste, usalo e interrompi il ciclo
+        img.onload = () => { found = true; };
+        if (found) break;
+      }
+  
+      // fallback: se non trova niente, usa la prima parola
+      img.onerror = () => {
+        img.src = `img/${words[0]}.png`;
+      };
+  
+      img.alt = part;
+      containerImg.appendChild(img);
+    });
+  
+    return containerImg.outerHTML;
+  }
 
-      const parts = exerciseName.split("+").map(p => p.trim());
-      parts.forEach(part => {
-        let baseName = part.toLowerCase().split(" ")[0]; // prende la parola principale
-        const imgPath = `img/${baseName}.png`;
-
-        const img = document.createElement("img");
-        img.className = "exercise-image";
-        img.src = imgPath;
-        img.alt = part;
-        img.width = 80;
-        img.height = 80;
-        img.style.objectFit = "contain";
-        containerImg.appendChild(img);
-      });
-
-      return containerImg.outerHTML;
-    }
 
     html += `<div class="exercise-container">
       <h4>🏋️ ${exercise.exercise}</h4>
