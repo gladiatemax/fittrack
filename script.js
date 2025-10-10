@@ -166,18 +166,42 @@ function displayProgram() {
       counterBox.querySelector(".btn-minus").addEventListener("click",()=>{if(count>0) count--; valueEl.textContent=count;});
       counterBox.querySelector(".btn-reset").addEventListener("click",()=>{count=0; valueEl.textContent=count;});
 
-      // Timer
-      const timerDisplay=counterBox.querySelector(".timer-display");
-      let timerInterval=null;
-      counterBox.querySelector(".btn-start-timer").addEventListener("click",()=>{
-        if(timerInterval) { clearInterval(timerInterval); timerInterval=null; }
-        let seconds=parseInt(counterBox.querySelector(".timer-minutes").value,10);
-        timerDisplay.textContent=seconds;
-        timerInterval=setInterval(()=>{
+      const timerDisplay = counterBox.querySelector(".timer-display");
+      let timerInterval = null;
+      
+      counterBox.querySelector(".btn-start-timer").addEventListener("click", () => {
+        if (timerInterval) {
+          clearInterval(timerInterval);
+          timerInterval = null;
+        }
+      
+        let seconds = parseInt(counterBox.querySelector(".timer-minutes").value, 10);
+        if (isNaN(seconds) || seconds <= 0) return;
+      
+        timerDisplay.textContent = seconds;
+        timerDisplay.style.color = "#38bdf8"; // azzurrino iniziale
+      
+        timerInterval = setInterval(() => {
           seconds--;
-          timerDisplay.textContent=seconds;
-          if(seconds<=0) clearInterval(timerInterval);
-        },1000);
+          timerDisplay.textContent = seconds;
+      
+          // cambia colore quando mancano 5 secondi
+          if (seconds <= 5 && seconds > 0) {
+            timerDisplay.style.color = "#facc15"; // giallo avviso
+          }
+      
+          if (seconds <= 0) {
+            clearInterval(timerInterval);
+            playBeep(); // ✅ suono dolce
+            row.classList.add("timer-finished");
+            timerDisplay.textContent = "⏱️ Fine!";
+            timerDisplay.style.color = "#f87171"; // rosso
+            setTimeout(() => {
+              row.classList.remove("timer-finished");
+              timerDisplay.style.color = "#38bdf8"; // ripristina colore base
+            }, 2500);
+          }
+        }, 1000);
       });
     });
   });
