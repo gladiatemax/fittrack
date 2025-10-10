@@ -61,6 +61,28 @@ function getClosestDayIndex() {
   return validDays[0];
 }
 
+// Suono di fine timer (beep soft)
+function playBeep() {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+
+    osc.type = "sine";
+    osc.frequency.value = 750; // tono medio-alto, ma non fastidioso
+    gain.gain.value = 0.05;    // volume molto basso
+
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+
+    osc.start();
+    osc.stop(ctx.currentTime + 0.4); // durata mezzo secondo
+  } catch (e) {
+    console.warn("Audio non supportato:", e);
+  }
+}
+
+
 // Mostra programma
 function displayProgram() {
   const container=document.getElementById("programDisplay");
