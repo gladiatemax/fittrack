@@ -78,28 +78,27 @@ function displayProgram() {
   const currentWeek = getCurrentWeek(program.startDate);
 
   program[day].forEach(exercise => {
-    // Percorso immagine automatizzato
     let fileName = exercise.exercise.toLowerCase().replace(/\s+/g,"_").replace(/[^\w\-]/g,"");
     let imgSrc = `img/${fileName}.png`;
 
-    // fallback se immagine non esiste
     fetch(imgSrc, {method:'HEAD'})
       .then(res => { if(!res.ok) imgSrc="img/default.png"; })
       .catch(()=>{ imgSrc="img/default.png"; })
       .finally(() => {
-        let html = `<h4>🏋️ ${exercise.exercise}</h4>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>Immagine</th>
-                          <th>Settimana</th>
-                          <th>Serie/<br>Ripetizioni</th>
-                          <th>Recupero</th>
-                          <th>Peso (kg)</th>
-                          <th>Note</th>
-                        </tr>
-                      </thead>
-                      <tbody>`;
+        let html = `<div class="exercise-card">
+                      <h4>🏋️ ${exercise.exercise}</h4>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Immagine</th>
+                            <th>Settimana</th>
+                            <th>Serie/<br>Ripetizioni</th>
+                            <th>Recupero</th>
+                            <th>Peso (kg)</th>
+                            <th>Note</th>
+                          </tr>
+                        </thead>
+                        <tbody>`;
 
         exercise.log.forEach((log, logIndex) => {
           const highlightClass = Number(log.week)===Number(currentWeek)?"current-week":"";
@@ -113,10 +112,10 @@ function displayProgram() {
                   </tr>`;
         });
 
-        html += `</tbody></table>`;
+        html += `</tbody></table></div>`;
         container.innerHTML += html;
 
-        // Gestione counter-box
+        // Contatore + timer recupero
         document.querySelectorAll(".exercise-row").forEach(row => {
           row.addEventListener("click", () => {
             const existing = row.nextElementSibling;
@@ -129,6 +128,7 @@ function displayProgram() {
               box.classList.add("fade-out");
               box.addEventListener("animationend",()=>box.remove(),{once:true});
             });
+
             const counterBox = document.createElement("tr");
             counterBox.className="counter-box";
             counterBox.innerHTML = `<td colspan="6">
@@ -140,19 +140,51 @@ function displayProgram() {
                   <button class="btn-plus">+</button>
                   <button class="btn-reset">⟳</button>
                 </div>
+                <div class="recovery-timer">
+                  <span>Recupero: </span>
+                  <span class="timer-display">0:00</span>
+                  <button class="btn-start-timer">▶</button>
+                  <button class="btn-reset-timer">⟳</button>
+                </div>
               </div>
             </td>`;
             row.insertAdjacentElement("afterend",counterBox);
+
+            // Gestione contatore
             const valueEl = counterBox.querySelector(".counter-value");
-            let count=0;
+            let count = 0;
             counterBox.querySelector(".btn-plus").addEventListener("click",()=>{count++; valueEl.textContent=count;});
             counterBox.querySelector(".btn-minus").addEventListener("click",()=>{if(count>0) count--; valueEl.textContent=count;});
             counterBox.querySelector(".btn-reset").addEventListener("click",()=>{count=0; valueEl.textContent=count;});
+
+            // Gestione timer
+            const timerDisplay = counterBox.querySelector(".timer-display");
+            const btnStart = counterBox.querySelector(".btn-start-timer");
+            const btnReset = counterBox.querySelector(".btn-reset-timer");
+            let timer = null;
+            let totalSeconds = 0;
+
+            btnStart.addEventListener("click", ()=>{
+              if(timer) return; // evita doppio click
+              totalSeconds = 30; // default 30s
+              timerDisplay.textContent = `0:${totalSeconds.toString().padStart(2,'0')}`;
+              timer = setInterval(()=>{
+                totalSeconds--;
+                timerDisplay.textContent = `0:${totalSeconds.toString().padStart(2,'0')}`;
+                if(totalSeconds<=0){ clearInterval(timer); timer=null; }
+              },1000);
+            });
+            btnReset.addEventListener("click",()=>{
+              if(timer){ clearInterval(timer); timer=null; }
+              totalSeconds=0;
+              timerDisplay.textContent="0:00";
+            });
           });
         });
       });
   });
 }
+
 
 // Navigazione giorni
 document.getElementById("prevDay").addEventListener("click", () => {
