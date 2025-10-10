@@ -85,23 +85,48 @@ function playBeep() {
 
 // Mostra programma
 function displayProgram() {
-  const container=document.getElementById("programDisplay");
-  const validDays=daysOfWeek.filter(day=>program[day]&&program[day].length>0);
-  if(validDays.length===0){ container.innerHTML="<p>Nessuna scheda disponibile.</p>"; return; }
-  while(!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length===0){
-    currentDayIndex=(currentDayIndex+1)%daysOfWeek.length;
+  const container = document.getElementById("programDisplay");
+  const validDays = daysOfWeek.filter(day => program[day] && program[day].length > 0);
+  if (validDays.length === 0) { container.innerHTML = "<p>Nessuna scheda disponibile.</p>"; return; }
+  while (!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length === 0) {
+    currentDayIndex = (currentDayIndex + 1) % daysOfWeek.length;
   }
 
-  const day=daysOfWeek[currentDayIndex];
-  document.getElementById("currentDayLabel").innerText=capitalize(day);
-  const currentWeek=getCurrentWeek(program.startDate);
+  const day = daysOfWeek[currentDayIndex];
+  document.getElementById("currentDayLabel").innerText = capitalize(day);
+  const currentWeek = getCurrentWeek(program.startDate);
 
-  let html=`<h3>📅 ${capitalize(day)}</h3>`;
-  program[day].forEach(exercise=>{
-    const imgPath=`img/${exercise.exercise.replace(/ /g,"_").toLowerCase()}.png`;
-    html+=`<div class="exercise-container">
+  let html = `<h3>📅 ${capitalize(day)}</h3>`;
+  program[day].forEach(exercise => {
+
+    // ------------------ GESTIONE IMMAGINI ------------------
+    function getExerciseImages(exerciseName) {
+      const containerImg = document.createElement("div");
+      containerImg.style.display = "flex";
+      containerImg.style.gap = "0.4rem";
+      containerImg.style.justifyContent = "center";
+
+      const parts = exerciseName.split("+").map(p => p.trim());
+      parts.forEach(part => {
+        let baseName = part.toLowerCase().split(" ")[0]; // prende la parola principale
+        const imgPath = `img/${baseName}.png`;
+
+        const img = document.createElement("img");
+        img.className = "exercise-image";
+        img.src = imgPath;
+        img.alt = part;
+        img.width = 80;
+        img.height = 80;
+        img.style.objectFit = "contain";
+        containerImg.appendChild(img);
+      });
+
+      return containerImg.outerHTML;
+    }
+
+    html += `<div class="exercise-container">
       <h4>🏋️ ${exercise.exercise}</h4>
-      <img src="${imgPath}" alt="${exercise.exercise}" class="exercise-img" width="80" height="80">
+      ${getExerciseImages(exercise.exercise)}
       <table>
         <thead>
           <tr>
@@ -113,54 +138,55 @@ function displayProgram() {
           </tr>
         </thead>
         <tbody>`;
-    
+
     // Mostra solo settimana corrente inizialmente
-    exercise.log.forEach((log,logIndex)=>{
-      const highlightClass=Number(log.week)===Number(currentWeek)?"current-week":"other-week";
-      html+=`<tr class="exercise-row ${highlightClass}" data-exercise="${exercise.exercise}" data-logindex="${logIndex}" ${highlightClass==="other-week"?'style="display:none"':''}>
+    exercise.log.forEach((log, logIndex) => {
+      const highlightClass = Number(log.week) === Number(currentWeek) ? "current-week" : "other-week";
+      html += `<tr class="exercise-row ${highlightClass}" data-exercise="${exercise.exercise}" data-logindex="${logIndex}" ${highlightClass === "other-week" ? 'style="display:none"' : ''}>
         <td>${log.week}</td>
-        <td>${log.setsReps||"-"}</td>
-        <td>${log.recupero||"-"}</td>
-        <td>${log.weight||"-"}</td>
-        <td>${log.note?log.note:"-"}</td>
+        <td>${log.setsReps || "-"}</td>
+        <td>${log.recupero || "-"}</td>
+        <td>${log.weight || "-"}</td>
+        <td>${log.note ? log.note : "-"}</td>
       </tr>`;
     });
 
-    html+=`</tbody></table>
+    html += `</tbody></table>
       <button class="toggle-weeks" data-exercise="${exercise.exercise}">👁️ Mostra altre settimane</button>
     </div>`;
   });
 
-  container.innerHTML=html;
+  container.innerHTML = html;
 
   // Toggle settimane
-  document.querySelectorAll(".toggle-weeks").forEach(btn=>{
-    btn.addEventListener("click",()=>{
-      const exercise=btn.dataset.exercise;
-      const rows=document.querySelectorAll(`.exercise-row[data-exercise="${exercise}"].other-week`);
-      const isHidden=rows[0].style.display==="none";
-      rows.forEach(r=>r.style.display=isHidden?"table-row":"none");
-      btn.textContent=isHidden?"👁️ Nascondi altre settimane":"👁️ Mostra altre settimane";
+  document.querySelectorAll(".toggle-weeks").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const exercise = btn.dataset.exercise;
+      const rows = document.querySelectorAll(`.exercise-row[data-exercise="${exercise}"].other-week`);
+      const isHidden = rows[0].style.display === "none";
+      rows.forEach(r => r.style.display = isHidden ? "table-row" : "none");
+      btn.textContent = isHidden ? "👁️ Nascondi altre settimane" : "👁️ Mostra altre settimane";
     });
   });
 
   // Contatore + Timer
-  document.querySelectorAll(".exercise-row").forEach(row=>{
-    row.addEventListener("click",()=>{
-      const existing=row.nextElementSibling;
-      if(existing && existing.classList.contains("counter-box")){
+  document.querySelectorAll(".exercise-row").forEach(row => {
+    row.addEventListener("click", () => {
+      const existing = row.nextElementSibling;
+      if (existing && existing.classList.contains("counter-box")) {
         existing.classList.add("fade-out");
-        existing.addEventListener("animationend",()=>existing.remove(),{once:true});
+        existing.addEventListener("animationend", () => existing.remove(), { once: true });
         return;
       }
-      document.querySelectorAll(".counter-box").forEach(box=>{
+
+      document.querySelectorAll(".counter-box").forEach(box => {
         box.classList.add("fade-out");
-        box.addEventListener("animationend",()=>box.remove(),{once:true});
+        box.addEventListener("animationend", () => box.remove(), { once: true });
       });
 
-      const counterBox=document.createElement("tr");
-      counterBox.className="counter-box";
-      counterBox.innerHTML=`<td colspan="5">
+      const counterBox = document.createElement("tr");
+      counterBox.className = "counter-box";
+      counterBox.innerHTML = `<td colspan="5">
         <div class="counter-content">
           <div class="series-container">
             <span class="counter-label">Serie completate:</span>
@@ -179,55 +205,48 @@ function displayProgram() {
           </div>
         </div>
       </td>`;
-      row.insertAdjacentElement("afterend",counterBox);
+      row.insertAdjacentElement("afterend", counterBox);
 
       // Serie contatore
-      const valueEl=counterBox.querySelector(".counter-value");
-      let count=0;
-      counterBox.querySelector(".btn-plus").addEventListener("click",()=>{count++; valueEl.textContent=count;});
-      counterBox.querySelector(".btn-minus").addEventListener("click",()=>{if(count>0) count--; valueEl.textContent=count;});
-      counterBox.querySelector(".btn-reset").addEventListener("click",()=>{count=0; valueEl.textContent=count;});
+      const valueEl = counterBox.querySelector(".counter-value");
+      let count = 0;
+      counterBox.querySelector(".btn-plus").addEventListener("click", () => { count++; valueEl.textContent = count; });
+      counterBox.querySelector(".btn-minus").addEventListener("click", () => { if (count > 0) count--; valueEl.textContent = count; });
+      counterBox.querySelector(".btn-reset").addEventListener("click", () => { count = 0; valueEl.textContent = count; });
 
+      // Timer
       const timerDisplay = counterBox.querySelector(".timer-display");
       let timerInterval = null;
-      
+
       counterBox.querySelector(".btn-start-timer").addEventListener("click", () => {
-        if (timerInterval) {
-          clearInterval(timerInterval);
-          timerInterval = null;
-        }
-      
+        if (timerInterval) { clearInterval(timerInterval); timerInterval = null; }
+
         let seconds = parseInt(counterBox.querySelector(".timer-minutes").value, 10);
         if (isNaN(seconds) || seconds <= 0) return;
-      
+
         timerDisplay.textContent = seconds;
-        timerDisplay.style.color = "#38bdf8"; // azzurrino iniziale
-      
+        timerDisplay.style.color = "#38bdf8";
+
         timerInterval = setInterval(() => {
           seconds--;
           timerDisplay.textContent = seconds;
-      
-          // cambia colore quando mancano 5 secondi
-          if (seconds <= 5 && seconds > 0) {
-            timerDisplay.style.color = "#facc15"; // giallo avviso
-          }
-      
+
+          if (seconds <= 5 && seconds > 0) timerDisplay.style.color = "#facc15";
+
           if (seconds <= 0) {
             clearInterval(timerInterval);
-            playBeep(); // ✅ suono dolce
+            playBeep();
             row.classList.add("timer-finished");
             timerDisplay.textContent = "⏱️ Fine!";
-            timerDisplay.style.color = "#f87171"; // rosso
-            setTimeout(() => {
-              row.classList.remove("timer-finished");
-              timerDisplay.style.color = "#38bdf8"; // ripristina colore base
-            }, 2500);
+            timerDisplay.style.color = "#f87171";
+            setTimeout(() => { row.classList.remove("timer-finished"); timerDisplay.style.color = "#38bdf8"; }, 2500);
           }
         }, 1000);
       });
     });
   });
 }
+
 
 // Navigazione giorni
 document.getElementById("prevDay").addEventListener("click",()=>{
