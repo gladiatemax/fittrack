@@ -14,12 +14,12 @@ header, footer {
 
 footer p {
   margin: 0.2rem 0;
-  color: #94a3b8;   /* grigio chiaro, meno invasivo */
+  color: #94a3b8;
   font-size: 0.9rem;
   text-align: center;
 }
 footer p:first-child {
-  color: #10b981;   /* evidenzia copyright */
+  color: #10b981;
   font-weight: bold;
   margin-bottom: 0.3rem;
 }
@@ -78,7 +78,7 @@ form textarea {
   color: #d1fae5;
 }
 
-/* Top bar */
+/* --- TOP BAR --- */
 #topBar {
   position: sticky;
   top: 0;
@@ -107,8 +107,8 @@ form textarea {
 #programDisplay {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #0f172a; /* blu notte */
-  border: 1px solid #065f46; /* verde scuro */
+  background-color: #0f172a;
+  border: 1px solid #065f46;
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
@@ -141,7 +141,7 @@ h4 {
   margin-bottom: 0.3rem;
 }
 
-/* BOX GIORNATA */
+/* --- BOX GIORNATA --- */
 .day-box {
   background-color: #0f172a;
   border: 1px solid #065f46;
@@ -151,7 +151,7 @@ h4 {
   box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
 }
 
-/* BOX ESERCIZIO */
+/* --- BOX ESERCIZIO --- */
 .exercise-box {
   background: linear-gradient(180deg, #111827 0%, #0d1117 100%);
   border-left: 4px solid #10b981;
@@ -164,10 +164,10 @@ h4 {
   align-items: center;
 }
 
-/* IMMAGINE DELL'ESERCIZIO */
+/* --- IMMAGINE DELL'ESERCIZIO --- */
 .exercise-image {
-  width: 100px;
-  height: 100px;
+  width: 80px;               /* ridotta da 100px */
+  height: 80px;
   object-fit: contain;
   background-color: #d1fae5;
   border-radius: 8px;
@@ -176,7 +176,7 @@ h4 {
   box-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
-/* TABELLA INTERNA */
+/* --- TABELLA INTERNA --- */
 .exercise-box table {
   width: 100%;
   border-collapse: collapse;
@@ -185,7 +185,7 @@ h4 {
   overflow: hidden;
 }
 
-/* CONTATORE SERIE E TIMER */
+/* --- CONTATORE SERIE E TIMER --- */
 .counter-box td {
   background-color: #1e293b;
   color: #f1f5f9;
@@ -210,15 +210,17 @@ h4 {
   color: #a7f3d0;
 }
 
+/* BOTTONI PIÙ PICCOLI E DISTANZIATI */
 .counter-buttons button,
 .timer-buttons button {
-  margin: 0 0.4rem;
-  padding: 6px 12px;
+  margin: 0 0.6rem;
+  padding: 4px 8px;
   border-radius: 6px;
   background-color: #10b981;
   border: none;
   color: #0d1117;
   font-weight: bold;
+  font-size: 0.9rem;
   cursor: pointer;
   transition: background-color 0.2s;
 }
@@ -228,7 +230,7 @@ h4 {
   background-color: #059669;
 }
 
-/* ANIMAZIONI */
+/* --- ANIMAZIONI --- */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
@@ -243,7 +245,7 @@ h4 {
   to { opacity: 0; transform: translateY(-5px); }
 }
 
-/* ADMIN PANEL */
+/* --- ADMIN PANEL --- */
 #adminPanel {
   display: flex;
   justify-content: center;
@@ -266,17 +268,18 @@ h4 {
   cursor: pointer;
 }
 
-/* RIGA SETTIMANA CORRENTE */
+/* --- RIGA SETTIMANA CORRENTE --- */
 .current-week {
   background-color: #1f2733;
   border-left: 3px solid #10b981;
 }
 
+/* --- TIMER LAMPEGGIANTE ROSSO --- */
 @keyframes flashRed {
   0%, 100% { background-color: #1e293b; }
   50% { background-color: #b91c1c; }
 }
 
 .timer-finished {
-  animation: flashRed 0.5s ease-in-out 3; /* lampeggia 3 volte */
+  animation: flashRed 0.5s ease-in-out 3;
 }
