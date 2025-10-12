@@ -171,7 +171,7 @@
           "setsReps": "MAV5 + (-10% 1xMAX)x3",
           "recupero": "2-3 min",
           "weight": "0",
-          "note": "(-10,-20,-30) quando stalli 5RM->3RM"
+          "note": "Quando stalli 5RM->3RM, 7Kg"
         },
         {
           "week": 2,
@@ -218,7 +218,7 @@
           "setsReps": "10RM",
           "recupero": "0",
           "weight": "0",
-          "note": ""
+          "note": "40Kg"
         },
         {
           "week": 2,
@@ -312,7 +312,7 @@
           "setsReps": "MAV5 + 90% 4x6",
           "recupero": "2-3 min",
           "weight": "0",
-          "note": ""
+          "note": "16Kg"
         },
         {
           "week": 2,
@@ -358,35 +358,35 @@
           "week": 1,
           "setsReps": "5x2 + 5x10",
           "recupero": "2-3 min",
-          "weight": "30",
+          "weight": "20/7.5",
           "note": ""
         },
         {
           "week": 2,
           "setsReps": "5x3 + 5x10",
           "recupero": "2-3 min",
-          "weight": "30",
+          "weight": "20/7.5",
           "note": ""
         },
         {
           "week": 3,
           "setsReps": "5x4 + 5x10",
           "recupero": "2-3 min",
-          "weight": "30",
+          "weight": "20/7.5",
           "note": ""
         },
         {
           "week": 4,
           "setsReps": "5x5 + 5x10",
           "recupero": "2-3 min",
-          "weight": "30",
+          "weight": "20/7.5",
           "note": ""
         },
         {
           "week": 6,
           "setsReps": "5x2 + 5x10",
           "recupero": "2-3 min",
-          "weight": "35",
+          "weight": "25",
           "note": ""
         }
       ]
@@ -495,7 +495,7 @@
           "setsReps": "TEST 15RM",
           "recupero": "0",
           "weight": "0",
-          "note": ""
+          "note": "14Kg"
         },
         {
           "week": 2,
