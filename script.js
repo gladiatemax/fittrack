@@ -172,7 +172,7 @@ function displayProgram() {
           </div>
           <div class="timer-container">
             <span class="counter-label">Recupero:</span>
-            <input type="number" min="1" value="30" class="timer-minutes" style="width:50px"> sec
+            <input type="number" min="1" value="60" class="timer-minutes" style="width:50px"> sec
             <button class="btn-start-timer">▶</button>
             <span class="timer-display">0</span> sec
           </div>
@@ -215,7 +215,6 @@ function displayProgram() {
             clearInterval(timerInterval);
             playBeep(); // ✅ suono dolce
             row.classList.add("timer-finished");
-            timerDisplay.textContent = "⏱️ Fine!";
             timerDisplay.style.color = "#f87171"; // rosso
             setTimeout(() => {
               row.classList.remove("timer-finished");
