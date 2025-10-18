@@ -155,104 +155,85 @@ body.scrolled #topBar {
 
 /* Alias / mapping delle classi usate dallo script.js -> non cambiano i valori di stile */
 
+/* RIPRISTINO: immagine di sfondo si scala normalmente con cover */
 .exercise-box,
 .exercise-container {
   background: 
-    linear-gradient(180deg, 
-      rgba(17, 24, 39, 0.75) 0%, 
-      rgba(0, 0, 0, 0.98) 100%
-    ),
+    linear-gradient(180deg, rgba(17, 24, 39, 0.75) 0%, rgba(0, 0, 0, 0.98) 100%),
     var(--exercise-img, none);
-  background-position: center;
-  background-size: 100% auto;
   background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;        /* rimesso a cover: l'immagine si adatta alla box come prima */
   border-left: 4px solid #238E00;
   border-radius: 10px;
   margin: 0.8rem 0;
-  padding: 1.5rem 0.75rem; /* aumentato padding top/bottom */
+  padding: 1.5rem 0.75rem;
   box-shadow: 0 0 6px rgba(0, 255, 153, 0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 200px; /* aumentata altezza minima */
+  min-height: 200px;
 }
 
-.exercise-container h4 {
-  font-size: 1.35rem; /* leggermente più grande */
-  text-align: center;
-  color: #a7f3d0;
-  margin: 0.5rem 0 2rem 0; /* aumentato margin-bottom */
-  width: 100%;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* aggiunto text-shadow per leggibilità */
-}
-
-/* table interna per entrambe le classi */
+/* TABELLA: leggera trasparenza + blur mantenuto */
 .exercise-box table,
 .exercise-container table {
   width: 100%;
   border-collapse: collapse;
-  /* leggera trasparenza per far intravedere lo sfondo/immagine dietro la tabella */
-  background-color: rgba(26,31,41,0.72);
+  background-color: rgba(26,31,41,0.72); /* trasparenza */
   border-radius: 8px;
   overflow: hidden;
-  /* lieve sfocatura dietro la tabella per migliorare contrasto leggibilità */
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  /* bordo sottile e discreto */
   border: 1px solid rgba(255,255,255,0.04);
 }
 
-/* alias per il display del timer (.timer-display usato dallo script) */
-.counter-value,
-.timer-value,
-.timer-display {
-  font-size: 1.2rem;
-  color: #a7f3d0;
-}
-
-/* Unico blocco consolidato per i bottoni del contatore/timer (evita duplicazione) */
-.counter-buttons button,
-.timer-buttons button,
-.btn-plus,
-.btn-minus,
-.btn-reset,
-.btn-start-timer{
-  margin: 0 0.6rem;
-  padding: 12px 14px;
-  min-width: 48px;
-  min-height: 48px;
-  border-radius: 8px;
-  background-color: #238E00;
+/* CONTATORE: mantenere il td come cella di tabella (colspan funzionante),
+   ma applicare lo sfondo/blur all'interno (alla .counter-content) così non rompe il layout */
+.counter-box td {
+  /* preserva il comportamento di colspan/tablolar layout */
+  display: table-cell;
+  padding: 0;               /* rimuove padding interno del td; verrà gestito da .counter-inner */
   border: none;
-  color: #000000;
-  font-weight: bold;
-  font-size: 1.25rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: background-color 0.2s;
+  background: transparent;
 }
 
-/* Ripristina dimensioni originali per il pulsante toggle-weeks (override) */
-.toggle-weeks {
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  min-width: auto;
-  min-height: auto;
-  border-radius: 6px;
-  margin: 0.5rem 0 0 0;
-  line-height: 1;
+.counter-box td .counter-content,
+.counter-box td .counter-inner {
+  /* se lo script usa .counter-content direttamente, o se preferisci puoi usare .counter-inner come wrapper */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  background-color: rgba(26,31,41,0.72);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  color: #f1f5f9;
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* alias per gli input secondi/minuti usati dallo script */
-.timer-minutes,
-.timer-seconds {
-  width: 64px;
-  padding: 4px 8px;
-  border-radius: 6px;
-  border: 1px solid #374151;
-  background-color: #000000;
-  color: #d1fae5;
-  text-align: center;
+/* fallback: se lo script non avvolge con .counter-inner, garantiamo che .counter-content riceva le regole */
+.counter-box td > .counter-content { /* già presente nella maggior parte dei casi */
+  padding: 0; /* la vera paddatura è nella regola sopra (.counter-box td .counter-content) */
+}
+
+/* Assicuriamo che la tabella interna non copra il titolo: margini e z-index */
+.exercise-container h4 {
+  z-index: 2;
+  position: relative;
+}
+
+/* per sicurezza: impediamo che la tabella trascini il background visivamente sopra il titolo */
+.exercise-box table,
+.exercise-container table {
+  position: relative;
+  z-index: 1;
 }
 
 /* --- IMMAGINE DELL'ESERCIZIO --- */
