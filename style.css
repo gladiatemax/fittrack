@@ -206,8 +206,7 @@ body.scrolled #topBar {
 .btn-plus,
 .btn-minus,
 .btn-reset,
-.btn-start-timer,
-.toggle-weeks {
+.btn-start-timer{
   margin: 0 0.6rem;
   padding: 12px 14px;
   min-width: 48px;
@@ -221,6 +220,17 @@ body.scrolled #topBar {
   line-height: 1;
   cursor: pointer;
   transition: background-color 0.2s;
+}
+
+/* Ripristina dimensioni originali per il pulsante toggle-weeks (override) */
+.toggle-weeks {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  min-width: auto;
+  min-height: auto;
+  border-radius: 6px;
+  margin: 0.5rem 0 0 0;
+  line-height: 1;
 }
 
 /* alias per gli input secondi/minuti usati dallo script */
