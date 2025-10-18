@@ -351,10 +351,10 @@ body.scrolled #topBar {
 
 /* --- RIGA SETTIMANA CORRENTE --- */
 .current-week {
-  background-color: rgba(30, 41, 59, 0.4); /* versione semi-trasparente del blu originale */
+  background-color: rgba(15, 23, 42, 0.4); /* blu più scuro con trasparenza */
   border-left: 3px solid #238E00;
 }
 
 .current-week td {
-  background-color: transparent; /* rimuove il background delle celle per mostrare il blu */
+  background-color: transparent;
 }
