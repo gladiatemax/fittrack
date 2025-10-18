@@ -351,6 +351,10 @@ body.scrolled #topBar {
 
 /* --- RIGA SETTIMANA CORRENTE --- */
 .current-week {
-  background-color: rgba(31, 39, 51, 0.25); /* versione trasparente */
+  background-color: rgba(35, 142, 0, 0.15); /* verde semi-trasparente basato sul colore accent #238E00 */
   border-left: 3px solid #238E00;
+}
+
+.current-week td {
+  background-color: transparent; /* rimuove il background delle celle per mostrare il verde */
 }
