@@ -99,16 +99,7 @@ form textarea {
   margin: 0 1rem;
 }
 
-#programDisplay {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #0f172a;
-  border: 1px solid #065f46;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
-  overflow-x: auto;
-}
+
 
 table {
   width: 100%;
