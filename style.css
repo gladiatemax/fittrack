@@ -164,17 +164,17 @@ body.scrolled #topBar {
     ),
     var(--exercise-img, none);
   background-position: center;
-  background-size: cover;  /* cambiato da 'contain' a 'cover' per evitare problemi di scaling */
+  background-size: cover;
   background-repeat: no-repeat;
   border-left: 4px solid #238E00;
   border-radius: 10px;
   margin: 0.8rem 0;
-  padding: 0.75rem;
+  padding: 2rem 0.75rem;    /* aumentato padding verticale da 0.75rem a 2rem */
   box-shadow: 0 0 6px rgba(0, 255, 153, 0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 150px;  /* garantisce spazio minimo per l'immagine di sfondo */
+  min-height: 180px;        /* aumentata altezza minima da 150px a 180px */
 }
 
 .exercise-container h4 {
@@ -187,22 +187,31 @@ body.scrolled #topBar {
 
 /* table interna per entrambe le classi */
 .exercise-box table,
-.exercise-container table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #1a1f29;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
+.exercise-container table,
 .exercise-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: rgba(26,31,41,0.75);
+  background-color: rgba(26,31,41,0.75); /* sfondo semi-trasparente */
   border-radius: 8px;
   overflow: hidden;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
+}
+
+/* Anche le celle della tabella devono essere semi-trasparenti */
+.exercise-box td,
+.exercise-container td,
+.exercise-table td {
+  background-color: rgba(26,31,41,0.4); /* celle ancora più trasparenti */
+  border: 1px solid rgba(55,65,81,0.3);
+}
+
+/* Le intestazioni delle colonne un po' più scure per leggibilità */
+.exercise-box th,
+.exercise-container th,
+.exercise-table th {
+  background-color: rgba(26,31,41,0.85);
+  border: 1px solid rgba(55,65,81,0.3);
 }
 
 /* alias per il display del timer (.timer-display usato dallo script) */
