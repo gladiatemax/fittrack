@@ -164,25 +164,26 @@ body.scrolled #topBar {
     ),
     var(--exercise-img, none);
   background-position: center;
-  background-size: cover;  /* cambiato da 'contain' a 'cover' per evitare problemi di scaling */
+  background-size: cover;
   background-repeat: no-repeat;
   border-left: 4px solid #238E00;
   border-radius: 10px;
   margin: 0.8rem 0;
-  padding: 0.75rem;
+  padding: 1.5rem 0.75rem; /* aumentato padding top/bottom */
   box-shadow: 0 0 6px rgba(0, 255, 153, 0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 150px;  /* garantisce spazio minimo per l'immagine di sfondo */
+  min-height: 200px; /* aumentata altezza minima */
 }
 
 .exercise-container h4 {
-  font-size: 1.25rem;
+  font-size: 1.35rem; /* leggermente più grande */
   text-align: center;
   color: #a7f3d0;
-  margin: 0.5rem 0 1rem 0;
+  margin: 0.5rem 0 2rem 0; /* aumentato margin-bottom */
   width: 100%;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* aggiunto text-shadow per leggibilità */
 }
 
 /* table interna per entrambe le classi */
