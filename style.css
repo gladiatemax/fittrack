@@ -164,7 +164,7 @@ body.scrolled #topBar {
     ),
     var(--exercise-img, none);
   background-position: center;
-  background-size: cover;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   border-left: 4px solid #238E00;
   border-radius: 10px;
@@ -191,9 +191,15 @@ body.scrolled #topBar {
 .exercise-container table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #1a1f29;
+  /* leggera trasparenza per far intravedere lo sfondo/immagine dietro la tabella */
+  background-color: rgba(26,31,41,0.72);
   border-radius: 8px;
   overflow: hidden;
+  /* lieve sfocatura dietro la tabella per migliorare contrasto leggibilità */
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  /* bordo sottile e discreto */
+  border: 1px solid rgba(255,255,255,0.04);
 }
 
 /* alias per il display del timer (.timer-display usato dallo script) */
@@ -260,9 +266,18 @@ body.scrolled #topBar {
 
 /* --- CONTATORE SERIE E TIMER --- */
 .counter-box td {
-  background-color: #1e293b;
+  display: block;               /* consente border-radius visibile su un singolo cell */
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(26,31,41,0.72); /* stessa trasparenza della table */
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 12px;
   color: #f1f5f9;
-  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
   animation: fadeIn 0.2s ease-out;
 }
 
