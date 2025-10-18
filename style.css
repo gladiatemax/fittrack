@@ -250,11 +250,8 @@ body.scrolled #topBar {
   width: 70px;
   height: 70px;
   object-fit: contain;
-  background-color: #d1fae5;
   border-radius: 8px;
-  padding: 5px;
-  margin-bottom: 0.6rem;
-  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+  padding: 6px;
 }
 
 /* --- CONTATORE SERIE E TIMER --- */
