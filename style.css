@@ -214,6 +214,19 @@ body.scrolled #topBar {
   transition: background-color 0.2s;
 }
 
+/* Pulsanti contatore serie: dimensioni maggiori per touch */
+.counter-buttons button,
+.btn-plus,
+.btn-minus,
+.btn-reset {
+  padding: 10px 12px;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  margin: 0 0.4rem;
+}
+
 /* alias per gli input secondi/minuti usati dallo script */
 .timer-minutes,
 .timer-seconds {

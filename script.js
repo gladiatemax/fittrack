@@ -95,12 +95,12 @@ function displayProgram() {
   document.getElementById("currentDayLabel").innerText=capitalize(day);
   const currentWeek=getCurrentWeek(program.startDate);
 
-  let html=`<h3>📅 ${capitalize(day)}</h3>`;
+  let html;
   program[day].forEach(exercise=>{
     const imgPath=`img/${exercise.exercise.replace(/ /g,"_").toLowerCase()}.png`;
     html+=`<div class="exercise-container">
-      <h4>🏋️ ${exercise.exercise}</h4>
-      <img src="${imgPath}" alt="${exercise.exercise}" class="exercise-img" width="80" height="80" onerror="this.onerror=null;this.src='img/default.png';">
+      <h4>${exercise.exercise}</h4>
+      <img src="${imgPath}" alt="${exercise.exercise}" class="exercise-img" onerror="this.onerror=null;this.src='img/default.png';">
       <table>
         <thead>
           <tr>
@@ -238,18 +238,6 @@ document.getElementById("nextDay").addEventListener("click",()=>{
   while(!program[daysOfWeek[currentDayIndex]] || program[daysOfWeek[currentDayIndex]].length===0);
   displayProgram();
 });
-
-// Aggiorna classe .scrolled in base allo scroll (per mostrare lo sfondo della top bar)
-function updateTopBarOnScroll() {
-  if (window.scrollY > 8) {
-    document.body.classList.add("scrolled");
-  } else {
-    document.body.classList.remove("scrolled");
-  }
-}
-window.addEventListener("scroll", updateTopBarOnScroll, { passive: true });
-// applica stato iniziale subito
-updateTopBarOnScroll();
 
 // Inizializzazione
 async function init(){
