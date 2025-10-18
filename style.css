@@ -159,7 +159,7 @@ body.scrolled #topBar {
 .exercise-container {
   background: 
     linear-gradient(180deg, 
-      rgba(17, 24, 39, 0.95) 0%, 
+      rgba(17, 24, 39, 0.75) 0%, 
       rgba(0, 0, 0, 0.98) 100%
     ),
     var(--exercise-img, none);
@@ -175,6 +175,14 @@ body.scrolled #topBar {
   flex-direction: column;
   align-items: center;
   min-height: 150px;  /* garantisce spazio minimo per l'immagine di sfondo */
+}
+
+.exercise-container h4 {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #a7f3d0;
+  margin: 0.5rem 0 1rem 0;
+  width: 100%;
 }
 
 /* table interna per entrambe le classi */
