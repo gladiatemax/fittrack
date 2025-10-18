@@ -260,3 +260,29 @@ async function init(){
   }
 }
 init();
+
+// Sentinel + IntersectionObserver: attiva body.scrolled SOLO quando la top bar scorre via
+(function setupTopBarSentinel(){
+  const topBar = document.getElementById("topBar");
+  if (!topBar) return;
+  // evita duplicati
+  if (document.getElementById("topBar-sentinel")) return;
+
+  const sentinel = document.createElement("div");
+  sentinel.id = "topBar-sentinel";
+  sentinel.style.width = "1px";
+  sentinel.style.height = "1px";
+  sentinel.style.margin = "0";
+  topBar.parentNode.insertBefore(sentinel, topBar);
+
+  const obs = new IntersectionObserver((entries) => {
+    const entry = entries[0];
+    if (entry && entry.isIntersecting) {
+      document.body.classList.remove("scrolled");
+    } else {
+      document.body.classList.add("scrolled");
+    }
+  }, { root: null, threshold: 0 });
+
+  obs.observe(sentinel);
+})();

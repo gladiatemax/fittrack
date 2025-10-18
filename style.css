@@ -78,8 +78,9 @@ form textarea {
 #topBar {
   position: sticky;
   top: 0;
+  left: 0;
   z-index: 1000;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem; /* mantiene l'allineamento dei contenuti con il body */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,6 +88,11 @@ form textarea {
   -webkit-backdrop-filter: blur(0px);
   backdrop-filter: blur(0px);
   background: transparent; /* rimane trasparente in cima */
+
+  /* estende lo sfondo fino ai bordi della viewport nonostante il padding del body */
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
+  box-sizing: border-box;
 }
 
 #dayNavigation {
@@ -194,7 +200,7 @@ body.scrolled #topBar {
   color: #a7f3d0;
 }
 
-/* bottoni del contatore/timer e classi singole usate nello script */
+/* Unico blocco consolidato per i bottoni del contatore/timer (evita duplicazione) */
 .counter-buttons button,
 .timer-buttons button,
 .btn-plus,
@@ -203,28 +209,18 @@ body.scrolled #topBar {
 .btn-start-timer,
 .toggle-weeks {
   margin: 0 0.6rem;
-  padding: 4px 8px;
-  border-radius: 6px;
+  padding: 12px 14px;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 8px;
   background-color: #238E00;
   border: none;
   color: #000000;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1.25rem;
+  line-height: 1;
   cursor: pointer;
   transition: background-color 0.2s;
-}
-
-/* Pulsanti contatore serie: dimensioni maggiori per touch */
-.counter-buttons button,
-.btn-plus,
-.btn-minus,
-.btn-reset {
-  padding: 10px 12px;
-  min-width: 44px;
-  min-height: 44px;
-  font-size: 1.05rem;
-  border-radius: 8px;
-  margin: 0 0.4rem;
 }
 
 /* alias per gli input secondi/minuti usati dallo script */
