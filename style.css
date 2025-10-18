@@ -19,13 +19,13 @@ footer p {
   text-align: center;
 }
 footer p:first-child {
-  color: #10b981;
+  color: #238E00;
   font-weight: bold;
   margin-bottom: 0.3rem;
 }
 
 h1 {
-  color: #10b981;
+  color: #238E00;
   margin-bottom: 0.25rem;
 }
 
@@ -34,7 +34,7 @@ p {
 }
 
 button {
-  background-color: #10b981;
+  background-color: #238E00;
   border: none;
   color: #0d1117;
   font-weight: bold;
@@ -134,7 +134,7 @@ th, td {
 }
 
 h3 {
-  color: #10b981;
+  color: #238E00;
 }
 
 h4 {
@@ -154,7 +154,7 @@ h4 {
 /* --- BOX ESERCIZIO --- */
 .exercise-box {
   background: linear-gradient(180deg, #111827 0%, #0d1117 100%);
-  border-left: 4px solid #10b981;
+  border-left: 4px solid #238E00;
   border-radius: 10px;
   margin: 0.8rem 0;
   padding: 0.8rem;
@@ -216,7 +216,7 @@ h4 {
   margin: 0 0.6rem;
   padding: 4px 8px;
   border-radius: 6px;
-  background-color: #10b981;
+  background-color: #238E00;
   border: none;
   color: #0d1117;
   font-weight: bold;
@@ -271,7 +271,7 @@ h4 {
 /* --- RIGA SETTIMANA CORRENTE --- */
 .current-week {
   background-color: #1f2733;
-  border-left: 3px solid #10b981;
+  border-left: 3px solid #238E00;
 }
 
 /* --- TIMER LAMPEGGIANTE ROSSO --- */
