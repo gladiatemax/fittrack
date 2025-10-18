@@ -1,9 +1,43 @@
+:root{
+  --bg: #0d1117;
+  --panel: #0f172a;
+  --accent: #238E00;
+  --muted: #94a3b8;
+  --success: #a7f3d0;
+  --danger: #f87171;
+  --info: #38bdf8;
+  --touch-size: 44px;
+}
+
+/* Mobile-first base tweaks */
 body {
+  font-size: 16px;
+  line-height: 1.4;
   background-color: #0d1117;
   color: #d1fae5;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0 1rem 2rem 1rem;
+}
+
+/* Buttons: larger touch targets on mobile, full width by default */
+button {
+  background-color: var(--accent);
+  border: none;
+  color: var(--bg);
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  min-height: var(--touch-size);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.18s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #059669;
 }
 
 header, footer {
@@ -33,20 +67,22 @@ p {
   color: #a3e635;
 }
 
-button {
-  background-color: #238E00;
-  border: none;
-  color: #0d1117;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.2s;
+/* Top bar / day navigation adjustments */
+#dayNavigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
 }
 
-button:hover {
-  background-color: #059669;
+#dayNavigation button {
+  width: 44px;
+  padding: 0.4rem;
+  margin: 0;
+  border-radius: 8px;
 }
 
 form {
@@ -90,20 +126,6 @@ form textarea {
   align-items: center;
 }
 
-#dayNavigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  background-color: transparent;
-  padding: 0.25rem 0.5rem;
-  border-radius: 10px;
-}
-
-#dayNavigation button {
-  margin: 0 1rem;
-}
-
 #programDisplay {
   max-width: 600px;
   margin: 0 auto;
@@ -115,65 +137,37 @@ form textarea {
   overflow-x: auto;
 }
 
-table {
+/* Ensure toggle-weeks is easy to tap on mobile */
+.toggle-weeks {
   width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  border-radius: 8px;
 }
 
-table, th, td {
-  border: 1px solid #374151;
-  font-size: 0.8rem;
-  text-align: center;
-  padding: 0.4rem;
-}
-
-th, td {
-  padding: 0.5rem;
-  text-align: center;
-}
-
-h3 {
-  color: #238E00;
-}
-
-h4 {
-  margin-bottom: 0.3rem;
-}
-
-/* --- BOX GIORNATA --- */
-.day-box {
-  background-color: #0f172a;
-  border: 1px solid #065f46;
-  border-radius: 12px;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
-}
-
-/* --- BOX ESERCIZIO --- */
-.exercise-box {
+/* Add styles to match script.js: .exercise-container and .exercise-img (fix mismatch) */
+.exercise-container {
   background: linear-gradient(180deg, #111827 0%, #0d1117 100%);
-  border-left: 4px solid #238E00;
+  border-left: 4px solid var(--accent);
   border-radius: 10px;
   margin: 0.8rem 0;
-  padding: 0.8rem;
-  box-shadow: 0 0 6px rgba(0, 255, 153, 0.15);
+  padding: 0.75rem;
+  box-shadow: 0 0 6px rgba(0, 255, 153, 0.12);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
-/* --- IMMAGINE DELL'ESERCIZIO --- */
+/* keep compatibility with existing .exercise-image name as alias */
+.exercise-img,
 .exercise-image {
-  width: 40px;               /* ridotta da 100px */
-  height: 40px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
   background-color: #d1fae5;
   border-radius: 8px;
-  padding: 5px;
+  padding: 6px;
   margin-bottom: 0.6rem;
-  box-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
 /* --- TABELLA INTERNA --- */
@@ -189,19 +183,20 @@ h4 {
 .counter-box td {
   background-color: #1e293b;
   color: #f1f5f9;
-  padding: 10px;
+  padding: 12px;
   animation: fadeIn 0.2s ease-out;
 }
 
 .counter-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: stretch;
 }
 
 .counter-label {
   font-weight: bold;
-  margin-right: 10px;
+  margin-bottom: 0.25rem;
 }
 
 .counter-value,
@@ -210,24 +205,18 @@ h4 {
   color: #a7f3d0;
 }
 
-/* BOTTONI PIÙ PICCOLI E DISTANZIATI */
+/* Larger tap targets for small control buttons */
 .counter-buttons button,
 .timer-buttons button {
-  margin: 0 0.6rem;
-  padding: 4px 8px;
-  border-radius: 6px;
-  background-color: #238E00;
+  margin: 0 0.4rem;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background-color: var(--accent);
   border: none;
-  color: #0d1117;
+  color: var(--bg);
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.counter-buttons button:hover,
-.timer-buttons button:hover {
-  background-color: #059669;
 }
 
 /* --- ANIMAZIONI --- */
@@ -282,4 +271,23 @@ h4 {
 
 .timer-finished {
   animation: flashRed 0.5s ease-in-out 3;
+}
+
+/* Responsive: tablet / desktop */
+@media (min-width: 700px) {
+  /* revert buttons to content width on larger screens */
+  button { width: auto; }
+
+  #programDisplay { max-width: 900px; }
+
+  /* place counter and timer side by side on wider screens */
+  .counter-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .exercise-img { width: 80px; height: 80px; }
+
+  .toggle-weeks { width: auto; }
 }

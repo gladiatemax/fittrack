@@ -98,10 +98,11 @@ function displayProgram() {
   let html=`<h3>📅 ${capitalize(day)}</h3>`;
   program[day].forEach(exercise=>{
     const imgPath=`img/${exercise.exercise.replace(/ /g,"_").toLowerCase()}.png`;
+    const hasOtherWeeks = exercise.log.some(l=>Number(l.week)!==Number(currentWeek));
     html+=`<div class="exercise-container">
       <h4>🏋️ ${exercise.exercise}</h4>
       <img src="${imgPath}" alt="${exercise.exercise}" class="exercise-img" width="80" height="80" onerror="this.onerror=null;this.src='img/default.png';">
-      <table>
+      <table class="exercise-box">
         <thead>
           <tr>
             <th>Settimana</th>
@@ -125,21 +126,25 @@ function displayProgram() {
       </tr>`;
     });
 
-    html+=`</tbody></table>
-      <button class="toggle-weeks" data-exercise="${exercise.exercise}">👁️ Mostra altre settimane</button>
-    </div>`;
+    html+=`</tbody></table>`;
+    if(hasOtherWeeks){
+      html+=`<button class="toggle-weeks" data-exercise="${exercise.exercise}" aria-expanded="false">👁️ Mostra altre settimane</button>`;
+    }
+    html+=`</div>`;
   });
 
   container.innerHTML=html;
 
-  // Toggle settimane
+  // Toggle settimane (robusto: controlla rows.length e usa aria-expanded)
   document.querySelectorAll(".toggle-weeks").forEach(btn=>{
     btn.addEventListener("click",()=>{
       const exercise=btn.dataset.exercise;
-      const rows=document.querySelectorAll(`.exercise-row[data-exercise="${exercise}"].other-week`);
-      const isHidden=rows[0].style.display==="none";
-      rows.forEach(r=>r.style.display=isHidden?"table-row":"none");
-      btn.textContent=isHidden?"👁️ Nascondi altre settimane":"👁️ Mostra altre settimane";
+      const rows=Array.from(document.querySelectorAll(`.exercise-row[data-exercise="${exercise}"].other-week`));
+      if(rows.length===0) return;
+      const currentlyHidden = rows.every(r => (r.style.display === "none" || getComputedStyle(r).display === "none"));
+      rows.forEach(r=> r.style.display = currentlyHidden ? "table-row" : "none");
+      btn.setAttribute("aria-expanded", String(currentlyHidden));
+      btn.textContent = currentlyHidden ? "👁️ Nascondi altre settimane" : "👁️ Mostra altre settimane";
     });
   });
 
@@ -165,15 +170,15 @@ function displayProgram() {
             <span class="counter-label">Serie completate:</span>
             <span class="counter-value">0</span>
             <div class="counter-buttons">
-              <button class="btn-minus">-</button>
-              <button class="btn-plus">+</button>
-              <button class="btn-reset">⟳</button>
+              <button class="btn-minus" aria-label="Rimuovi serie">-</button>
+              <button class="btn-plus" aria-label="Aggiungi serie">+</button>
+              <button class="btn-reset" aria-label="Reset serie">⟳</button>
             </div>
           </div>
           <div class="timer-container">
             <span class="counter-label">Recupero:</span>
-            <input type="number" min="1" value="30" class="timer-minutes" style="width:50px"> sec
-            <button class="btn-start-timer">▶</button>
+            <input type="number" min="1" value="30" class="timer-seconds" style="width:60px" aria-label="Secondi recupero"> sec
+            <button class="btn-start-timer" aria-label="Avvia timer">▶</button>
             <span class="timer-display">0</span> sec
           </div>
         </div>
@@ -196,7 +201,7 @@ function displayProgram() {
           timerInterval = null;
         }
 
-        let seconds = parseInt(counterBox.querySelector(".timer-minutes").value, 10);
+        let seconds = parseInt(counterBox.querySelector(".timer-seconds").value, 10);
         if (isNaN(seconds) || seconds <= 0) return;
 
         timerDisplay.textContent = seconds;
