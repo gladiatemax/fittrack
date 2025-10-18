@@ -96,11 +96,19 @@ function displayProgram() {
   const currentWeek=getCurrentWeek(program.startDate);
 
   let html = "";
-  program[day].forEach(exercise=>{
+  program[day].forEach(exercise => {
     const imgPath = `img/${exercise.exercise.replace(/ /g,"_").toLowerCase()}.jpg`;
-    html += `<div class="exercise-container">
+    
+    // Verifica esistenza immagine
+    const img = new Image();
+    const hasCustomBg = new Promise(resolve => {
+      img.onload = () => resolve(true);
+      img.onerror = () => resolve(false);
+      img.src = imgPath;
+    });
+
+    html += `<div class="exercise-container" data-exercise="${exercise.exercise}">
       <h4>${exercise.exercise}</h4>
-      <img src="${imgPath}" alt="${exercise.exercise}" class="exercise-img" onerror="this.onerror=null;this.src='img/default.png';">
       <table>
         <thead>
           <tr>
@@ -128,6 +136,16 @@ function displayProgram() {
     html+=`</tbody></table>
       <button class="toggle-weeks" data-exercise="${exercise.exercise}">👁️ Mostra altre settimane</button>
     </div>`;
+
+    // Applica background solo se l'immagine esiste
+    hasCustomBg.then(exists => {
+      if (exists) {
+        const container = document.querySelector(`.exercise-container[data-exercise="${exercise.exercise}"]`);
+        if (container) {
+          container.style.setProperty('--exercise-img', `url('${imgPath}')`);
+        }
+      }
+    });
   });
 
   container.innerHTML=html;

@@ -171,15 +171,20 @@ body.scrolled #topBar {
 /* .exercise-container è generata dallo script; riutilizza gli stessi selettori di .exercise-box */
 .exercise-box,
 .exercise-container {
-  background: linear-gradient(180deg, #111827 0%, #000000 100%);
+  background: 
+    linear-gradient(180deg, rgba(17, 24, 39, 0.95) 0%, rgba(13, 17, 23, 0.98) 100%),
+    var(--exercise-img, none);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   border-left: 4px solid #238E00;
   border-radius: 10px;
   margin: 0.8rem 0;
-  padding: 0.8rem;
+  padding: 0.75rem;
   box-shadow: 0 0 6px rgba(0, 255, 153, 0.15);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 /* table interna per entrambe le classi */
