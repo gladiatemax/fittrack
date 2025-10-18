@@ -153,29 +153,18 @@ body.scrolled #topBar {
   box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
 }
 
-/* --- BOX ESERCIZIO --- */
-.exercise-box {
-  background: linear-gradient(180deg, #111827 0%, #000000 100%);
-  border-left: 4px solid #238E00;
-  border-radius: 10px;
-  margin: 0.8rem 0;
-  padding: 0.8rem;
-  box-shadow: 0 0 6px rgba(0, 255, 153, 0.15);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* Alias / mapping delle classi usate dallo script.js -> non cambiano i valori di stile */
 
-/* .exercise-container è generata dallo script; riutilizza gli stessi selettori di .exercise-box */
 .exercise-box,
 .exercise-container {
   background: 
-    linear-gradient(180deg, rgba(17, 24, 39, 0.95) 0%, rgba(13, 17, 23, 0.98) 100%),
+    linear-gradient(180deg, 
+      rgba(17, 24, 39, 0.95) 0%, 
+      rgba(0, 0, 0, 0.98) 100%
+    ),
     var(--exercise-img, none);
   background-position: center;
-  background-size: contain;
+  background-size: cover;  /* cambiato da 'contain' a 'cover' per evitare problemi di scaling */
   background-repeat: no-repeat;
   border-left: 4px solid #238E00;
   border-radius: 10px;
@@ -184,7 +173,8 @@ body.scrolled #topBar {
   box-shadow: 0 0 6px rgba(0, 255, 153, 0.15);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  min-height: 150px;  /* garantisce spazio minimo per l'immagine di sfondo */
 }
 
 /* table interna per entrambe le classi */
