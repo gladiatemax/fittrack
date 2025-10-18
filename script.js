@@ -109,7 +109,7 @@ function displayProgram() {
 
     html += `<div class="exercise-container" data-exercise="${exercise.exercise}">
       <h4>${exercise.exercise}</h4>
-      <table>
+      <table class="exercise-table">
         <thead>
           <tr>
             <th>Settimana</th>

@@ -195,6 +195,16 @@ body.scrolled #topBar {
   overflow: hidden;
 }
 
+.exercise-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(26,31,41,0.75);
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
 /* alias per il display del timer (.timer-display usato dallo script) */
 .counter-value,
 .timer-value,
