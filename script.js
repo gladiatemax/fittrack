@@ -95,10 +95,10 @@ function displayProgram() {
   document.getElementById("currentDayLabel").innerText=capitalize(day);
   const currentWeek=getCurrentWeek(program.startDate);
 
-  let html;
+  let html = "";
   program[day].forEach(exercise=>{
-    const imgPath=`img/${exercise.exercise.replace(/ /g,"_").toLowerCase()}.png`;
-    html=`<div class="exercise-container">
+    const imgPath = `img/${exercise.exercise.replace(/ /g,"_").toLowerCase()}.png`;
+    html += `<div class="exercise-container">
       <h4>${exercise.exercise}</h4>
       <img src="${imgPath}" alt="${exercise.exercise}" class="exercise-img" onerror="this.onerror=null;this.src='img/default.png';">
       <table>
