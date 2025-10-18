@@ -191,7 +191,7 @@ body.scrolled #topBar {
 .exercise-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: rgba(26,31,41,0.75); /* sfondo semi-trasparente */
+  background-color: rgba(26,31,41,0.5); /* aumentata trasparenza da 0.75 a 0.5 */
   border-radius: 8px;
   overflow: hidden;
   -webkit-backdrop-filter: blur(4px);
@@ -202,16 +202,16 @@ body.scrolled #topBar {
 .exercise-box td,
 .exercise-container td,
 .exercise-table td {
-  background-color: rgba(26,31,41,0.4); /* celle ancora più trasparenti */
-  border: 1px solid rgba(55,65,81,0.3);
+  background-color: rgba(26,31,41,0.25); /* aumentata trasparenza da 0.4 a 0.25 */
+  border: 1px solid rgba(55,65,81,0.2);
 }
 
 /* Le intestazioni delle colonne un po' più scure per leggibilità */
 .exercise-box th,
 .exercise-container th,
 .exercise-table th {
-  background-color: rgba(26,31,41,0.85);
-  border: 1px solid rgba(55,65,81,0.3);
+  background-color: rgba(26,31,41,0.7); /* leggermente più opaco per leggibilità */
+  border: 1px solid rgba(55,65,81,0.2);
 }
 
 /* alias per il display del timer (.timer-display usato dallo script) */
