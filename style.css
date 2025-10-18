@@ -83,6 +83,10 @@ form textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 220ms ease, backdrop-filter 220ms ease, box-shadow 220ms ease;
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+  background: transparent; /* rimane trasparente in cima */
 }
 
 #dayNavigation {
@@ -98,8 +102,6 @@ form textarea {
 #dayNavigation button {
   margin: 0 1rem;
 }
-
-
 
 table {
   width: 100%;
@@ -125,6 +127,14 @@ h3 {
 
 h4 {
   margin-bottom: 0.3rem;
+}
+
+/* quando il body ha .scrolled mostra sfondo grigio semi-trasparente */
+body.scrolled #topBar {
+  background-color: rgba(128,128,128,0.30); /* grigio semi-trasparente */
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.35);
 }
 
 /* --- BOX GIORNATA --- */
@@ -218,8 +228,8 @@ h4 {
 
 /* --- IMMAGINE DELL'ESERCIZIO --- */
 .exercise-img {
-  width: 40px;               /* ridotta da 100px */
-  height: 40px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
   background-color: #d1fae5;
   border-radius: 8px;

@@ -239,6 +239,18 @@ document.getElementById("nextDay").addEventListener("click",()=>{
   displayProgram();
 });
 
+// Aggiorna classe .scrolled in base allo scroll (per mostrare lo sfondo della top bar)
+function updateTopBarOnScroll() {
+  if (window.scrollY > 8) {
+    document.body.classList.add("scrolled");
+  } else {
+    document.body.classList.remove("scrolled");
+  }
+}
+window.addEventListener("scroll", updateTopBarOnScroll, { passive: true });
+// applica stato iniziale subito
+updateTopBarOnScroll();
+
 // Inizializzazione
 async function init(){
   const user=getUser();
