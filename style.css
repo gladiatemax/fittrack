@@ -1,5 +1,5 @@
 body {
-  background-color: #0d1117;
+  background-color: #000000;
   color: #d1fae5;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -36,17 +36,13 @@ p {
 button {
   background-color: #238E00;
   border: none;
-  color: #0d1117;
+  color: #000000;
   font-weight: bold;
   font-size: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.2s;
-}
-
-button:hover {
-  background-color: #059669;
 }
 
 form {
@@ -74,7 +70,7 @@ form textarea {
   padding: 0.5rem;
   border-radius: 6px;
   border: 1px solid #374151;
-  background-color: #0d1117;
+  background-color: #000000;
   color: #d1fae5;
 }
 
@@ -83,7 +79,6 @@ form textarea {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: linear-gradient(180deg, rgba(13,17,23,0.95), rgba(13,17,23,0.85));
   padding: 0.5rem 0;
   display: flex;
   justify-content: center;
@@ -153,7 +148,7 @@ h4 {
 
 /* --- BOX ESERCIZIO --- */
 .exercise-box {
-  background: linear-gradient(180deg, #111827 0%, #0d1117 100%);
+  background: linear-gradient(180deg, #111827 0%, #000000 100%);
   border-left: 4px solid #238E00;
   border-radius: 10px;
   margin: 0.8rem 0;
@@ -218,16 +213,11 @@ h4 {
   border-radius: 6px;
   background-color: #238E00;
   border: none;
-  color: #0d1117;
+  color: #000000;
   font-weight: bold;
   font-size: 0.9rem;
   cursor: pointer;
   transition: background-color 0.2s;
-}
-
-.counter-buttons button:hover,
-.timer-buttons button:hover {
-  background-color: #059669;
 }
 
 /* --- ANIMAZIONI --- */
@@ -263,7 +253,7 @@ h4 {
   padding: 0.4rem 0.6rem;
   border-radius: 6px;
   border: 1px solid #374151;
-  background-color: #0d1117;
+  background-color: #000000;
   color: #d1fae5;
   cursor: pointer;
 }
