@@ -23,7 +23,7 @@
           "setsReps": "5(54), 3(60), 1+(68) + 1xAMRAP(54)",
           "recupero": "2-3 min",
           "weight": "0",
-          "note": ""
+          "note": "1+(68)[6] AMRAP(54)[15]"
         },
         {
           "week": 4,
@@ -41,7 +41,7 @@
         },
         {
           "week": 6,
-          "setsReps": "3(54), 3(62), 3+(70)+ 1xAMRAP(54)",
+          "setsReps": "3(54), 3(62), 3+(70) + 1xAMRAP(54)",
           "recupero": "2-3 min",
           "weight": "0",
           "note": ""
@@ -70,7 +70,7 @@
           "setsReps": "5(28), 3(32), 1+(36)",
           "recupero": "2-3 min",
           "weight": "0",
-          "note": ""
+          "note": "1+(36)[5]"
         },
         {
           "week": 4,
@@ -117,7 +117,7 @@
           "setsReps": "5(38), 4(40), 3(44), 2(48), 1+(50)",
           "recupero": "2-3 min",
           "weight": "0",
-          "note": ""
+          "note": "1+(50)[10]"
         },
         {
           "week": 4,
@@ -192,7 +192,7 @@
           "setsReps": "MAV5 + (-10% 1xMAX)x3",
           "recupero": "2-3 min",
           "weight": "0",
-          "note": ""
+          "note": "8Kg"
         },
         {
           "week": 3,
@@ -239,7 +239,7 @@
           "setsReps": "8RM",
           "recupero": "0",
           "weight": "0",
-          "note": ""
+          "note": "46Kg"
         },
         {
           "week": 3,
@@ -326,14 +326,14 @@
           "setsReps": "MAV5 + 90% 4x6",
           "recupero": "2-3 min",
           "weight": "0",
-          "note": "16Kg"
+          "note": "16Kg Backoff(14Kg)"
         },
         {
           "week": 2,
           "setsReps": "MAV5 + 90% 4x6",
           "recupero": "2-3 min",
           "weight": "0",
-          "note": ""
+          "note": "16Kg Backoff(15Kg)"
         },
         {
           "week": 3,
@@ -379,21 +379,21 @@
           "week": 2,
           "setsReps": "5x3 + 5x10",
           "recupero": "2-3 min",
-          "weight": "20/7.5",
+          "weight": "20/8",
           "note": ""
         },
         {
           "week": 3,
           "setsReps": "5x4 + 5x10",
           "recupero": "2-3 min",
-          "weight": "20/7.5",
+          "weight": "20/8",
           "note": ""
         },
         {
           "week": 4,
           "setsReps": "5x5 + 5x10",
           "recupero": "2-3 min",
-          "weight": "20/7.5",
+          "weight": "20/8",
           "note": ""
         },
         {
@@ -555,28 +555,28 @@
           "week": 1,
           "setsReps": "5x2 + 4x8",
           "recupero": "2-3 min",
-          "weight": "20",
+          "weight": "20/8",
           "note": ""
         },
         {
           "week": 2,
           "setsReps": "5x3 + 4x6",
           "recupero": "2-3 min",
-          "weight": "20",
+          "weight": "20/8",
           "note": ""
         },
         {
           "week": 3,
           "setsReps": "5x4 + 2x4",
           "recupero": "2-3 min",
-          "weight": "20",
+          "weight": "20/8",
           "note": ""
         },
         {
           "week": 4,
           "setsReps": "5x5 + 4x8",
           "recupero": "2-3 min",
-          "weight": "20",
+          "weight": "20/8",
           "note": ""
         },
         {
