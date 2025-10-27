@@ -2,7 +2,7 @@
   "startDate": "2025-10-27",
   "martedì": [
     {
-      "exercise": "Tapis Rouland 1",
+      "exercise": "Tapis Roulant 1",
       "log": [
         {
           "week": 1,
@@ -237,10 +237,45 @@
       ]
     },
     {
-      "exercise": "Tapis Rouland 2",
+      "exercise": "Tapis Roulant 2",
       "log": [
         {
           "week": 1,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 2,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 3,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 4,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 5,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 6,
           "setsReps": "5 km/h x 5min",
           "recupero": "0",
           "weight": "0",
@@ -251,7 +286,7 @@
   ],
   "sabato": [
     {
-      "exercise": "Tapis Rouland 1",
+      "exercise": "Tapis Roulant 1",
       "log": [
         {
           "week": 1,
@@ -541,13 +576,48 @@
           "recupero": "0",
           "weight": "0",
           "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 2,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 3,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 4,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 5,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 6,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
         }
       ]
     }
   ],
   "giovedì": [
     {
-      "exercise": "Tapis Rouland 1",
+      "exercise": "Tapis Roulant 1",
       "log": [
         {
           "week": 1,
@@ -782,10 +852,45 @@
       ]
     },
     {
-      "exercise": "Tapis Rouland 2",
+      "exercise": "Tapis Roulant 2",
       "log": [
         {
           "week": 1,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 2,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 3,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 4,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 5,
+          "setsReps": "5 km/h x 5min",
+          "recupero": "0",
+          "weight": "0",
+          "note": "uguale x tutte le settimane"
+        },
+        {
+          "week": 6,
           "setsReps": "5 km/h x 5min",
           "recupero": "0",
           "weight": "0",
