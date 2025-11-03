@@ -206,7 +206,7 @@
           "setsReps": "MAV5 + (-10% 1xMAX)x3",
           "recupero": "2-3 min",
           "weight": "0",
-          "note": ""
+          "note": "10Kg"
         },
         {
           "week": 5,
@@ -347,7 +347,7 @@
           "setsReps": "MAV5 + 90% 4x6",
           "recupero": "2-3 min",
           "weight": "0",
-          "note": ""
+          "note": "18Kg, Backoff(16Kg)"
         },
         {
           "week": 5,
