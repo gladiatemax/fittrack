@@ -172,6 +172,20 @@
           "recupero": "2 min",
           "weight": "0",
           "note": "se chiusa +2,5%"
+        },
+					{
+          "week": 5,
+          "setsReps": "2x12(50), 2x10(52), 2x8(54)",
+          "recupero": "2 min",
+          "weight": "0",
+          "note": "se chiusa +2,5%"
+        },
+        {
+          "week": 6,
+          "setsReps": "2x10(52), 2x8(54), 2x6(56)",
+          "recupero": "2 min",
+          "weight": "0",
+          "note": "se chiusa +2,5%"
         }
       ]
     }
