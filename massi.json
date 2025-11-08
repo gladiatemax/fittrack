@@ -411,12 +411,19 @@
           "note": ""
         },
         {
-          "week": 6,
+          "week": 5,
           "setsReps": "5x2 + 5x10",
           "recupero": "2-3 min",
           "weight": "25",
           "note": ""
-        }
+        },
+		{
+          "week": 6,
+          "setsReps": "5x3 + 5x10",
+          "recupero": "2-3 min",
+          "weight": "25",
+          "note": ""
+        },
       ]
     }
   ],
