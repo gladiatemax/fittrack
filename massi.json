@@ -274,7 +274,7 @@
           "setsReps": "8RM",
           "recupero": "0",
           "weight": "0",
-          "note": ""
+          "note": "54Kg"
         },
         {
           "week": 6,
@@ -368,7 +368,7 @@
           "setsReps": "MAV5 + 90% 4x6",
           "recupero": "2-3 min",
           "weight": "0",
-          "note": ""
+          "note": "18Kg, Backoff(16Kg)"
         },
         {
           "week": 6,
@@ -414,18 +414,18 @@
           "week": 5,
           "setsReps": "5x2 + 5x10",
           "recupero": "2-3 min",
-          "weight": "25",
+          "weight": "25/9",
           "note": ""
         },
-		{
+					{
           "week": 6,
           "setsReps": "5x3 + 5x10",
           "recupero": "2-3 min",
-          "weight": "25",
+          "weight": "25/9",
           "note": ""
         }
       ]
-	}
+			}
   ],
   "venerdì": [
     {
