@@ -6,42 +6,42 @@
       "log": [
         {
           "week": 1,
-          "setsReps": "5(58),3(64),1+(72)+ 1xAMRAP(58)",
+          "setsReps": "5(58), 3(64), 1+(72) + 1xAMRAP(58)",
           "recupero": "2-3 min",
           "weight": "",
           "note": ""
         },
         {
           "week": 2,
-          "setsReps": "5(34),5(40),5(48)",
+          "setsReps": "5(34), 5(40), 5(48)",
           "recupero": "2-3 min",
           "weight": "",
           "note": ""
         },
         {
           "week": 3,
-          "setsReps": "5(56),5(62),5+(70) + 1xAMRAP(56)",
+          "setsReps": "5(56), 5(62), 5+(70) + 1xAMRAP(56)",
           "recupero": "2-3 min",
           "weight": "",
           "note": ""
         },
         {
           "week": 4,
-          "setsReps": "3(58),3(66),3+(74)+ 1xAMRAP(58)",
+          "setsReps": "3(58), 3(66), 3+(74) + 1xAMRAP(58)",
           "recupero": "2-3 min",
           "weight": "",
           "note": ""
         },
         {
           "week": 5,
-          "setsReps": "5(62),3(68),1+(76)+ 1xAMRAP(62)",
+          "setsReps": "5(62), 3(68), 1+(76) + 1xAMRAP(62)",
           "recupero": "2-3 min",
           "weight": "",
           "note": ""
         },
         {
           "week": 6,
-          "setsReps": "5(38),5(44),5(52)",
+          "setsReps": "5(38), 5(44), 5(52)",
           "recupero": "2-3 min",
           "weight": "",
           "note": ""
@@ -53,7 +53,7 @@
       "log": [
         {
           "week": 1,
-          "setsReps": "4(30),2(34),1+(38)",
+          "setsReps": "4(30), 2(34), 1+(38)",
           "recupero": "2-3 min",
           "weight": "",
           "note": ""
@@ -67,21 +67,21 @@
         },
         {
           "week": 3,
-          "setsReps": "3(28),3(32),3(36)",
+          "setsReps": "3(28), 3(32), 3(36)",
           "recupero": "2-3 min",
           "weight": "",
           "note": ""
         },
         {
           "week":4,
-          "setsReps": "2(30),2(34),2(38)",
+          "setsReps": "2(30), 2(34), 2(38)",
           "recupero": "2-3 min",
           "weight": "",
           "note": ""
         },
         {
           "week": 5,
-          "setsReps": "3(32),2(36),1+(40)",
+          "setsReps": "3(32), 2(36), 1+(40)",
           "recupero": "2-3 min",
           "weight": "",
           "note": ""
