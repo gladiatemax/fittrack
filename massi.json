@@ -8,42 +8,42 @@
           "week": 1,
           "setsReps": "5(58),3(64),1+(72)+ 1xAMRAP(58)",
           "recupero": "2-3 min",
-          "weight": "90%1RM",
+          "weight": "",
           "note": ""
         },
         {
           "week": 2,
           "setsReps": "5(34),5(40),5(48)",
           "recupero": "2-3 min",
-          "weight": "90%1RM",
+          "weight": "",
           "note": ""
         },
         {
           "week": 3,
           "setsReps": "5(56),5(62),5+(70) + 1xAMRAP(56)",
           "recupero": "2-3 min",
-          "weight": "90%1RM",
+          "weight": "",
           "note": ""
         },
         {
           "week": 4,
           "setsReps": "3(58),3(66),3+(74)+ 1xAMRAP(58)",
           "recupero": "2-3 min",
-          "weight": "90%1RM",
+          "weight": "",
           "note": ""
         },
         {
           "week": 5,
           "setsReps": "5(62),3(68),1+(76)+ 1xAMRAP(62)",
           "recupero": "2-3 min",
-          "weight": "90%1RM",
+          "weight": "",
           "note": ""
         },
         {
           "week": 6,
           "setsReps": "5(38),5(44),5(52)",
           "recupero": "2-3 min",
-          "weight": "90%1RM",
+          "weight": "",
           "note": ""
         }
       ]
@@ -55,7 +55,7 @@
           "week": 1,
           "setsReps": "4(30),2(34),1+(38)",
           "recupero": "2-3 min",
-          "weight": "1RM",
+          "weight": "",
           "note": ""
         },
         {
@@ -69,21 +69,21 @@
           "week": 3,
           "setsReps": "3(28),3(32),3(36)",
           "recupero": "2-3 min",
-          "weight": "1RM",
+          "weight": "",
           "note": ""
         },
         {
           "week":4,
           "setsReps": "2(30),2(34),2(38)",
           "recupero": "2-3 min",
-          "weight": "1RM",
+          "weight": "",
           "note": ""
         },
         {
           "week": 5,
           "setsReps": "3(32),2(36),1+(40)",
           "recupero": "2-3 min",
-          "weight": "1RM",
+          "weight": "",
           "note": ""
         },
         {
@@ -147,14 +147,14 @@
       "log": [
         {
           "week": 1,
-          "setsReps": "2x12(50),2x10(52),2x8(54)",
+          "setsReps": "2x12(50), 2x10(52), 2x8(54)",
           "recupero": "2 min",
           "weight": "0",
           "note": "se chiusa +2,5%"
         },
         {
           "week": 2,
-          "setsReps": "2x10(52),2x8(54),2x6(56)",
+          "setsReps": "2x10(52), 2x8(54), 2x6(56)",
           "recupero": "2 min",
           "weight": "0",
           "note": "se chiusa +2,5%"
@@ -262,42 +262,42 @@
       "log": [
         {
           "week": 1,
-          "setsReps": "5(34),5(40),5(44),5(50),3(58),8(44)",
+          "setsReps": "5(34), 5(40), 5(44), 5(50), 3(58), 8(44)",
           "recupero": "3-5 min",
           "weight": "0",
           "note": ""
         },
         {
           "week": 2,
-          "setsReps": "5(36),5(42),5(46),5(52),3(60),8(46)",
+          "setsReps": "5(36), 5(42), 5(46), 5(52), 3(60), 8(46)",
           "recupero": "3-5 min",
           "weight": "0",
           "note": ""
         },
         {
           "week": 3,
-          "setsReps": "5(36),5(42),5(48),5(54),3(62),8(48)",
+          "setsReps": "5(36), 5(42), 5(48), 5(54), 3(62), 8(48)",
           "recupero": "3-5 min",
           "weight": "0",
           "note": ""
         },
         {
           "week": 4,
-          "setsReps": "5(38),5(42),5(48),5(54),3(64),8(48)",
+          "setsReps": "5(38), 5(42), 5(48), 5(54), 3(64), 8(48)",
           "recupero": "3-5 min",
           "weight": "0",
           "note": ""
         },
         {
           "week": 5,
-          "setsReps": "5(38),5(44),5(50),5(58),3(66),8(50)",
+          "setsReps": "5(38), 5(44), 5(50), 5(58), 3(66), 8(50)",
           "recupero": "3-5 min",
           "weight": "0",
           "note": ""
         },
         {
           "week": 6,
-          "setsReps": "5(40),5(48),5(54),5(58),3(68),8(54)",
+          "setsReps": "5(40), 5(48), 5(54), 5(58), 3(68), 8(54)",
           "recupero": "3-5 min",
           "weight": "0",
           "note": ""
@@ -405,7 +405,7 @@
       "log": [
         {
           "week": 1,
-          "setsReps": "4(40),3(44),2(50),1+(54)",
+          "setsReps": "4(40), 3(44), 2(50), 1+(54)",
           "recupero": "2-3 min",
           "weight": "0",
           "note": ""
@@ -419,21 +419,21 @@
         },
         {
           "week": 3,
-          "setsReps": "3(38),3(44),3(50)",
+          "setsReps": "3(38), 3(44), 3(50)",
           "recupero": "2-3 min",
           "weight": "0",
           "note": ""
         },
         {
           "week": 4,
-          "setsReps": "2(40),2(46),2(54)",
+          "setsReps": "2(40), 2(46), 2(54)",
           "recupero": "2-3 min",
           "weight": "0",
           "note": ""
         },
         {
           "week": 5,
-          "setsReps": "3(44),2(50),1+(58)",
+          "setsReps": "3(44), 2(50), 1+(58)",
           "recupero": "2-3 min",
           "weight": "0",
           "note": ""
@@ -452,42 +452,42 @@
       "log": [
         {
           "week": 1,
-          "setsReps": "5(34),5(40),5(44/46),5(50/52),5(56/58)",
+          "setsReps": "5(34), 5(40), 5(44/46), 5(50/52), 5(56/58)",
           "recupero": "3-5 min",
           "weight": "0",
           "note": ""
         },
         {
           "week": 2,
-          "setsReps": "5(36),5(42),5(46/48),5(52/54),5(58/60)",
+          "setsReps": "5(36), 5(42), 5(46/48), 5(52/54), 5(58/60)",
           "recupero": "3-5 min",
           "weight": "0",
           "note": ""
         },
         {
           "week": 3,
-          "setsReps": "5(36),5(42),5(48),5(54),5(60/62)",
+          "setsReps": "5(36), 5(42), 5(48), 5(54), 5(60/62)",
           "recupero": "3-5 min",
           "weight": "0",
           "note": ""
         },
         {
           "week": 4,
-          "setsReps": "5(38),5(42/44),5(48/50),5(54/58),5(62/64)",
+          "setsReps": "5(38), 5(42/44), 5(48/50), 5(54/58), 5(62/64)",
           "recupero": "3-5 min",
           "weight": "0",
           "note": ""
         },
         {
           "week": 5,
-          "setsReps": "5(38),5(44),5(50),5(58/58),5(64/66)",
+          "setsReps": "5(38), 5(44), 5(50), 5(58/58), 5(64/66)",
           "recupero": "3-5 min",
           "weight": "0",
           "note": ""
         },
         {
           "week": 6,
-          "setsReps": "5(40),5(48),5(54),5(58/60),5(66/68)",
+          "setsReps": "5(40), 5(48), 5(54), 5(58/60), 5(66/68)",
           "recupero": "3-5 min",
           "weight": "0",
           "note": ""
