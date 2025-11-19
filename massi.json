@@ -9,7 +9,7 @@
           "setsReps": "5(58), 3(64), 1+(72) + 1xAMRAP(58)",
           "recupero": "2-3 min",
           "weight": "",
-          "note": ""
+          "note": "1+(72Kg)[10], AMRAP(58Kg)[16]"
         },
         {
           "week": 2,
@@ -56,7 +56,7 @@
           "setsReps": "4(30), 2(34), 1+(38)",
           "recupero": "2-3 min",
           "weight": "",
-          "note": ""
+          "note": "1+(38Kg)[5]"
         },
         {
           "week": 2,
@@ -147,14 +147,43 @@
       "log": [
         {
           "week": 1,
-          "setsReps": "2x12(50), 2x10(52), 2x8(54)",
+          "setsReps": "2x12(52), 2x10(54), 2x8(56)",
           "recupero": "2 min",
           "weight": "0",
           "note": "se chiusa +2,5%"
         },
         {
           "week": 2,
-          "setsReps": "2x10(52), 2x8(54), 2x6(56)",
+          "setsReps": "2x10(54), 2x8(56), 2x6(58)",
+          "recupero": "2 min",
+          "weight": "0",
+          "note": "se chiusa +2,5%"
+        },
+        {
+          "week": 3,
+          "setsReps": "2x12(54), 2x10(56), 2x8(58)",
+          "recupero": "2 min",
+          "weight": "0",
+          "note": "se chiusa +2,5%"
+        },
+        {
+          "week": 4,
+          "setsReps": "2x10(56), 2x8(58), 2x6(60)",
+          "recupero": "2 min",
+          "weight": "0",
+          "note": "se chiusa +2,5%"
+        },
+        
+        {
+          "week": 5,
+          "setsReps": "2x12(56), 2x10(58), 2x8(60)",
+          "recupero": "2 min",
+          "weight": "0",
+          "note": "se chiusa +2,5%"
+        },
+        {
+          "week": 6,
+          "setsReps": "2x10(58), 2x8(60), 2x6(62)",
           "recupero": "2 min",
           "weight": "0",
           "note": "se chiusa +2,5%"
