@@ -1,0 +1,411 @@
+{
+  "lunedì": [
+    {
+      "exercise": "Squat",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "90%5RM",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "90%5RM",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "90%5RM",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "90%5RM",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Panca",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "90%5RM",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "90%5RM",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "90%5RM",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "90%5RM",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Rowing Mono",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "4x8",
+          "recupero": "2min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "4x8",
+          "recupero": "2min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "4x8",
+          "recupero": "2min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "4x8",
+          "recupero": "2min",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Curl Ez",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x3",
+          "recupero": "2min",
+          "weight": "5RM",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "5x3",
+          "recupero": "2min",
+          "weight": "5RM",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "5x4",
+          "recupero": "2min",
+          "weight": "5RM",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5x5",
+          "recupero": "2min",
+          "weight": "5RM",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "mercoledì": [
+    {
+      "exercise": "Squat",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x2",
+          "recupero": "2-3 min",
+          "weight": "90%",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "5x2",
+          "recupero": "2-3 min",
+          "weight": "90%",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "5x2",
+          "recupero": "2-3 min",
+          "weight": "90%",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5x2",
+          "recupero": "2-3 min",
+          "weight": "90%",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Trazioni Zav",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x2+1xmax",
+          "recupero": "2min",
+          "weight": "15",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "5x3+1xmax",
+          "recupero": "2min",
+          "weight": "15",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "5x4+1xmax",
+          "recupero": "2min",
+          "weight": "15",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5x2+1xmax",
+          "recupero": "2min",
+          "weight": "15",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5x5+1xmax",
+          "recupero": "2min",
+          "weight": "15",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Panca Piana",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x2",
+          "recupero": "2min",
+          "weight": "90%",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "5x2",
+          "recupero": "2min",
+          "weight": "90%",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "5x2",
+          "recupero": "2min",
+          "weight": "90%",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5x2",
+          "recupero": "2min",
+          "weight": "90%",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Lento in Avanti",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "MAV 5 + 90% 4x6",
+          "recupero": "2min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "MAV 5 + 90% 4x6",
+          "recupero": "2min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "MAV 5 + 90% 4x6",
+          "recupero": "2min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "MAV 5 + 90% 4x6",
+          "recupero": "2min",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "venerdì": [
+    {
+      "exercise": "Stacco",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5RM",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "5RM",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "5RM",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5RM",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Panca Piana",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "MAV 5",
+          "recupero": "2-3min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "MAV 5",
+          "recupero": "2-3min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "MAV 5",
+          "recupero": "2-3min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "MAV 5",
+          "recupero": "2-3min",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Squat",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "MAV 5",
+          "recupero": "2-3min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "MAV 5",
+          "recupero": "2-3min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "MAV 5",
+          "recupero": "2-3min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "MAV 5",
+          "recupero": "2-3min",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "French Press",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "MAV 5 + 90%4x6",
+          "recupero": "2-3min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "MAV 5 + 90%4x6",
+          "recupero": "2-3min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "MAV 5 + 90%4x6",
+          "recupero": "2-3min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "MAV 5 + 90%4x6",
+          "recupero": "2-3min",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}
