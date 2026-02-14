@@ -1,4 +1,5 @@
 {
+  "startDate": "2026-02-17",
   "mercoledì": [
     {
       "exercise": "Panca Piana",
@@ -62,7 +63,7 @@
       ]
     },
     {
-      "exercise": "Trazioni Zav.",
+      "exercise": "Trazioni Zavorrate",
       "log": [
         {
           "week": 1,
@@ -308,7 +309,7 @@
   ],
   "lunedì": [
     {
-      "exercise": "Trazioni Zav.",
+      "exercise": "Trazioni Zavorrate",
       "log": [
         {
           "week": 1,
@@ -676,7 +677,7 @@
   ],
   "venerdì": [
     {
-      "exercise": "Military",
+      "exercise": "Military Press",
       "log": [
         {
           "week": 1,
