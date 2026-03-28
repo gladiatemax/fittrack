@@ -708,22 +708,29 @@
           "note": ""
         },
         {
-          "week": 6,
+          "week": 5,
           "setsReps": "4x4",
           "recupero": "2-3 min",
           "weight": "40",
           "note": ""
         },
         {
-          "week": 7,
+          "week": 6,
           "setsReps": "3x5",
           "recupero": "2-3 min",
           "weight": "40",
           "note": ""
         },
         {
-          "week": 8,
+          "week": 7,
           "setsReps": "5x3",
+          "recupero": "2-3 min",
+          "weight": "42",
+          "note": ""
+        },
+        {
+          "week": 8,
+          "setsReps": "4x4",
           "recupero": "2-3 min",
           "weight": "42",
           "note": ""
