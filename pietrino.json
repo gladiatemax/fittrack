@@ -1,0 +1,957 @@
+{
+  "lunedì": [
+    {
+      "exercise": "Squat",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "Bil",
+          "note": "Bil = bilanciere vuoto"
+        },
+        {
+          "week": 2,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "+ kg",
+          "note": "+ kg = incremento moderato di peso max 5 kg (se estremamente leggero anche di più)"
+        },
+        {
+          "week": 3,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "+ kg",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "+ kg",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "+ kg",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "+ kg",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Military press",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3x6",
+          "recupero": "1:30-2 min",
+          "weight": "Bil",
+          "note": "Bilanciere sopra la testa"
+        },
+        {
+          "week": 2,
+          "setsReps": "4x6",
+          "recupero": "1:30-2 min",
+          "weight": "=",
+          "note": "=: solito carico della volta prima"
+        },
+        {
+          "week": 3,
+          "setsReps": "3x6",
+          "recupero": "1:30-2 min",
+          "weight": "+kg",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "4x6",
+          "recupero": "1:30-2 min",
+          "weight": "=",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "3x6",
+          "recupero": "1:30-2 min",
+          "weight": "+kg",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "4x6",
+          "recupero": "1:30-2 min",
+          "weight": "=",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Australian Chin-Up",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3x10 + 1 x max",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": "Quando nel 1xmax fai 10 o piu rep aumentiamo l'inclinazione"
+        },
+        {
+          "week": 2,
+          "setsReps": "3x10 + 1 x max",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3x10 + 1 x max",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "3x10 + 1 x max",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "3x10 + 1 x max",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3x10 + 1 x max",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Push Down",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3x10 + 1xmax",
+          "recupero": "1-1:30 min",
+          "weight": "Loop blu",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "4x10",
+          "recupero": "1-1:30 min",
+          "weight": "Loop blu",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3x10 + 1xmax",
+          "recupero": "1-1:30 min",
+          "weight": "Loop rossa",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "4x10",
+          "recupero": "1-1:30 min",
+          "weight": "Loop rossa",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "3x10 + 1xmax",
+          "recupero": "1-1:30 min",
+          "weight": "Loop celeste",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "4x10",
+          "recupero": "1-1:30 min",
+          "weight": "Loop celeste",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Plank",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "1xmax + 2xmeta'",
+          "recupero": "1 min",
+          "weight": "BW",
+          "note": "Spalle lontane dalle orecchie, spingi le scapole e sedere duro"
+        },
+        {
+          "week": 2,
+          "setsReps": "1xmax + 2xmeta'",
+          "recupero": "1 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "1xmax + 2xmeta'",
+          "recupero": "1 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "1xmax + 2xmeta'",
+          "recupero": "1 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "1xmax + 2xmeta'",
+          "recupero": "1 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "1xmax + 2xmeta'",
+          "recupero": "1 min",
+          "weight": "BW",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "martedì": [
+    {
+      "exercise": "Panca Piana",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "Bil",
+          "note": "Petto sempre alto, non rimbalzare e non staccare il culo"
+        },
+        {
+          "week": 2,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "+kg",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "+kg",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "+kg",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "+kg",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "+kg",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Trazioni Assistite",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3x6",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": "Bw: peso corporeo,corpo libero"
+        },
+        {
+          "week": 2,
+          "setsReps": "3x8",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3x10",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "3x6",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": "aumento difficoltà"
+        },
+        {
+          "week": 5,
+          "setsReps": "3x8",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3x10",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Alzate Laterali",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "Test 12 rm + 1 x max",
+          "recupero": "2 min",
+          "weight": "0",
+          "note": "Spalle lontano dalle orecchie"
+        },
+        {
+          "week": 2,
+          "setsReps": "3x10 +1 x max",
+          "recupero": "1:30 min",
+          "weight": "12 rm",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3x10 +1 x max",
+          "recupero": "1:30 min",
+          "weight": "12 rm",
+          "note": "quando nel 1 x max fai + di 10 o 10 rep aumenta i kg"
+        },
+        {
+          "week": 4,
+          "setsReps": "3x10 +1 x max",
+          "recupero": "1:30 min",
+          "weight": "12 rm",
+          "note": "quando nel 1 x max fai + di 10 o 10 rep aumenta i kg"
+        },
+        {
+          "week": 5,
+          "setsReps": "3x10 +1 x max",
+          "recupero": "1:30 min",
+          "weight": "12 rm",
+          "note": "quando nel 1 x max fai + di 10 o 10 rep aumenta i kg"
+        },
+        {
+          "week": 6,
+          "setsReps": "3x10 +1 x max",
+          "recupero": "1:30 min",
+          "weight": "12 rm",
+          "note": "quando nel 1 x max fai + di 10 o 10 rep aumenta i kg"
+        }
+      ]
+    },
+    {
+      "exercise": "Tiger Push Up",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "4x8-10",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": "quando rieschi a chiudere il 4x10, torniamo al 4x8 aumentando la difficoltà"
+        },
+        {
+          "week": 2,
+          "setsReps": "4x8-10",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "4x8-10",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "4x8-10",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "4x8-10",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "4x8-10",
+          "recupero": "1:30-2 min",
+          "weight": "BW",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Curl manubri + Lombari",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "Test 15 rm + 3x10 + 10\" iso",
+          "recupero": "1-1:30 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "3x13 + 1xmax + 3x10 + 10\" iso",
+          "recupero": "1-1:30 min",
+          "weight": "15 rm",
+          "note": "quando fai 13 o piu rep nel x max aumenta i kg"
+        },
+        {
+          "week": 3,
+          "setsReps": "3x13 + 1xmax + 3x10 + 10\" iso",
+          "recupero": "1-1:30 min",
+          "weight": "15 rm",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "3x13 + 1xmax + 3x10 + 10\" iso",
+          "recupero": "1-1:30 min",
+          "weight": "15 rm",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "3x13 + 1xmax + 3x10 + 10\" iso",
+          "recupero": "1-1:30 min",
+          "weight": "15 rm",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3x13 + 1xmax + 3x10 + 10\" iso",
+          "recupero": "1-1:30 min",
+          "weight": "15 rm",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "venerdì": [
+    {
+      "exercise": "Panca 3 fermi in discesa",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x3",
+          "recupero": "2-3 min",
+          "weight": "Bil",
+          "note": "Petto sempre alto sopratutto quanto sali"
+        },
+        {
+          "week": 2,
+          "setsReps": "4x4",
+          "recupero": "2-3 min",
+          "weight": "Bil",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3x5",
+          "recupero": "2-3 min",
+          "weight": "Bil",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5x3",
+          "recupero": "2-3 min",
+          "weight": "+kg",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "4x4",
+          "recupero": "2-3 min",
+          "weight": "=",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3x5",
+          "recupero": "2-3 min",
+          "weight": "=",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Pulley Presa larga",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3x10 + 10\"",
+          "recupero": "1:30 min",
+          "weight": "Loop blu",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "3x10 + 10\"",
+          "recupero": "1:30 min",
+          "weight": "Loop blu",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3x10 + 10\"",
+          "recupero": "1:30 min",
+          "weight": "Loop rossa",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "3x10 + 10\"",
+          "recupero": "1:30 min",
+          "weight": "Loop rossa",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "3x10 + 10\"",
+          "recupero": "1:30 min",
+          "weight": "Loop celeste",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3x10 + 10\"",
+          "recupero": "1:30 min",
+          "weight": "Loop celeste",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Alzate Laterali",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "4x6-8",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "4x6-8",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "4x6-8",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "4x6-8",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "4x6-8",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "4x6-8",
+          "recupero": "1:30 min",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Leg curl",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "Test 15 rm",
+          "recupero": "1-1:30 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "3x13 + 1xmax",
+          "recupero": "1-1:30 min",
+          "weight": "15rm",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3x13 + 1xmax",
+          "recupero": "1-1:30 min",
+          "weight": "15rm",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "3x13 + 1xmax",
+          "recupero": "1-1:30 min",
+          "weight": "15rm",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "3x13 + 1xmax",
+          "recupero": "1-1:30 min",
+          "weight": "15rm",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3x13 + 1xmax",
+          "recupero": "1-1:30 min",
+          "weight": "15rm",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Wall sit",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3x15\"",
+          "recupero": "30-1min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "3x20\"",
+          "recupero": "30-1min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3x25\"",
+          "recupero": "30-1min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3x30\"",
+          "recupero": "30-1min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "3x35\"",
+          "recupero": "30-1min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "3x40\"",
+          "recupero": "30-1min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3x45\"",
+          "recupero": "30-1min",
+          "weight": "BW",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "giovedì": [
+    {
+      "exercise": "Squat",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x10",
+          "recupero": "1:30-2min",
+          "weight": "Bil",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "5x9",
+          "recupero": "1:30-2min",
+          "weight": "+kg",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "5x8",
+          "recupero": "1:30-2min",
+          "weight": "+kg",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "5x7",
+          "recupero": "1:30-2min",
+          "weight": "+kg",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "5x6",
+          "recupero": "1:30-2min",
+          "weight": "+kg",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "5x5",
+          "recupero": "1:30-2min",
+          "weight": "+kg",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Lento avanti",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "Test 10 RM",
+          "recupero": "1:30-2min",
+          "weight": "0",
+          "note": "Gomiti sempre sotto i polsi, spingi il peso sopra la testa e le spalle basse"
+        },
+        {
+          "week": 2,
+          "setsReps": "4x8-10",
+          "recupero": "1:30-2min",
+          "weight": "10 RM",
+          "note": "quando riesci a chiudere le 8 rep si passa alle 10, quando chiudi le 10 si torna alle 8 aumentando i kg"
+        },
+        {
+          "week": 3,
+          "setsReps": "4x8-10",
+          "recupero": "1:30-2min",
+          "weight": "10 RM",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "4x8-10",
+          "recupero": "1:30-2min",
+          "weight": "10 RM",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "4x8-10",
+          "recupero": "1:30-2min",
+          "weight": "10 RM",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "4x8-10",
+          "recupero": "1:30-2min",
+          "weight": "10 RM",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Tenute Supine ISO alla sbarra",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3 x max",
+          "recupero": "1:30 min",
+          "weight": "BW",
+          "note": "Petto aperto, palle basse e indietro"
+        },
+        {
+          "week": 2,
+          "setsReps": "3 x max",
+          "recupero": "1:30 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3 x max",
+          "recupero": "1:30 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "3 x max",
+          "recupero": "1:30 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "3 x max",
+          "recupero": "1:30 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3 x max",
+          "recupero": "1:30 min",
+          "weight": "BW",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Push up",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "1 x max + 2 x meta",
+          "recupero": "1:30 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "1 x max + 2 x meta",
+          "recupero": "1:30 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "1 x max + 2 x meta",
+          "recupero": "1:30 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "1 x max + 2 x meta",
+          "recupero": "1:30 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "1 x max + 2 x meta",
+          "recupero": "1:30 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "1 x max + 2 x meta",
+          "recupero": "1:30 min",
+          "weight": "BW",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Plank",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "3 x 30\"",
+          "recupero": "1 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "3 x 35\"",
+          "recupero": "1 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "3 x 40\"",
+          "recupero": "1 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "3 x 45\"",
+          "recupero": "1 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "3 x 50\"",
+          "recupero": "1 min",
+          "weight": "BW",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "3 x 1'",
+          "recupero": "1 min",
+          "weight": "BW",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}
