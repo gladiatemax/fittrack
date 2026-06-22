@@ -1,0 +1,449 @@
+{
+  "lunedì": [
+    {
+      "exercise": "Panca Piana",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "5x10",
+          "recupero": "1:30-2 min",
+          "weight": "48",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "5x9",
+          "recupero": "1:30-2 min",
+          "weight": "52",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "6x6",
+          "recupero": "2-3 min",
+          "weight": "56",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "4x7",
+          "recupero": "2-3 min",
+          "weight": "60",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "5x5",
+          "recupero": "2-3 min",
+          "weight": "64",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "5x2",
+          "recupero": "2-3 min",
+          "weight": "68",
+          "note": ""
+        },
+        {
+          "week": 7,
+          "setsReps": "3 (68) + 5 (64) x 3 giri",
+          "recupero": "2-3 min",
+          "weight": "68",
+          "note": ""
+        },
+        {
+          "week": 8,
+          "setsReps": "6x4",
+          "recupero": "2-3 min",
+          "weight": "68",
+          "note": ""
+        },
+        {
+          "week": 9,
+          "setsReps": "5x1 (72), 1x5 (64)",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 10,
+          "setsReps": "3x3",
+          "recupero": "2-3 min",
+          "weight": "72",
+          "note": ""
+        },
+        {
+          "week": 11,
+          "setsReps": "3x1 (78) , 4x3 (72)",
+          "recupero": "2-3 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 12,
+          "setsReps": "3x1",
+          "recupero": "2-3 min",
+          "weight": "80",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Rowing Mono",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "Test 10 RM",
+          "recupero": "2-2:30 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "4x4",
+          "recupero": "2-2:30 min",
+          "weight": "10 rm",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "5x5",
+          "recupero": "2-2:30 min",
+          "weight": "10 rm",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "6x6",
+          "recupero": "2-2:30 min",
+          "weight": "10 rm",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "4x4",
+          "recupero": "2-2:30 min",
+          "weight": "+ kg",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "5x5",
+          "recupero": "2-2:30 min",
+          "weight": "=",
+          "note": ""
+        },
+        {
+          "week": 7,
+          "setsReps": "6x6",
+          "recupero": "2-2:30 min",
+          "weight": "=",
+          "note": ""
+        },
+        {
+          "week": 8,
+          "setsReps": "4x4",
+          "recupero": "2-2:30 min",
+          "weight": "+kg",
+          "note": ""
+        },
+        {
+          "week": 9,
+          "setsReps": "5x5",
+          "recupero": "2-2:30 min",
+          "weight": "=",
+          "note": ""
+        },
+        {
+          "week": 10,
+          "setsReps": "6x6",
+          "recupero": "2-2:30 min",
+          "weight": "=",
+          "note": ""
+        },
+        {
+          "week": 11,
+          "setsReps": "4x4",
+          "recupero": "2-2:30 min",
+          "weight": "+kg",
+          "note": ""
+        },
+        {
+          "week": 12,
+          "setsReps": "5x5",
+          "recupero": "2-2:30 min",
+          "weight": "=",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Leg Extension",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "Ramping 10 + myorep 20\"(5rep)",
+          "recupero": "0",
+          "weight": "0",
+          "note": "5 rep ogni mini set con 20\" di rec, fino a che non chiudi piu le 5 rep"
+        },
+        {
+          "week": 2,
+          "setsReps": "Ramping 10 + myorep 20\"(5rep)",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "Ramping 10 + myorep 20\"(5rep)",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "Ramping 10 + myorep 20\"(5rep)",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "Ramping 10 + myorep 20\"(5rep)",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "Ramping 10 + myorep 20\"(5rep)",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 7,
+          "setsReps": "Ramping 10 + myorep 20\"(5rep)",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 8,
+          "setsReps": "Ramping 10 + myorep 20\"(5rep)",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 9,
+          "setsReps": "Ramping 10 + myorep 20\"(5rep)",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 10,
+          "setsReps": "Ramping 10 + myorep 20\"(5rep)",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 11,
+          "setsReps": "Ramping 10 + myorep 20\"(5rep)",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 12,
+          "setsReps": "Ramping 10 + myorep 20\"(5rep)",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Crunch al Cavo Alto",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "Test 10 RM",
+          "recupero": "0",
+          "weight": "0",
+          "note": "Tira solo di addome, SO GIA'......"
+        },
+        {
+          "week": 2,
+          "setsReps": "4x8-10",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "4x8-10",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "4x8-10",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "4x8-10",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "4x8-10",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 7,
+          "setsReps": "4x8-10",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 8,
+          "setsReps": "4x8-10",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 9,
+          "setsReps": "4x8-10",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 10,
+          "setsReps": "4x8-10",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 11,
+          "setsReps": "4x8-10",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 12,
+          "setsReps": "4x8-10",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "exercise": "Curl Ez",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "Test 5 RM",
+          "recupero": "0",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 2,
+          "setsReps": "3x8",
+          "recupero": "1-1:30min",
+          "weight": "5 rm",
+          "note": ""
+        },
+        {
+          "week": 3,
+          "setsReps": "6x4",
+          "recupero": "2-2:30min",
+          "weight": "5 RM",
+          "note": ""
+        },
+        {
+          "week": 4,
+          "setsReps": "Test 5 RM + 3x5 (90% 5rm)",
+          "recupero": "2-2:30min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 5,
+          "setsReps": "8x3",
+          "recupero": "1-1:30 min",
+          "weight": "5 RM (new)",
+          "note": ""
+        },
+        {
+          "week": 6,
+          "setsReps": "6x4",
+          "recupero": "2-2:30 min",
+          "weight": "5 RM (new)",
+          "note": ""
+        },
+        {
+          "week": 7,
+          "setsReps": "Test 5RM + 3x5 (90% 5rm)",
+          "recupero": "2-2:30 min",
+          "weight": "0",
+          "note": ""
+        },
+        {
+          "week": 8,
+          "setsReps": "8x3",
+          "recupero": "1-1:30 min",
+          "weight": "5RM (New)",
+          "note": ""
+        },
+        {
+          "week": 9,
+          "setsReps": "6x4",
+          "recupero": "2-2:30 min",
+          "weight": "5RM (New)",
+          "note": ""
+        },
+        {
+          "week": 10,
+          "setsReps": "Test 5 RM + 3x5 (90% 5rm)",
+          "recupero": "2-2:30 min",
+          "weight": "5RM (New)",
+          "note": ""
+        },
+        {
+          "week": 11,
+          "setsReps": "8x3",
+          "recupero": "1-1:30 min",
+          "weight": "5RM (New)",
+          "note": ""
+        },
+        {
+          "week": 12,
+          "setsReps": "6x4",
+          "recupero": "2-2:30 min",
+          "weight": "5RM (New)",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}
