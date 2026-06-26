@@ -248,18 +248,18 @@
     {
       "exercise": "Spider curl + Push Down",
       "log": [
-        { "week": 1, "setsReps": "3x15(+1xmax)+15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
-        { "week": 2, "setsReps": "3x15(+1xmax)+15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
-        { "week": 3, "setsReps": "3x15(+1xmax)+15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
-        { "week": 4, "setsReps": "3x15(+1xmax)+15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
-        { "week": 5, "setsReps": "3x15(+1xmax)+15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
-        { "week": 6, "setsReps": "3x15(+1xmax)+15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
-        { "week": 7, "setsReps": "3x15(+1xmax)+15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
-        { "week": 8, "setsReps": "3x15(+1xmax)+15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
-        { "week": 9, "setsReps": "3x15(+1xmax)+15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
-        { "week": 10, "setsReps": "3x15(+1xmax)+15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
-        { "week": 11, "setsReps": "3x15(+1xmax)+15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
-        { "week": 12, "setsReps": "3x15(+1xmax)+15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" }
+        { "week": 1, "setsReps": "3x15(+1xmax) + 15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
+        { "week": 2, "setsReps": "3x15(+1xmax) + 15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
+        { "week": 3, "setsReps": "3x15(+1xmax) + 15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
+        { "week": 4, "setsReps": "3x15(+1xmax) + 15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
+        { "week": 5, "setsReps": "3x15(+1xmax) + 15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
+        { "week": 6, "setsReps": "3x15(+1xmax) + 15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
+        { "week": 7, "setsReps": "3x15(+1xmax) + 15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
+        { "week": 8, "setsReps": "3x15(+1xmax) + 15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
+        { "week": 9, "setsReps": "3x15(+1xmax) + 15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
+        { "week": 10, "setsReps": "3x15(+1xmax) + 15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
+        { "week": 11, "setsReps": "3x15(+1xmax) + 15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" },
+        { "week": 12, "setsReps": "3x15(+1xmax) + 15(+1xmax)", "recupero": "1-1:30 min", "weight": "0", "note": "" }
       ]
     }
   ]
