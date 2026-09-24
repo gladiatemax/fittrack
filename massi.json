@@ -738,6 +738,67 @@
   ],
   "venerdì": [
     {
+      "exercise": "T-row",
+      "log": [
+        {
+          "week": 1,
+          "setsReps": "2x6-8",
+          "recupero": "2-2:30 min",
+          "weight": "10RM",
+          "note": "Presa prona"
+        },
+        {
+          "week": 2,
+          "setsReps": "2x6-8",
+          "recupero": "2-2:30 min",
+          "weight": "10RM",
+          "note": "Presa prona"
+        },
+        {
+          "week": 3,
+          "setsReps": "2x6-8",
+          "recupero": "2-2:30 min",
+          "weight": "10RM",
+          "note": "Presa prona"
+        },
+        {
+          "week": 4,
+          "setsReps": "2x6-8",
+          "recupero": "2-2:30 min",
+          "weight": "10RM",
+          "note": "Presa prona"
+        },
+        {
+          "week": 5,
+          "setsReps": "2x6-8",
+          "recupero": "2-2:30 min",
+          "weight": "10RM",
+          "note": "Presa prona"
+        },
+        {
+          "week": 6,
+          "setsReps": "2x6-8",
+          "recupero": "2-2:30 min",
+          "weight": "10RM",
+          "note": "Presa prona"
+        },
+        {
+          "week": 7,
+          "setsReps": "2x6-8",
+          "recupero": "2-2:30 min",
+          "weight": "10RM",
+          "note": "Presa prona"
+        },
+        {
+          "week": 8,
+          "setsReps": "2x6-8",
+          "recupero": "2-2:30 min",
+          "weight": "10RM",
+          "note": "Presa prona"
+        }
+      ]
+    },
+    {
       "exercise": "Lat Machine presa prona",
       "log": [
         {
@@ -799,7 +860,7 @@
       ]
     },
     {
-      "exercise": "Pulley Presa Larga Neutra",
+      "exercise": "The real pulley con maniglie",
       "log": [
         {
           "week": 1,
@@ -860,7 +921,7 @@
       ]
     },
     {
-      "exercise": "Pull Down",
+      "exercise": "pullover con manubrio",
       "log": [
         {
           "week": 1,
@@ -917,67 +978,6 @@
           "recupero": "1:30 min",
           "weight": "15 RM",
           "note": "Gomiti leggermente flessi"
-        }
-      ]
-    },
-    {
-      "exercise": "Rowing",
-      "log": [
-        {
-          "week": 1,
-          "setsReps": "2x10-15",
-          "recupero": "1:30 min",
-          "weight": "15 RM",
-          "note": "Presa prona"
-        },
-        {
-          "week": 2,
-          "setsReps": "2x10-15",
-          "recupero": "1:30 min",
-          "weight": "15 RM",
-          "note": "Presa prona"
-        },
-        {
-          "week": 3,
-          "setsReps": "2x10-15",
-          "recupero": "1:30 min",
-          "weight": "15 RM",
-          "note": "Presa prona"
-        },
-        {
-          "week": 4,
-          "setsReps": "2x10-15",
-          "recupero": "1:30 min",
-          "weight": "15 RM",
-          "note": "Presa prona"
-        },
-        {
-          "week": 5,
-          "setsReps": "2x10-15",
-          "recupero": "1:30 min",
-          "weight": "15 RM",
-          "note": "Presa prona"
-        },
-        {
-          "week": 6,
-          "setsReps": "2x10-15",
-          "recupero": "1:30 min",
-          "weight": "15 RM",
-          "note": "Presa prona"
-        },
-        {
-          "week": 7,
-          "setsReps": "2x10-15",
-          "recupero": "1:30 min",
-          "weight": "15 RM",
-          "note": "Presa prona"
-        },
-        {
-          "week": 8,
-          "setsReps": "2x10-15",
-          "recupero": "1:30 min",
-          "weight": "15 RM",
-          "note": "Presa prona"
         }
       ]
     },
@@ -1050,61 +1050,61 @@
       ]
     },
     {
-      "exercise": "Crunch al Iperextension",
+      "exercise": "crunch al cavo + plank nel recupero",
       "log": [
         {
           "week": 1,
-          "setsReps": "3x10 + tenuta x max",
-          "recupero": "1:30 min",
+          "setsReps": "3x15-20",
+          "recupero": "45 sec-1 min plank",
           "weight": "BW",
           "note": "Non perdere la schiena scendi finche mantieni la schiena"
         },
         {
           "week": 2,
-          "setsReps": "3x10 + tenuta x max",
-          "recupero": "1:30 min",
+          "setsReps": "3x15-20",
+          "recupero": "45 sec-1 min plank",
           "weight": "BW",
           "note": "Non perdere la schiena scendi finche mantieni la schiena"
         },
         {
           "week": 3,
-          "setsReps": "3x10 + tenuta x max",
-          "recupero": "1:30 min",
+          "setsReps": "3x15-20",
+          "recupero": "45 sec-1 min plank",
           "weight": "BW",
           "note": "Non perdere la schiena scendi finche mantieni la schiena"
         },
         {
           "week": 4,
-          "setsReps": "3x10 + tenuta x max",
-          "recupero": "1:30 min",
+          "setsReps": "3x15-20",
+          "recupero": "45 sec-1 min plank",
           "weight": "BW",
           "note": "Non perdere la schiena scendi finche mantieni la schiena"
         },
         {
           "week": 5,
-          "setsReps": "3x10 + tenuta x max",
-          "recupero": "1:30 min",
+          "setsReps": "3x15-20",
+          "recupero": "45 sec-1 min plank",
           "weight": "BW",
           "note": "Non perdere la schiena scendi finche mantieni la schiena"
         },
         {
           "week": 6,
-          "setsReps": "3x10 + tenuta x max",
-          "recupero": "1:30 min",
+          "setsReps": "3x15-20",
+          "recupero": "45 sec-1 min plank",
           "weight": "BW",
           "note": "Non perdere la schiena scendi finche mantieni la schiena"
         },
         {
           "week": 7,
-          "setsReps": "3x10 + tenuta x max",
-          "recupero": "1:30 min",
+          "setsReps": "3x15-20",
+          "recupero": "45 sec-1 min plank",
           "weight": "BW",
           "note": "Non perdere la schiena scendi finche mantieni la schiena"
         },
         {
           "week": 8,
-          "setsReps": "3x10 + tenuta x max",
-          "recupero": "1:30 min",
+          "setsReps": "3x15-20",
+          "recupero": "45 sec-1 min plank",
           "weight": "BW",
           "note": "Non perdere la schiena scendi finche mantieni la schiena"
         }
